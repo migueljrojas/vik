@@ -1,6 +1,82 @@
-[
-    {
-        "name":"",
-        "url":""
+{
+    "menu":[
+        {
+            "nombre":"Vina Vik",
+            "url":"/",
+            "submenu":[
+                {
+                    "nombre":"Historia",
+                    "url":"/"
+                },
+                {
+                    "nombre":"Nuestro Concepto",
+                    "url":"/"
+                },
+                {
+                    "nombre":"la bodega",
+                    "url":"/"
+                },
+                {
+                    "nombre":"el pavilion",
+                    "url":"/"
+                }
+            ]
+        },
+        {
+            "nombre":"nuestros vinos",
+            "url":"/",
+            "submenu":[
+                {
+                    "nombre":"vik",
+                    "url":"/"
+                },
+                {
+                    "nombre":"milla cala",
+                    "url":"/"
+                },
+                {
+                    "nombre":"la piu belle",
+                    "url":"/"
+                },
+                {
+                    "nombre":"your vik bottle",
+                    "url":"/"
+                }
+            ]
+        },
+        {
+            "nombre":"vik chile retreat",
+            "url":"/",
+        },
+        {
+            "nombre":"news",
+            "url":"/",
+            "submenu":[
+                {
+                    "nombre":"prensa",
+                    "url":"/"
+                },
+                {
+                    "nombre":"connect",
+                    "url":"/"
+                }
+            ]
+        },
+        {
+            "nombre":"videos y galeria",
+            "url":"/"
+        },
+        {
+            "nombre":"contacto",
+            "url":"/"
+        },
+        {
+            "nombre":"reserva",
+            "url":"/"
+        }
+    ],
+    "tienda":{
+        "texto":"tienda",
+        "cantidades":"0"
     }
-]
+}

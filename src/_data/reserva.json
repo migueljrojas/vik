@@ -1,0 +1,76 @@
+{
+    "principal":{
+        "titulo":"reserva",
+        "contenido":"La invitación es a descubrir una viña única, con un concepto holístico que no lo dejará indiferente, no en vano los indígenas llamaban a esta zona “Lugar de oro”."
+    },
+    "seccion1":{
+            "titulo":"enoturismo",
+            "contenido":[
+                "Aquí encontrará una nueva forma de ver la tierra, el viñedo y sin lugar a dudas encontrará el 'ORO' un vino supremo que lo dejará encantado.",
+                "Para visitarnos, hacer reserva en nuestros restaurantes, o para obtener más información, contactarnos en  info@vik.cl o + 56 9 5668 4852"
+            ],
+            "boton":{
+                "nombre":"brochure vik tours",
+                "url":
+            }
+        }
+    },
+    "actividades":[
+        {
+            "titulo":"catas de vinos",
+            "texto":"Disfrute de una cata de vinos en nuestra excepcional sala de cata, donde uno de nuestros expertos VIK lo guiará para poder descubrir el alma de nuestros vinos.",
+            "imagen":"*"
+        }
+        {
+            "titulo":"visitas guiadas",
+            "texto":"Por nuestro viñedo y nuestras instalaciones: Descubra el misterio que encierra cada una de nuestras botellas desde la perspectiva de un vinicultor y conozca el arte de elaborar un gran vino.",
+            "imagen":"*"
+        },
+        {
+            "titulo":"cabalgatas",
+            "texto":"Cabalgue por nuestro viñedo VIK en compañía de un guía experto para descubrir los 11000 acres (4400 hectáreas) de hermosa naturaleza y vides.",
+            "imagen":"*"
+        },
+        {
+            "titulo":"trekking",
+            "texto":"Viña VIK posee numerosos senderos de trekking para disfrutar un lugar único, con una fascinante diversidad geográfica y de flora y fauna.",
+            "imagen":"*"
+        },
+        {
+            "titulo":"mountain bike",
+            "texto":"Otra forma distinta de conocer la hacienda desde diferentes ángulos en nuestras mountain bikes. Usted podrá realizar un recorrido por todo el viñedo desde las cimas de los cerros por un camino especialmente diseñado o a través de los diferentes caminos del viñedo.",
+            "imagen":"*"
+        },
+        {
+            "titulo":"gastronomía",
+            "texto":"o invitamos a conocer nuestra exquisita mesa en donde nuestro Chef lo impresionará con los más frescos y deliciosos platos típicos chilenos especialmente elaborados para nuestros vinos. También le ofrecemos la opción de un delicioso asado en medio del viñedo y la hacienda. Conoce nuestros restaurantes: El Pavilion y Milla Milla, el restaurante de nuestro exceptional Vik Chile Retreat.",
+            "extra":" Milla Milla   Pavilion",
+            "imagen":"*"
+        },
+        {
+            "titulo":"vinotherapia spa",
+            "texto":"Nuestro spa de vino holístico le invita a disfrutar de una experiencia única, de bienestar diseñada para renovar su energía física y mental con terapias especiales que son una perfecta combinación de aromas, textura y somidos, y ofrecen una variedad excepcional de sensaciones. ",
+            "imagen":"*"
+        },
+        {
+            "titulo":"piscina",
+            "texto":"Nada unas brazadas en la piscina infinita de mármol con vista al viñedo VIK.",
+            "imagen":""
+        },
+        {
+            "titulo":"alojamiento",
+            "texto":"En Viña VIK brindamos alojamiento de primer nivel con vistas impactantes de la Cordillera de los Andes, el viñedo y la naturaleza que lo rodea. Tiene además la opción de reservar la Cabaña de VIK para una estadía íntima y relajada en nuestra encantadora casa del viñedo.",
+            "extra":"Vik Chile Retreat website",
+            "imagen":"*"
+        },
+        {
+            "titulo":"visite viñedoscercanos",
+            "texto":"Visite los viñedos cercanos en Apalta, Cachapoal y Valle de Colchagua; tales como Neyen, Montes, Lapostolle y Clos de Apalta. Además en el Valle de Colchagua encontrará variados viñedos que podrá visitar como también la ciudad de Santa Cruz.",
+            "imagen":"*"
+        }
+    ],
+    "seccion2":{
+        "titulo":"reserva",
+        "texto":"Para reservar u obtener más informaciones, contáctanos a info@vik.cl o al +56 9 5668 4853"
+    }
+}

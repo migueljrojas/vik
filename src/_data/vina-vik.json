@@ -1,0 +1,188 @@
+{
+    "principal":{
+        "titulo":"vina vik",
+        "texto":"A holistic vineyard creating world class wine located on 10,000 acres of Chilean nature & featuring an architecturally exceptional winery, restaurant & retreat.",
+        "mensaje":"“Science and knowledge are our foundation Passion is our engine and The wine is the expression of our Art”"
+    },
+    "historia":{
+        "seccion1":{
+            "titulo":"nuestra historia",
+            "texto":"Alexander Vik emprendedor Noruego se propuso crear un viñedo excepcional en el año 2004 para producir un vino único."
+        },
+        "seccion2":{
+            "titulo":"2006",
+            "texto":"Para lograr esta meta y encontrar el mejor terroir, reunieron un equipo de enólogos, climatólogos, geólogos, viticultores y agrónomos para realizar una búsqueda en Sudamérica. La elección de los mejores terroir y las óptimas condiciones climáticas para la viticultura lo llevaron a que en el año 2006 adquiriera 4325 hectáreas en Chile. ",
+        },
+        "seccion3":{
+            "titulo":"lugar de oro",
+            "texto":[
+                "El lugar escogido fue el Valle de Millahue, denominado por los indígenas 'Lugar de Oro'.",
+                "Es aquí donde nace 'VIK' un viñedo que encarna la perfecta fusión entre hombre, experiencia, tierra, clima y alta tecnología."
+            ]
+        },
+        "seccion4":{
+            "texto":"Nuestra viña o 'Lugar de Oro', que se encuentra ubicada al interior del valle entre innumerables quebradas, ofreciendo una variedad de terroir inigualable, pequeños microclimas cada uno con distintas exposiciones y siempre bañado de una fresca brisa costera, lo que entrega la complejidad siempre buscada y que nos asegura que estamos en camino a lograr nuestra meta de producir el mejor vino de Sud América.",
+        },
+        "seccion5":{
+            "imagenes":"3imagenes"
+        },
+        "seccion6":{
+            "titulo":"equipo",
+            "texto":"Un equipo de profesionales innovadores y comprometidos. ",
+            "imagen-principal":"",
+            "miembros":[
+                {
+                    "foto":"",
+                    "nombre":"Gastón Williams",
+                    "cargo":"ceo"
+                },
+                {
+                    "foto":"",
+                    "nombre":"christián vallejo",
+                    "cargo":"winemaker"
+                },
+                {
+                    "foto":"",
+                    "nombre":"Pedro Veas",
+                    "cargo":"cfo"
+
+                }
+            ]
+        }
+    },
+    "nuestro-concepto":{
+        "seccion1":{
+            "titulo":"nuestro concepto",
+            "texto":"El concepto vitivinícola de VIK se basa en la técnica de la optimización de cada una de las etapas de viticultura y vinificación, por medio de la gran atención en la ciencia y tecnología, todo esto adaptado a nuestros valles para lograr la mejor madurez de nuestra fruta y crear los mejores vinos.",
+            "imagen":"*"
+        },
+        "seccion2":{
+            "titulo":"holismo",
+            "texto":"Nuestro vino holístico es el resultado de un magnífico terroir dinámico junto con las mejores técnicas, prácticas vitícolas y vinícolas que puedan existir, además de un trabajo de excelencia en la protección y mejoramiento del medio ambiente, del desarrollo humano y social, de la arquitectura y del arte."
+        },
+        "seccion3":{
+            "titulo":"VITI-VINICULTURA",
+            "texto":"El concepto vitivinícola de VIK se basa en la técnica de la optimización de cada una de las etapas de viticultura y vinificación, por medio de la gran atención en la ciencia y tecnología, todo esto adaptado a nuestros valles para lograr la mejor madurez de nuestra fruta y crear los mejores vinos."
+        },
+        "seccion4":{
+            "titulo":"+300 personas",
+            "texto":"El equipo VIK, formado por más de 300 personas, trabaja a diario con precisión y amor por la tierra para crear nuestro magnífico vino."
+        },
+        "seccion5":{
+            "titulo":"la perfeccion",
+            "texto":"Nuestro objetivo es adaptar las mejores técnicas para maximizar la óptima calidad de nuestras uvas con tecnología de punta, manteniendo nuestro concepto holístico de perfección cualitativa.",
+            "imagen":"*"
+        },
+        "seccion6":{
+            "titulo":"viticultura",
+            "texto":"En VIK la viticultura de precisión es fundamental, por esta razón contamos con tecnología de punta que nos ayuda a lograr nuestra premisa de mantener una plantación en alta densidad.",
+            "estadisticas":[
+                {
+                    "numeros":"7.518",
+                    "texto":"En VIK la viticultura de precisión es fundamental, por esta razón contamos con tecnología de punta que nos ayuda a lograr nuestra premisa de mantener una plantación en alta densidad.",
+                },
+                {
+                    "numeros":"8.333",
+                    "texto":"PLANTAS / HAEN LAS LADERAS"
+                },
+                {
+                    "numeros":"10.000",
+                    "texto":"PLANTAS / HAEN ULTIMAS PLANTACIONES 2012"
+                }
+            ],
+            "contenido":[
+                "La plantación y elección de las cepas se estableció luego de minuciosos estudios de suelos, estudios meteorológicos y exposición de los valles. Las variedades elegidas, Cabernet Sauvignon, Carménère, Syrah, Cabernet Franc y Merlot fueron plantadas a lo largo de los distintos valles del campo buscando siempre la armonía entre el equilibrio hídrico, el clima, la tierra y el portainjerto.",
+                "También contamos con un sistema de riego cuya finalidad es controlar la condición hídrica y formación de cada planta, para lo cual se optimizaron los recursos hídricos, energéticos, el potencial manejo de riego y fertigación de cada sitio específico"
+            ]
+        },
+        "seccion7":{
+            "imagenes":"3",
+        },
+        "seccion8":{
+            "titulo":"VINICULTURA",
+            "texto":"También contamos con un sistema de riego cuya finalidad es controlar la condición hídrica y formación de cada planta, para lo cual se optimizaron los recursos hídricos, energéticos, el potencial manejo de riego y fertigación de cada sitio específico",
+            "contenido":[
+                "Nos caracterizamos porque cada cuba se adapte a una vinificación apropiada respetando el origen de la uva y la definición organoléptica de cada cuba. Para esto contamos con una primera selección de racimos y una segunda selección de granos lo que nos permite obtener una materia prima de alta calidad.",
+                "Hacemos hasta 3 cosechas de noche cuando la uva está más fresca y en su calidad máxima —siempre de forma manual— en cada cuartel según la madurez de la uva con la finalidad de obtener sólo uvas de excelente calidad.",
+                "Asimismo, nuestros equipos aportan el mayor cuidado durante la elaboración de nuestros vinos manteniendo la naturaleza de cada parcela. Se respetan los equilibrios del vino por lo que todas nuestras uvas son transportadas por gravedad a las cubas de acero inoxidable para mantener el frescor de la fruta y la precisión aromática del vino.",
+                "La maceración pre-fermentativa es a 8°C durante 5 a 6 días y la fermentación alcohólica es con 5 remontajes diarios para extraer el color y los taninos. De igual manera se realiza una maceración post fermentativa entre 7 y 15 días según los años y degustación.",
+                "El blending, o tipificación, es un proceso por el cual se combinan vinos de diferentes bloques y varietales para representar la visión de los enólogos, y se completa con permanentes catas a lo largo de meses. Una vez terminado, se devuelve el vino a la barrica hasta que el enólogo determina que es el momento de embotellar.",
+                "La crianza del vino se realiza en barricas nuevas de roble francés, las que se renuevan cada año. El vino es guardado durante 18 a 24 meses con trasiegos cada 3 meses. La vinificación de nuestros vinos implica una mayor atención en la transformación de la uva en un vino elegante, fino, expresivo, aromático, equilibrado, con cuerpo y de gran categoría, un premier grand cru Sudamericano."
+            ]
+        },
+        "seccion9":{
+            "titulo":"UN TERROIR PERFECTO",
+            "texto":"La gran extensión de nuestro viñedo y sus inigualables atributos nos permiten crear un vino único y de calidad infinita, sólo posible gracias a la minuciosa atención en todos los detalles.",
+            "contenido":[
+                "Nuestra viña cuenta con una amplitud térmica exquisita lo que es una ventaja para la elaboración de nuestro vino por lo que contamos con escasos períodos de lluvia en épocas de crecimiento y cosecha lo que favorece el frescor de la fruta y así lograr taninos maduros al momento de la cosecha.",
+                "VIK posee 12 valles con distintos tipos de suelos en donde cada uno fue analizado para plantar el portainjerto específico para ese tipo de suelo. Esta variedad y complejidad nos ayuda a crear un gran vino único.",
+                "Tenemos la filosofía que el terroir es un concepto dinámico, por eso estamos siempre muy atentos a la continua optimización de todos los detalles en el viñedo.",
+                "IMPORTANCIA DE LOS VIENTOSVIK recibe brisas marinas diarias directamente del Océano Pacifico. Las brisas permiten refrescar y tener nuestro viñedo sano."
+            ]
+        },
+        "seccion10":{
+            "titulo":"vik verde",
+            "texto":"En VIK el desarrollo sustentable también constituye uno de nuestros pilares fundamentales, lo que se materializa por nuestra preocupación por el medio ambiente y el entorno en donde crece nuestro viñedo. Dentro de las medidas de mitigación, recuperación y mejoramiento cabe destacar:",
+            "contenido":[
+                "Poseemos nuestra propia planta de tratamiento de aguas lo que nos permite usar nuevamente el agua para regar nuestro viñedo.",
+                "Contamos con una huella de carbono negativa ya que nuestro viñedo está rodeado de 2000 hectáreas de bosque nativo. Además, hemos plantado más de 590 árboles como quillayes, peumo y litre para reforestar.",
+                "VIK posee una biodiversidad increíble en donde los organismos vivientes son parte de un todo actuando recíprocamente entre sí, pero también con el aire, el agua, y el suelo que los rodean. Poseemos una gran variedad de animales silvestre (patos, cormoranes, cisnes, águilas, pumas, etc) gracias a que geográficamente estamos aislados al interior del Valle VIK y poseemos un lago al interior del viñedo.La cercanía del bosque con el viñedo favorece el buen desarrollo de las plantas y el buen equilibrio flor-fauna- (las arañas que están en el viñedo y los predadores en el bosque)",
+                "Eficiencia Arquitectónica: La bodega VIK es muy eficiente ya que usa freecooling, energía solar, aislación natural."
+            ]
+        },
+        "seccion11":{
+            "texto":"¿le interesa obtener más información técnica sobre nuestra viña?",
+            "boton":{
+                "texto":"descargar",
+                "url":"*"
+            }
+        }
+    },
+    "bodega":{
+        "seccion1":{
+            "titulo":"la bodega",
+            "texto":"La bodega VIK se caracteriza por poseer un diseño único y sin precedentes, que es al mismo tiempo vanguardista, altamente sostenible, tecnológicamente creativo y con un despliegue visual impactante que promete redefinir la experiencia del vino."
+        },
+        "seccion2":{
+            "titulo":"la historia de nuestra bodega",
+            "texto":"En 2007, Carrie y Alexander Vik se embarcaron en un concurso de arquitectura con profesionales chilenos, que finalmente resultó en la elección de Smiljan Radic (en sociedad con Loreto Lyon) como el arquitecto principal y diseñador de la bodega, con su inspirador y creativo diseño. Luego de la elección de Smiljan Radic, el equipo VIK pasó tres años trabajando para refinar y mejorar el concepto del diseño original y los materiales. Enclavado entre las montañas, rodeado de magníficos valles y los inmensos Andes a lo lejos, la bodega ha sido cuidadosamente diseñada para producir un impacto mínimo en el paisaje y ha implementado la más innovadora y avanzada tecnología al mismo tiempo que procura crear un diseño único y ser operativamente muy eficiente."
+        },
+        "seccion3":{
+            "texto":"El diseño de la bodega incluye un exclusivo techo transparente de tela extensible, que permite la entrada de luz natural que baña la bodega y por lo tanto propicia la operación de la bodega sin la utilización de luz artificial. La entrada de la bodega ostenta una vista impactante de una plaza de agua, con agua fluyendo a lo largo de todo el espacio por una leve pendiente de dos grados, y que además proporciona un elemento adicional de enfriamiento."
+        },
+        "seccion4":{
+            "texto":"Ubicada en la superficie de la plaza de agua se encuentra una instalación artística de Smiljan Radic y la escultora Marcela Correa, el talentoso e inspirado equipo chileno conformado por la pareja de marido y mujer. Las veredas que se han recortado en la plaza permiten a los visitantes caminar a través de un paisaje acuático. Como la mayor parte del edificio está ubicado bajo tierra, el vino se enfría de manera natural durante el proceso de elaboración, manteniendo una temperatura constante utilizando la amplitud térmica natural del valle. El techo de tela, el elemento arquitectónico más importante que se visualiza desde el exterior, da la impresión de una enorme ala blanca suspendida sobre la bodega subterránea. Ambos lados de la bodega cuentan con altas paredes de vidrio, haciendo que la bodega sea transparente y brindando al visitante una vista a través de la bodega hacia el Pavillion al otro lado de la misma."
+        },
+        "seccion5":{
+            "titulo":"cava",
+            "texto":[
+                "Ingresar a la Cava desde el nivel inferior del Hall de Fermentación es como entrar en los misteriosos secretos de la elaboración del vino, con las barricas tenuemente iluminadas que se pueden observar ubicadas hasta lo alto a cada lado del pasillo central.",
+                "Los visitantes son guiados hasta la pared en el extremo opuesto, bellamente pintada por Eduardo Cardozo con su interpretación de los diferentes niveles del terroir del viñedo y luego hasta la Sala de Cata, con su altar del vino donde los visitantes pueden degustar nuestros sobresalientes vinos VIK."
+            ]
+        },
+        "seccion6":{
+            "titulo":"sala de cata",
+            "texto":[
+                "Aquí es donde los expertos de VIK presentan varios aspectos del vino VIK y guían a los visitantes a través de una degustación de varietales en bloques individuales, conversando sobre las características únicas de cada uno, así como también los diferentes vintage lanzados.",
+                "Luego de la cata, los huéspedes pueden dirigirse hacia el piso superior, hasta el Pavilion para disfrutar de VIK con exquisiteces culinarias en un entorno de excepcional diseño y esculturas de Marcela Correa, mientras disfrutan de la vista de los viñedos VIK y la bodega, en medio de la majestuosa naturaleza circundante. Aquí podrán adquirir los vinos VIK para disfrutar en casa con amigos y rememorar sus experiencias VIK."
+            ]
+        },
+        "seccion7":{
+            "texto":"Para reservar o para obtener más información, contáctanos a info@vik.cl o + 56 9 5668 4853."
+        }
+    },
+    "pavilion":{
+        "seccion1":{
+            "titulo":"el pavilion",
+            "texto":"El Pavilion , un restaurant, lounge y tienda bañado por la luz del sol, con paredes vidriadas del suelo al techo, brindando vistas deslumbrantes del Viñedo VIK, la Bodega, Viña Vik y la majestuosa naturaleza que los rodea."
+        },
+        "seccion2":{
+            "titulo":"Rodrigo acuña bravo",
+            "texto":"Con la supervisión del Chef Ejecutivo de Viña Vik, Rodrigo Acuña Bravo, el menú se va modificando diariamente y ofrece los más frescos ingredientes locales. A tono con la filosofía holística de VIK, la sabrosa gastronomía está siempre realzada con una copa de los elegantes vinos VIK, celebrando la vibrante cultura de Chile."
+        },
+        "seccion3":{
+            "texto":"Reserva.Escribe a info@vik.cl o llama +56 9 5668 4853"
+        }
+
+    }
+},

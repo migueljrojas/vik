@@ -1,0 +1,328 @@
+{
+    "principal":{
+        "titulo":"Nuestros vinos",
+        "texto":[
+            "Ensamblajes elegantes, voluptuosos, complejos y equilibrados. Nuestros vinos holísticos VIK son vinos de clase mundial, de gran guarda, y que se disfrutan bebiendo.",
+            "Estos vinos excepcionales y únicos son el resultado de una elegante mezcla de las cepas Cabernet Sauvignon, Carmenere, Syrah, Merlot y Cabernet Franc, mezclas que son elegidas cada año de manera diferente."
+        ],
+        "vinos":[
+            {
+                "imagen":"",
+                "botones":[
+                    {
+                        "texto":"descubre este vino",
+                        "url":"*"
+                    },
+                    {
+                        "texto":"comprar",
+                        "url":"*"
+                    }
+                ]
+            },
+            {
+                "imagen":"",
+                "botones":[
+                    {
+                        "texto":"descubre este vino",
+                        "url":"*"
+                    },
+                    {
+                        "texto":"comprar",
+                        "url":"*"
+                    }
+                ]
+            },
+            {
+                "imagen":"",
+                "botones":[
+                    {
+                        "texto":"ir almicrositio",
+                        "url":"*"
+                    },
+                    {
+                        "texto":"descubre este vino",
+                        "url":"*"
+                    },
+                    {
+                        "texto":"comprar",
+                        "url":"*"
+                    }
+                ]
+            }
+        ]
+    },
+    "VIK":{
+        "seccion1":{
+            "nombre":"vik",
+            "texto":"El icono de la perfección,puro y elegante",
+            "contenido":"VIK es un vino exclusivo, elegante y alegre, con características similares a los grandes vinos de Bordeaux pero con más frescor, más fruta, más dinámico con una gran precisión de los taninos pero sin exceso.",
+            "boton":{
+                "texto":"comprar",
+                "url":"*"
+            }
+        },
+        "seccion2":{
+            "nombre":"notas de vinedo",
+            "imagen":"*",
+            "contenido":[
+                "VIK es un vino exclusivo, elegante y alegre, con características similares a los grandes vinos de Bordeaux pero con más frescor, más fruta, más dinámico con una gran precisión de los taninos pero sin exceso.",
+                "En VIK, cosechamos de forma manual por la noche, cuando las uvas son más frías. Cosechemos los Cabernet Sauvignon desde el 4 de abril hasta el 26 de abril, los Carménère desde el 27 de abril hasta 6 de mayo, los Syrah desde el 8 de abril hasta el 11 de abril, los Cabernet Franc los 11 y 12 de abril y el merlot el 10 de abril."
+            ]
+        },
+        "seccion3":{
+            "nombre":"RED BLEND",
+            "texto":"composición varietal",
+            "composicion":[
+                {
+                    "numero":"53",
+                    "texto":"CABERNET SAUVIGNON"
+                },
+                {
+                    "numero":"35",
+                    "texto":"CARMENERE"
+                },
+                {
+                    "numero":"6",
+                    "texto":"CABERNET FRANC"
+                },
+                {
+                    "numero":"4",
+                    "texto":"merlot"
+                },
+                {
+                    "numero":"2",
+                    "texto":"syrah"
+                }
+            ],
+            "composicion2":[
+                {
+                    "titulo":"ALCOHOL",
+                    "valor":"14%"
+                },
+                {
+                    "titulo":"ACIDEZ",
+                    "valor":"pH 3,74"
+                },
+                {
+                    "titulo":"AZÚCAR RESIDUAL",
+                    "valor":"3,08 g/lt"
+                },
+                {
+                    "titulo":"TIEMPO EN BARRICA",
+                    "valor":"26 meses"
+                },
+                {
+                    "titulo":"ENVEJECIMIENTO",
+                    "valor":"25 anos"
+                },
+                {
+                    "titulo":"TEMPERATURA DE SERVICIO",
+                    "valor":"16-18º C"
+                }
+            ]
+        },
+        "seccion4":{
+            "nombre":"notas de cata",
+            "notas":[
+                "Very bright and deep ruby red.",
+                "Red fruits (strawberry, raspberry) in perfect harmony with secondary aromas from the barrel.",
+                "The wood perfectly respects the evolution of the aromas of the wine.",
+                "A balanced wine that is very subtle with a great aromatic freshness.",
+                "A fresh attack, silky, very thin, with elegant and round tannins with long persistence",
+                "A very elegant well balanced wine.",
+                "Vik 2012 has characteristics similar to the great wines of Bordeaux, but with more freshness, more fruit, more dynamic with high percision of tannins without excess",
+                "The wine has great structure and body that deliver an exquisite mouthfeel on the palate."
+            ]
+        },
+        "seccion5":{
+            "texto":"te gusto este vino",
+            "boton":{
+                "texto":"comprar",
+                "url":"*"
+            }
+        }
+    },
+    "milla cala":{
+        "seccion1":{
+            "nombre":"milla cala",
+            "texto":"El encuentro entreel Viejo y el Nuevo Mundo",
+            "contenido":"Milla Cala es un vino armonioso con una elegancia persistente, que mantiene un perfecto equilibrio entre aroma, cuerpo y complejidad.",
+            "boton":{
+                "texto":"comprar",
+                "url":"*"
+            }
+        },
+        "seccion2":{
+            "nombre":"notas de vinedo",
+            "imagen":"*",
+            "contenido":[
+                "Julio de 2010 fue más frío de lo normal, lo que retrasó el inicio de brotacion por 10 días. De septiembre a enero continuó siendo más frío que el promedio. Tuvimos menos insolación media por día en diciembre y enero, lo que permitió tener mucha frescura, una buena acidez y una gran elegancia de taninos. Febrero trajo clima cálido y soleado, que era muy útil para asegurar una buena maduración fenólica en las variedades de maduración tardía como Cabernet Sauvignon, y Carménère. Marzo y abril trajeron un poco de lluvia y nubes que permitieron una lenta maduración de la fruta. En resumen, fue un año fresco con más caída de lluvia de lo normal y un bajo rendimiento. Como resultado, el vino tiene un gran color, una acidez muy presente, una buena intensidad frutal y muy buen equilibrio",
+                "En VIK, cosechamos de forma manual por la noche, cuando las uvas son más frías.",
+                "Cosechemos los Cabernet Sauvignon desde el 4 de abril hasta el 26 de abril, los Carménère desde el 27 de abril hasta 6 de mayo, los Syrah desde el 8 de abril hasta el 11 de abril, los Cabernet Franc los 11 y 12 de abril y el merlot el 10 de abril."
+            ]
+        },
+        "seccion3":{
+            "nombre":"RED BLEND",
+            "texto":"composición varietal",
+            "composicion":[
+                {
+                    "numero":"50",
+                    "texto":"CABERNET SAUVIGNON"
+                },
+                {
+                    "numero":"35",
+                    "texto":"CARMENERE"
+                },
+                {
+                    "numero":"8",
+                    "texto":"CABERNET FRANC"
+                },
+                {
+                    "numero":"3",
+                    "texto":"merlot"
+                },
+                {
+                    "numero":"4",
+                    "texto":"syrah"
+                }
+            ],
+            "composicion2":[
+                {
+                    "titulo":"ALCOHOL",
+                    "valor":"13,9%"
+                },
+                {
+                    "titulo":"ACIDEZ",
+                    "valor":"pH 3,66"
+                },
+                {
+                    "titulo":"AZÚCAR RESIDUAL",
+                    "valor":"2,73 g/L"
+                },
+                {
+                    "titulo":"TIEMPO EN BARRICA",
+                    "valor":"20 Meses"
+                },
+                {
+                    "titulo":"ENVEJECIMIENTO",
+                    "valor":"15 Años"
+                },
+                {
+                    "titulo":"TEMPERATURA DE SERVICIO",
+                    "valor":"16-18º C"
+                }
+            ]
+        },
+        "seccion4":{
+            "nombre":"notas de cata",
+            "notas":[
+                "The wine is ruby-red, with a profound brilliance. The 2012 harvest was earlier than usual due to above average heat. Plenty of ripe dark fruit aromas on the nose greatly compliment the ever-present red fruits. The brilliance of the harvest shines through in the lightness of the body of this wine.",
+                "Milla Cala 2012 has incredibly vibrant red fruit aromas (strawberry and raspberry) that harmonize perfectly with those of the barrel. It is a very subtle wine that balances its freshness with age.",
+                "The attack is very fresh, silky-smooth, with elegant, round tannins and a long finish. It is friendly in the mouth; at the same time round and satisfying, easily approachable with beautiful structure, yet has a complexity waiting to be explored.",
+                "A harmonious wine with a persistent elegance Milla Cala maintains a flawless equilibrium between aroma, body, and complexity. It is the perfect companion to any meal, its graceful manner complimenting and pleasing all palates. Milla Cala is the perfect companion who knows how to keep the conversation flowing."
+            ]
+        },
+        "seccion5":{
+            "texto":"te gusto este vino",
+            "boton":{
+                "texto":"comprar",
+                "url":"*"
+
+            }
+        }
+    },
+    "la pui belle":{
+        "seccion1":{
+            "nombre":"LA PIU BELLE",
+            "texto":"EL ARTE DE HACER VINO",
+            "contenido":"La Piu Belle es un elegante y complejo ensamblaje de Cabernet Sauvignon, Carménère, Cabernet Franc, Merlot y Syrah. La Piu Belle, la diosa de Millahue, fue pintada especialmente por Gonzalo Cienfuegos, como homenaje al arte, a la importancia del arte en VIK, y al arte de la vinificación.",
+            "boton1":{
+                "texto":"ir al micrositio",
+                "url":"*"
+            },
+            "boton2":{
+                "texto":"comprar",
+                "url":"*"
+            }
+        },
+        "seccion2":{
+            "nombre":"notas de vinedo",
+            "imagen":"*",
+            "contenido":[
+                "Julio de 2010 fue más frío de lo normal, lo que retrasó el inicio de brotacion por 10 días. De septiembre a enero continuó siendo más frío que el promedio. Tuvimos menos insolación media por día en diciembre y enero, lo que permitió tener mucha frescura, una buena acidez y una gran elegancia de taninos. Febrero trajo clima cálido y soleado, que era muy útil para asegurar una buena maduración fenólica en las variedades de maduración tardía como Cabernet Sauvignon, y Carménère. Marzo y abril trajeron un poco de lluvia y nubes que permitieron una lenta maduración de la fruta. En resumen, fue un año fresco con más caída de lluvia de lo normal y un bajo rendimiento. Como resultado, el vino tiene un gran color, una acidez muy presente, una buena intensidad frutal y muy buen equilibrio.",
+                "En VIK, cosechamos de forma manual por la noche, cuando las uvas son más frías. Cosechemos los Cabernet Sauvignon desde el 4 de abril hasta el 26 de abril, los Carménère desde el 27 de abril hasta 6 de mayo, los Syrah desde el 8 de abril hasta el 11 de abril, los Cabernet Franc los 11 y 12 de abril y el merlot el 10 de abril."
+            ]
+        },
+        "seccion3":{
+            "nombre":"RED BLEND",
+            "texto":"composición varietal",
+            "composicion":[
+                {
+                    "numero":"51",
+                    "texto":"CABERNET SAUVIGNON"
+                },
+                {
+                    "numero":"34",
+                    "texto":"CARMENERE"
+                },
+                {
+                    "numero":"8",
+                    "texto":"CABERNET FRANC"
+                },
+                {
+                    "numero":"6",
+                    "texto":"merlot"
+                },
+                {
+                    "numero":"1",
+                    "texto":"syrah"
+                }
+            ],
+            "composicion2":[
+                {
+                    "titulo":"ALCOHOL",
+                    "valor":"13.8%"
+                },
+                {
+                    "titulo":"ACIDEZ",
+                    "valor":"5,12 g/lt pH 3,71"
+                },
+                {
+                    "titulo":"AZÚCAR RESIDUAL",
+                    "valor":"2,82 g/lt"
+                },
+                {
+                    "titulo":"TIEMPO EN BARRICA",
+                    "valor":"21 MONTHS"
+                },
+                {
+                    "titulo":"ENVEJECIMIENTO",
+                    "valor":"18 YEARS"
+                },
+                {
+                    "titulo":"TEMPERATURA DE SERVICIO",
+                    "valor":"16-18º C"
+                }
+            ]
+        },
+        "seccion4":{
+            "nombre":"notas de cata",
+            "notas":[
+                "The 2011 La Piu Belle wine is beautiful and deep with an evolved ruby color and intense halo that visually captures your attention.",
+                "The nose is remarkably intense and well balanced, recallingaromas that engage all your senses, starting with delicate  berries, wildflowers, spices and a touch of oak that makes the wine more complex but friendly at the same time. As a gift of the cool spring, the flavor of cranberries explode on your lips, tinting them with delicate color. The attack is incredibly fresh, silky smooth, with body and structure. The tannins are round and elegant, with a long and lengthy finish.",
+                "La Piu Belle is a harmonious wine with a persistent elegance, offering itself without excess. It is dynamic with an enticing nose that is also fruity, creating a beautiful equilibrium with tannins that delicately complete the aromatic spectrum. It is a wine that beckons you from across the room with only a glance of the eye and washes down like a sashaying silken scarf"
+            ]
+        },
+        "seccion5":{
+            "texto":"te gusto este vino",
+            "boton":{
+                "texto":"comprar",
+                "url":"*"
+            }
+        }
+    },
+    "your vik bottle":{
+        "titulo":"your vik bottle",
+        "texto":"Type here the number printed on the bottle's label and you will get more details on your wine."
+    }
+},

@@ -1,3 +1,64 @@
 {
-    
+    "nuestros-vinos":{
+        "titulo":"nuestros vinos",
+        "vinos":[
+            {
+                "nombre":"vik",
+                "imagen":""
+            },
+            {
+                "nombre":"milla calla",
+                "imagen":""
+            },
+            {
+                "nombre":"la piu belle",
+                "imagen":""
+            }
+        ]
+    },
+    "nuestra-historia":{
+        "titulo":"nuestra historia",
+        "texto":"Alexander Vik emprendedor noruego se propuso crear un viñedo excepcional en el año 2004 para producir un vino único.",
+        "boton":{
+            "nombre":"conoce mas",
+            "url":"#"
+        },
+        "imagen":""
+    },
+    "nuestra-bodega":{
+        "titulo":"nuestra bodega",
+        "texto":"Un diseño único y sin precedentes, que es al mismo tiempo vanguardista, altamente sostenible, tecnológicamente creativo y con un despliegue visual impactante que promete redefinir la experiencia del vino.",
+        "boton":{
+            "nombre":"conoce mas",
+            "url":"#"
+        },
+        "imagen":""
+    },
+    "nuestro-conceptp":{
+        "titulo":"nuestro concepto",
+        "texto":"En VIK los conceptos de ciencia, tecnología y conocimiento son nuestra base, la pasión es nuestro motor y el vino es la expresión de nuestro arte.",
+        "boton":{
+            "nombre":"conoce mas",
+            "url":"#"
+        },
+        "video":""
+    },
+    "el-pavillion":{
+        "titulo":"el pavilion",
+        "texto":"Un restaurante con vista a 360º entre viñedo, montaña y naturaleza. Ofrece una cocina creativa, elaborada con productos orgánicos de nuestro huerto y de la región.",
+        "boton":{
+            "nombre":"conoce mas",
+            "url":"#"
+        },
+        "imagen":""
+    },
+    "vik-chile-retreat":{
+        "titulo":"vik chile retreat",
+        "texto":"Un hotel excepcional para sumergirse completamente en la experiencia VIK, centrada en el concepto que todos los elementos de su estadía se unen para transformar la forma en que podrá disfrutar de nuestros vinos VIK.",
+        "boton":{
+            "nombre":"conoce mas",
+            "url":"#"
+        },
+        "imagen":""
+    }
 }
