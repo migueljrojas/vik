@@ -1,17 +1,24 @@
 {
-    "nombre":"",
-    "titulo":"",
-    "texto":"",
+    "nombre":"carro de compras",
+    "titulo":"tu carrito",
+    "texto":"Al monto total de su compra se agregará IVA y otros eventuales impuestos al momento de despacho, dependiendo del país de destino. Le notificaremos el precio a pagar antes de hacer el cargo a su tarjeta de crédito.",
     "productos":[
         {
-            "nombre":"",
-            "valor":"",
-            "total":""
+            "nombre":"La piu belle 6 Botellas",
+            "valor":"$450.00",
+            "total":"$450.00"
         },
         {
-            "nombre":"",
-            "valor":"",
-            "total":""
+            "nombre":"VIK 2010 1/4 caja (75 cl - 3 botellas)",
+            "valor":"$450.00",
+            "total":"$450.00"
+
         }
-    ]
+    ],
+    "checkout":{
+        "nombre":"carro de compras",
+        "titulo":"Comprobante",
+        "texto1":"Verifique su pedido y realice el pago para finalizar al compra o vuelva atrás para modificar",
+        "texto2":"Puede haber un cargo adicional al total de su carrito por el IVA y otros impuestos de importación que pueden aplicarse dependiendo del país al que se envía el vino.Le notificaremos este costo antes de cargar su tarjeta de crédito."
+    }
 }

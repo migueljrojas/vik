@@ -13,11 +13,11 @@
     "products":[
         {
             "img":"",
-            "nombre":"",
+            "nombre":"Milla Cala 2013",
             "desc":[
-                ""
+                "Milla Cala es un vino armonioso con una elegancia persistente, que mantiene un perfecto equilibrio entre aroma, cuerpo y complejidad."
             ],
-            "precio":"",
+            "precio":"$39/botella - disponible",
             "boton":{
                 "texto":"comprar",
                 "url":"/tienda/producto"
@@ -25,11 +25,12 @@
         },
         {
             "img":"",
-            "nombre":"",
+            "nombre":"Vik 2012",
             "desc":[
-                ""
+                "Un vino muy equilibrado y muy elegante.
+VIK 2012 tiene características similares a los grandes vinos de Burdeos, pero con más frescura..."
             ],
-            "precio":"",
+            "precio":"$140/botella - disponible",
             "boton":{
                 "texto":"comprar",
                 "url":"/tienda/producto"
@@ -37,11 +38,11 @@
         },
         {
             "img":"",
-            "nombre":"",
+            "nombre":"VIK Collection Box",
             "desc":[
-                ""
+                "2 botellas de VIK 2012 2 botellas de La Piu Belle 2011 2 botellas de Milla Cala 2012"
             ],
-            "precio":"",
+            "precio":"$508/caja – disponible",
             "boton":{
                 "texto":"comprar",
                 "url":"/tienda/producto"
@@ -49,11 +50,11 @@
         },
         {
             "img":"",
-            "nombre":"",
+            "nombre":"Milla Cala 2012",
             "desc":[
-                ""
+                "Milla Cala es un vino armonioso con una elegancia persistente, que mantiene un perfecto equilibrio entre aroma, cuerpo y complejidad."
             ],
-            "precio":"",
+            "precio":"$39/botella - disponible",
             "boton":{
                 "texto":"comprar",
                 "url":"/tienda/producto"
@@ -61,11 +62,11 @@
         },
         {
             "img":"",
-            "nombre":"",
+            "nombre":"VIK 2011",
             "desc":[
-                ""
+                "Un vino puro y elegante, con una multitud de perfumes, una estructura tánica muy firme y a la vez muy bien equilibrado. Un gran vino!"
             ],
-            "precio":"",
+            "precio":"$140/caja – disponible",
             "boton":{
                 "texto":"comprar",
                 "url":"/tienda/producto"
@@ -73,11 +74,11 @@
         },
         {
             "img":"",
-            "nombre":"",
+            "nombre":"La Piu Belle 2011",
             "desc":[
-                ""
+                "Es un vino armonioso con una clara elegancia, ofreciédose sin excesos. Es un vino dinámico, con una atractiva nariza afrutada, creando un hermoso equilibrio aromático."
             ],
-            "precio":"",
+            "precio":"$75/botella - disponible",
             "boton":{
                 "texto":"comprar",
                 "url":"/tienda/producto"
