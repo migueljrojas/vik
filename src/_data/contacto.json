@@ -3,14 +3,16 @@
     "subtitulo":"Accede a experiencias unicas",
     "adicionales":[
         {
+            "icon":"",
             "titulo":"Vik Chile Retreat & Milla Milla Restaurant",
             "contenido":"Para alojarse en nuestro excepcional retreat con 22 suites, o reservar en el restaurante Milla Milla, puede contactarnos en",
             "mail":"reservations@vikchile.com",
             "phone":" +56 9 5668 4853"
         },
         {
-            "titulo":"Tours, degustaciones & Pavilion Restaurant",
-            "contenido":"Para más informaciones sobre visitas, actividades en nuestra viña, y reservas en el restaurante Pavilion, puedes contactarnos en",
+            "icon":"",
+            "titulo":"Tours, degustaciones & pavillion Restaurant",
+            "contenido":"Para más informaciones sobre visitas, actividades en nuestra viña, y reservas en el restaurante pavillion, puedes contactarnos en",
             "mail":"tours@vik.cl",
             "phone":"+56 9 5668 4853"
         }
@@ -21,6 +23,4 @@
         "mail":"info@vik.cl",
         "phone":"562 22482218"
     }
-
-
-},
+}

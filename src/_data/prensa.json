@@ -1,0 +1,44 @@
+{
+    "news":[
+        {
+            "img":"/images/prensa/1.jpg",
+            "title":"Vik, la piu belle: Wine asd a celebration of artistic expression",
+            "date":"09.2017"
+        },
+        {
+            "img":"/images/prensa/2.jpg",
+            "title":"Vik, la piu belle: Wine asd a celebration of artistic expression",
+            "date":"09.2017"
+        },
+        {
+            "img":"/images/prensa/3.jpg",
+            "title":"Vik, la piu belle: Wine asd a celebration of artistic expression",
+            "date":"09.2017"
+        },
+        {
+            "img":"/images/prensa/4.jpg",
+            "title":"Vik, la piu belle: Wine asd a celebration of artistic expression",
+            "date":"09.2017"
+        }
+    ],
+    "connect":[
+        {
+            "img":"/images/connect/1.jpg",
+            "title":"Vik, la piu belle: Wine asd a celebration of artistic expression",
+            "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
+            "date":"09.2017"
+        },
+        {
+            "img":"/images/connect/2.jpg",
+            "title":"Vik, la piu belle: Wine asd a celebration of artistic expression",
+            "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
+            "date":"09.2017"
+        },
+        {
+            "img":"/images/connect/3.jpg",
+            "title":"Vik, la piu belle: Wine asd a celebration of artistic expression",
+            "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
+            "date":"09.2017"
+        }
+    ]
+}

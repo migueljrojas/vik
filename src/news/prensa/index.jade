@@ -1,8 +1,66 @@
-extends ../_layouts/base
+extends ../../_layouts/base
 
 block config
   //- Correct base url pathing for this page
-  - var baseUrl = '../'
+  - var baseUrl = '../../'
 
 block content
-  p news/prensa page
+    main.news.news--press
+        section.news__hero
+            +section-title('Prensa', 'h1', 'none')
+            ul.news__hero__tabs
+                - for (var i = 0; i < 9; ++i) {
+                    - var year = 2018
+                    li.news__hero__tab
+                        span=(year - 1)
+                - }
+        section.news__pages
+            - for (var i = 0; i < 9; ++i) {
+                - var year = 2018
+                .news__page
+                    .news__page__heading
+                        button.news__page__nav.news__page__nav--left
+                        span.news__page__year=(year - 1)
+                        button.news__page__nav.news__page__nav--right
+                    .news__page__articles
+                        - for (var i = 0; i < 3; ++i) {
+                            each article in site.data.prensa.news
+                                .news__page__articles__item
+                                    +press-article('press', article)
+                        - }
+            - }
+            
+        section.news__contact
+            .container
+                .row
+                    .col-xs-24.col-sm-16.col-sm-offset-4
+                        +section-title('Contacto de prensa', 'h2', 'none')
+                        p.news__contact__text Para información y material de prensa por favor contactarse por email a:
+                        .row
+                            .col-xs-24.col-sm-12
+                                h3.news__contact__subtitle consultas globales
+                                p.news__contact__item
+                                    a(href="mailto:info@vik.cl") info@vik.cl
+                                p.news__contact__item
+                                    strong Meg Connoly
+                                    a(href="mailto:vik@mcc-pr.com") vik@mcc-pr.com
+                                p.news__contact__item.news__contact__item--inline
+                                    strong MCC NYC:
+                                    span 212 505 8200
+                                p.news__contact__item.news__contact__item--inline
+                                    strong MCC LA:
+                                    span 310 496 7557
+                            
+                            .col-xs-24.col-sm-12
+                                h3.news__contact__subtitle consultas brasil
+                                p.news__contact__item
+                                    a(href="mailto:info@vik.cl") info@vik.cl
+                                p.news__contact__item
+                                    strong Marina Valle
+                                    a(href="mailto:marina@presspod.com.br") marina@presspod.com.br
+                                p.news__contact__item
+                                    strong Presspod phone:
+                                    span +55 11 4561 2613
+                                    span 11 99936 1196
+                                    
+        +top-footer('Historia', 'Vinos')

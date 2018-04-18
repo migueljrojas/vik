@@ -5,4 +5,32 @@ block config
   - var baseUrl = '../'
 
 block content
-  p vina-vik page
+    main.vina
+        section.vina__hero
+            .vina__hero__data
+                +section-title(site.data.vina-vik.principal.titulo, 'h1', 'x')
+                p.vina__hero__data__text= site.data.vina-vik.principal.texto
+                +share
+        section.vina__interstitial
+            .container
+                .row
+                    .col-xs-24.col-sm-18.col-sm-offset-3
+                        p.vina__interstitial__quote= site.data.vina-vik.principal.mensaje
+        section.vina__parallax
+            .vina__parallax__1
+                a(href=#)
+                    img(src="/images/vina-vik/video-placeholder.jpg")
+            .vina__parallax__2
+            .vina__parallax__3
+                img(src="/images/vina-vik/video-placeholder.jpg")
+            .vina__parallax__4
+            .vina__parallax__5
+                img(src="/images/vina-vik/video-placeholder.jpg")
+        section.vina__reserva
+            .container
+                .row
+                    .col-xs-24.col-sm-18.col-sm-offset-3
+                        h3.vina__reserva__title Reserva
+                        p.vina__reserva__text Escribe a Info@vik.cl o llama +56 9 5668 4853
+        +top-footer('historia', 'vinos')
+                        

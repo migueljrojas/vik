@@ -1,8 +1,29 @@
-extends ../_layouts/base
+extends ../../_layouts/base
 
 block config
   //- Correct base url pathing for this page
-  - var baseUrl = '../'
+  - var baseUrl = '../../'
 
 block content
-  p news/connect page
+    main.news.news--connect
+        section.news__hero
+            +section-title('Connect', 'h1', 'none')
+            a._button.-ghost(href="#") Registrarme
+            
+        section.news__pages
+                .news__page
+                    .news__page__articles
+                        - for (var i = 0; i < 3; ++i) {
+                            each article in site.data.prensa.connect
+                                .news__page__articles__item
+                                    +press-article('connect', article)
+                        - }
+            
+        section.news__contact
+            .container
+                .row
+                    .col-xs-24.col-sm-16.col-sm-offset-4
+                        +section-title('Connect para recibir información de VIK invitaciones a eventos y otros especiales', 'h2', 'none')
+                        a._button(href="#") Connect
+                                    
+        +top-footer('Historia', 'Vinos')

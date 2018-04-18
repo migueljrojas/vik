@@ -51,10 +51,10 @@
             }
         ]
     },
-    "VIK":{
+    "vik":{
         "seccion1":{
             "nombre":"vik",
-            "texto":"El icono de la perfección,puro y elegante",
+            "texto":"El icono de la perfección, puro y elegante",
             "contenido":"VIK es un vino exclusivo, elegante y alegre, con características similares a los grandes vinos de Bordeaux pero con más frescor, más fruta, más dinámico con una gran precisión de los taninos pero sin exceso.",
             "boton":{
                 "texto":"comprar",
@@ -63,10 +63,17 @@
         },
         "seccion2":{
             "nombre":"notas de vinedo",
-            "imagen":"*",
             "contenido":[
                 "VIK es un vino exclusivo, elegante y alegre, con características similares a los grandes vinos de Bordeaux pero con más frescor, más fruta, más dinámico con una gran precisión de los taninos pero sin exceso.",
                 "En VIK, cosechamos de forma manual por la noche, cuando las uvas son más frías. Cosechemos los Cabernet Sauvignon desde el 4 de abril hasta el 26 de abril, los Carménère desde el 27 de abril hasta 6 de mayo, los Syrah desde el 8 de abril hasta el 11 de abril, los Cabernet Franc los 11 y 12 de abril y el merlot el 10 de abril."
+            ],
+            "slider":[
+                {
+
+                },
+                {
+
+                }
             ]
         },
         "seccion3":{
@@ -132,17 +139,31 @@
                 "A very elegant well balanced wine.",
                 "Vik 2012 has characteristics similar to the great wines of Bordeaux, but with more freshness, more fruit, more dynamic with high percision of tannins without excess",
                 "The wine has great structure and body that deliver an exquisite mouthfeel on the palate."
+            ],
+            "slider":[
+                {
+                    "pts":"92",
+                    "name":"VIK 2012",
+                    "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequ.",
+                    "logo":"/images/vinos/reviewer-logo.png"
+                },
+                {
+                    "pts":"95",
+                    "name":"VIK 2013",
+                    "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequ.",
+                    "logo":"/images/vinos/reviewer-logo.png"
+                }
             ]
         },
         "seccion5":{
             "texto":"te gusto este vino",
             "boton":{
                 "texto":"comprar",
-                "url":"*"
+                "url":"/tienda/producto"
             }
         }
     },
-    "milla cala":{
+    "millacala":{
         "seccion1":{
             "nombre":"milla cala",
             "texto":"El encuentro entreel Viejo y el Nuevo Mundo",
@@ -159,6 +180,14 @@
                 "Julio de 2010 fue más frío de lo normal, lo que retrasó el inicio de brotacion por 10 días. De septiembre a enero continuó siendo más frío que el promedio. Tuvimos menos insolación media por día en diciembre y enero, lo que permitió tener mucha frescura, una buena acidez y una gran elegancia de taninos. Febrero trajo clima cálido y soleado, que era muy útil para asegurar una buena maduración fenólica en las variedades de maduración tardía como Cabernet Sauvignon, y Carménère. Marzo y abril trajeron un poco de lluvia y nubes que permitieron una lenta maduración de la fruta. En resumen, fue un año fresco con más caída de lluvia de lo normal y un bajo rendimiento. Como resultado, el vino tiene un gran color, una acidez muy presente, una buena intensidad frutal y muy buen equilibrio",
                 "En VIK, cosechamos de forma manual por la noche, cuando las uvas son más frías.",
                 "Cosechemos los Cabernet Sauvignon desde el 4 de abril hasta el 26 de abril, los Carménère desde el 27 de abril hasta 6 de mayo, los Syrah desde el 8 de abril hasta el 11 de abril, los Cabernet Franc los 11 y 12 de abril y el merlot el 10 de abril."
+            ],
+            "slider":[
+                {
+
+                },
+                {
+
+                }
             ]
         },
         "seccion3":{
@@ -220,6 +249,20 @@
                 "Milla Cala 2012 has incredibly vibrant red fruit aromas (strawberry and raspberry) that harmonize perfectly with those of the barrel. It is a very subtle wine that balances its freshness with age.",
                 "The attack is very fresh, silky-smooth, with elegant, round tannins and a long finish. It is friendly in the mouth; at the same time round and satisfying, easily approachable with beautiful structure, yet has a complexity waiting to be explored.",
                 "A harmonious wine with a persistent elegance Milla Cala maintains a flawless equilibrium between aroma, body, and complexity. It is the perfect companion to any meal, its graceful manner complimenting and pleasing all palates. Milla Cala is the perfect companion who knows how to keep the conversation flowing."
+            ],
+            "slider":[
+                {
+                    "pts":"92",
+                    "name":"VIK 2012",
+                    "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequ.",
+                    "logo":"/images/vinos/reviewer-logo.png"
+                },
+                {
+                    "pts":"95",
+                    "name":"VIK 2013",
+                    "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequ.",
+                    "logo":"/images/vinos/reviewer-logo.png"
+                }
             ]
         },
         "seccion5":{
@@ -227,11 +270,10 @@
             "boton":{
                 "texto":"comprar",
                 "url":"*"
-
             }
         }
     },
-    "la pui belle":{
+    "piubelle":{
         "seccion1":{
             "nombre":"LA PIU BELLE",
             "texto":"EL ARTE DE HACER VINO",
@@ -251,6 +293,12 @@
             "contenido":[
                 "Julio de 2010 fue más frío de lo normal, lo que retrasó el inicio de brotacion por 10 días. De septiembre a enero continuó siendo más frío que el promedio. Tuvimos menos insolación media por día en diciembre y enero, lo que permitió tener mucha frescura, una buena acidez y una gran elegancia de taninos. Febrero trajo clima cálido y soleado, que era muy útil para asegurar una buena maduración fenólica en las variedades de maduración tardía como Cabernet Sauvignon, y Carménère. Marzo y abril trajeron un poco de lluvia y nubes que permitieron una lenta maduración de la fruta. En resumen, fue un año fresco con más caída de lluvia de lo normal y un bajo rendimiento. Como resultado, el vino tiene un gran color, una acidez muy presente, una buena intensidad frutal y muy buen equilibrio.",
                 "En VIK, cosechamos de forma manual por la noche, cuando las uvas son más frías. Cosechemos los Cabernet Sauvignon desde el 4 de abril hasta el 26 de abril, los Carménère desde el 27 de abril hasta 6 de mayo, los Syrah desde el 8 de abril hasta el 11 de abril, los Cabernet Franc los 11 y 12 de abril y el merlot el 10 de abril."
+            ],
+            "slider":[
+                {
+                },
+                {
+                }
             ]
         },
         "seccion3":{
@@ -311,6 +359,20 @@
                 "The 2011 La Piu Belle wine is beautiful and deep with an evolved ruby color and intense halo that visually captures your attention.",
                 "The nose is remarkably intense and well balanced, recallingaromas that engage all your senses, starting with delicate  berries, wildflowers, spices and a touch of oak that makes the wine more complex but friendly at the same time. As a gift of the cool spring, the flavor of cranberries explode on your lips, tinting them with delicate color. The attack is incredibly fresh, silky smooth, with body and structure. The tannins are round and elegant, with a long and lengthy finish.",
                 "La Piu Belle is a harmonious wine with a persistent elegance, offering itself without excess. It is dynamic with an enticing nose that is also fruity, creating a beautiful equilibrium with tannins that delicately complete the aromatic spectrum. It is a wine that beckons you from across the room with only a glance of the eye and washes down like a sashaying silken scarf"
+            ],
+            "slider":[
+                {
+                    "pts":"92",
+                    "name":"VIK 2012",
+                    "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequ.",
+                    "logo":"/images/vinos/reviewer-logo.png"
+                },
+                {
+                    "pts":"95",
+                    "name":"VIK 2013",
+                    "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequ.",
+                    "logo":"/images/vinos/reviewer-logo.png"
+                }
             ]
         },
         "seccion5":{
@@ -321,8 +383,8 @@
             }
         }
     },
-    "your vik bottle":{
+    "yourvikbottle":{
         "titulo":"your vik bottle",
         "texto":"Type here the number printed on the bottle's label and you will get more details on your wine."
     }
-},
+}

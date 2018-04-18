@@ -1,8 +1,78 @@
-extends ../_layouts/base
+extends ../../_layouts/base
 
 block config
   //- Correct base url pathing for this page
-  - var baseUrl = '../'
+  - var baseUrl = '../../'
 
 block content
-  p nuestros-vinos/la-piu-belle page
+    main.wine
+        section.wine__hero
+            .container
+                .row
+                    .col-xs-24
+                        span.wine__hero__name= site.data.vinos.piubelle.seccion1.nombre
+                        +section-title(site.data.vinos.piubelle.seccion1.texto, 'h1', 'x')
+                        p.wine__hero__text=site.data.vinos.piubelle.seccion1.contenido
+                        +share
+                        a._button(href="/tienda/producto")
+            
+                        .wine__parralax.wine__parralax--one
+                            .wine__parallax__element
+                                img(src="/images/vinos/vik.png")
+                
+        section.wine__content
+            .container
+                .row
+                    .col-xs-24.col-sm-16.col-sm-offset-4
+                        +section-title(site.data.vinos.piubelle.seccion2.nombre, 'h2', 'x')
+                        .wine__parralax.wine__parralax--two
+                        each p in site.data.vinos.piubelle.seccion2.texto
+                            p=.wine__content__texto
+                        +slider('.wine__content__slider')
+                            each slide in site.data.vinos.piubelle.seccion2.slider
+                                .wine__content__slide
+                                    .wine__content__slide__img
+                                        a(href=slide.url)
+                                            img(src=slide.img)
+        
+        section.wine__data
+            .container
+                .row
+                    .col-xs-24
+                        +section-title(slide in site.data.vinos.piubelle.seccion3.texto, 'h3', 'x', 'alt')
+                        ul.wine__data__composicion
+                            each item in site.data.vinos.piubelle.seccion3.composicion
+                                li.wine__data__composicion__item
+                                    span.wine__data__composicion__item__number= item.numero
+                                    span.wine__data__composicion__item__text= item.texto
+                        ul.wime__data__features
+                            each item in site.data.vinos.piubelle.seccion3.composicion2
+                                li.wine__data__features__item
+                                    span.wine__data__features__item__text= item.texto
+                                    span.wine__data__features__item__number= item.numero
+                        
+        section.wine__content
+            .container
+                .row
+                    .col-xs-24.col-sm-16.col-sm-offset-4
+                        +section-title(site.data.vinos.piubelle.seccion4.nombre, 'h2', 'x')
+                        .wine__parralax.wine__parralax--three
+                        each p in site.data.vinos.piubelle.seccion4.notas
+                            p=.wine__content__texto
+                        +slider('.wine__content__slider')
+                            each slide in site.data.vinos.piubelle.seccion4.slider
+                                .wine__content__slide
+                                    .wine__content__slide__data
+                                        .wine__content__slide__data__pts=slide.pts
+                                        .wine__content__slide__data__name=slide.name
+                                        .wine__content__slide__data__desc=slide.desc
+                                        img.wine__content__slide__data__logo(src=slide.logo)
+        
+        section.wine__cta
+            .container
+                .row
+                    .col-xs-24
+                        +section-title(site.data.vinos.piubelle.seccion5.texto, 'h3', 'none')
+                        a._button(href=site.data.vinos.piubelle.seccion5.boton.url)= site.data.vinos.piubelle.seccion5.boton.texto
+        
+        +top-footer('historia', 'bodega')

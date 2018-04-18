@@ -1,8 +1,27 @@
-extends ../_layouts/base
+extends ../../_layouts/base
 
 block config
   //- Correct base url pathing for this page
-  - var baseUrl = '../'
+  - var baseUrl = '../../'
 
 block content
-  p nuestros-vinos/your-vik-bottle page
+    main.yourbottle
+        section.yourbottle__hero
+            .container-fluid
+                .col-xs-24
+                    +section-title(site.data.vinos.yourvikbottle.titulo, 'h1', 'x')
+        section.yourbottle__content
+            .container
+                .row
+                    .col-xs-24
+                        p.yourbottle__content__text=site.data.vinos.yourvikbottle.texto
+                        form.yourbottle__content__form.vikform
+                            input.vikform__input(type="text", placeholder="Nº")
+                            select.vikform__input.vikform__input--select
+                                option 2012
+                                option 2013
+                                option 2014
+                                option 2015
+                            button.vikform__submit(type="submit") Buscar
+        
+        +top-footer('historia', 'bodega')

@@ -4,15 +4,14 @@
         "contenido":"La invitación es a descubrir una viña única, con un concepto holístico que no lo dejará indiferente, no en vano los indígenas llamaban a esta zona “Lugar de oro”."
     },
     "seccion1":{
-            "titulo":"enoturismo",
-            "contenido":[
-                "Aquí encontrará una nueva forma de ver la tierra, el viñedo y sin lugar a dudas encontrará el 'ORO' un vino supremo que lo dejará encantado.",
-                "Para visitarnos, hacer reserva en nuestros restaurantes, o para obtener más información, contactarnos en  info@vik.cl o + 56 9 5668 4852"
-            ],
-            "boton":{
-                "nombre":"brochure vik tours",
-                "url":
-            }
+        "titulo":"enoturismo",
+        "contenido":[
+            "Aquí encontrará una nueva forma de ver la tierra, el viñedo y sin lugar a dudas encontrará el 'ORO' un vino supremo que lo dejará encantado.",
+            "Para visitarnos, hacer reserva en nuestros restaurantes, o para obtener más información, contactarnos en  info@vik.cl o + 56 9 5668 4852"
+        ],
+        "boton":{
+            "nombre":"brochure vik tours",
+            "url":"#"
         }
     },
     "actividades":[
@@ -20,7 +19,7 @@
             "titulo":"catas de vinos",
             "texto":"Disfrute de una cata de vinos en nuestra excepcional sala de cata, donde uno de nuestros expertos VIK lo guiará para poder descubrir el alma de nuestros vinos.",
             "imagen":"*"
-        }
+        },
         {
             "titulo":"visitas guiadas",
             "texto":"Por nuestro viñedo y nuestras instalaciones: Descubra el misterio que encierra cada una de nuestras botellas desde la perspectiva de un vinicultor y conozca el arte de elaborar un gran vino.",
@@ -43,8 +42,17 @@
         },
         {
             "titulo":"gastronomía",
-            "texto":"o invitamos a conocer nuestra exquisita mesa en donde nuestro Chef lo impresionará con los más frescos y deliciosos platos típicos chilenos especialmente elaborados para nuestros vinos. También le ofrecemos la opción de un delicioso asado en medio del viñedo y la hacienda. Conoce nuestros restaurantes: El Pavilion y Milla Milla, el restaurante de nuestro exceptional Vik Chile Retreat.",
-            "extra":" Milla Milla   Pavilion",
+            "texto":"o invitamos a conocer nuestra exquisita mesa en donde nuestro Chef lo impresionará con los más frescos y deliciosos platos típicos chilenos especialmente elaborados para nuestros vinos. También le ofrecemos la opción de un delicioso asado en medio del viñedo y la hacienda. Conoce nuestros restaurantes: El pavillion y Milla Milla, el restaurante de nuestro exceptional Vik Chile Retreat.",
+            "extra":[
+                {
+                    "nombre":"Milla Milla",
+                    "url":"#"
+                },
+                {
+                    "nombre":"pavillion",
+                    "url":"#"
+                }
+            ],
             "imagen":"*"
         },
         {
@@ -60,7 +68,12 @@
         {
             "titulo":"alojamiento",
             "texto":"En Viña VIK brindamos alojamiento de primer nivel con vistas impactantes de la Cordillera de los Andes, el viñedo y la naturaleza que lo rodea. Tiene además la opción de reservar la Cabaña de VIK para una estadía íntima y relajada en nuestra encantadora casa del viñedo.",
-            "extra":"Vik Chile Retreat website",
+            "extra":[
+                {
+                    "nombre":"Vik Chile Retreat website",
+                    "url":"#"
+                }
+            ],
             "imagen":"*"
         },
         {

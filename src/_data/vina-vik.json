@@ -1,6 +1,6 @@
 {
     "principal":{
-        "titulo":"vina vik",
+        "titulo":"viña vik",
         "texto":"A holistic vineyard creating world class wine located on 10,000 acres of Chilean nature & featuring an architecturally exceptional winery, restaurant & retreat.",
         "mensaje":"“Science and knowledge are our foundation Passion is our engine and The wine is the expression of our Art”"
     },
@@ -11,20 +11,25 @@
         },
         "seccion2":{
             "titulo":"2006",
-            "texto":"Para lograr esta meta y encontrar el mejor terroir, reunieron un equipo de enólogos, climatólogos, geólogos, viticultores y agrónomos para realizar una búsqueda en Sudamérica. La elección de los mejores terroir y las óptimas condiciones climáticas para la viticultura lo llevaron a que en el año 2006 adquiriera 4325 hectáreas en Chile. ",
+            "texto":"Para lograr esta meta y encontrar el mejor terroir, reunieron un equipo de enólogos, climatólogos, geólogos, viticultores y agrónomos para realizar una búsqueda en Sudamérica. La elección de los mejores terroir y las óptimas condiciones climáticas para la viticultura lo llevaron a que en el año 2006 adquiriera 4325 hectáreas en Chile. "
         },
         "seccion3":{
             "titulo":"lugar de oro",
+            "imagen":"/images/vina-vik/historia-oro.jpg",
             "texto":[
                 "El lugar escogido fue el Valle de Millahue, denominado por los indígenas 'Lugar de Oro'.",
                 "Es aquí donde nace 'VIK' un viñedo que encarna la perfecta fusión entre hombre, experiencia, tierra, clima y alta tecnología."
             ]
         },
         "seccion4":{
-            "texto":"Nuestra viña o 'Lugar de Oro', que se encuentra ubicada al interior del valle entre innumerables quebradas, ofreciendo una variedad de terroir inigualable, pequeños microclimas cada uno con distintas exposiciones y siempre bañado de una fresca brisa costera, lo que entrega la complejidad siempre buscada y que nos asegura que estamos en camino a lograr nuestra meta de producir el mejor vino de Sud América.",
+            "texto":"Nuestra viña o 'Lugar de Oro', que se encuentra ubicada al interior del valle entre innumerables quebradas, ofreciendo una variedad de terroir inigualable, pequeños microclimas cada uno con distintas exposiciones y siempre bañado de una fresca brisa costera, lo que entrega la complejidad siempre buscada y que nos asegura que estamos en camino a lograr nuestra meta de producir el mejor vino de Sud América."
         },
         "seccion5":{
-            "imagenes":"3imagenes"
+            "imagenes":[
+                "/images/vina-vik/historia-tile-1.jpg",
+                "/images/vina-vik/historia-tile-2.jpg",
+                "/images/vina-vik/historia-tile-3.jpg"
+            ]
         },
         "seccion6":{
             "titulo":"equipo",
@@ -50,7 +55,7 @@
             ]
         }
     },
-    "nuestro-concepto":{
+    "concepto":{
         "seccion1":{
             "titulo":"nuestro concepto",
             "texto":"El concepto vitivinícola de VIK se basa en la técnica de la optimización de cada una de las etapas de viticultura y vinificación, por medio de la gran atención en la ciencia y tecnología, todo esto adaptado a nuestros valles para lograr la mejor madurez de nuestra fruta y crear los mejores vinos.",
@@ -79,7 +84,7 @@
             "estadisticas":[
                 {
                     "numeros":"7.518",
-                    "texto":"En VIK la viticultura de precisión es fundamental, por esta razón contamos con tecnología de punta que nos ayuda a lograr nuestra premisa de mantener una plantación en alta densidad.",
+                    "texto":"En VIK la viticultura de precisión es fundamental, por esta razón contamos con tecnología de punta que nos ayuda a lograr nuestra premisa de mantener una plantación en alta densidad."
                 },
                 {
                     "numeros":"8.333",
@@ -96,7 +101,11 @@
             ]
         },
         "seccion7":{
-            "imagenes":"3",
+            "imagenes":[
+                "",
+                "",
+                ""
+            ]
         },
         "seccion8":{
             "titulo":"VINICULTURA",
@@ -164,17 +173,17 @@
             "titulo":"sala de cata",
             "texto":[
                 "Aquí es donde los expertos de VIK presentan varios aspectos del vino VIK y guían a los visitantes a través de una degustación de varietales en bloques individuales, conversando sobre las características únicas de cada uno, así como también los diferentes vintage lanzados.",
-                "Luego de la cata, los huéspedes pueden dirigirse hacia el piso superior, hasta el Pavilion para disfrutar de VIK con exquisiteces culinarias en un entorno de excepcional diseño y esculturas de Marcela Correa, mientras disfrutan de la vista de los viñedos VIK y la bodega, en medio de la majestuosa naturaleza circundante. Aquí podrán adquirir los vinos VIK para disfrutar en casa con amigos y rememorar sus experiencias VIK."
+                "Luego de la cata, los huéspedes pueden dirigirse hacia el piso superior, hasta el pavillion para disfrutar de VIK con exquisiteces culinarias en un entorno de excepcional diseño y esculturas de Marcela Correa, mientras disfrutan de la vista de los viñedos VIK y la bodega, en medio de la majestuosa naturaleza circundante. Aquí podrán adquirir los vinos VIK para disfrutar en casa con amigos y rememorar sus experiencias VIK."
             ]
         },
         "seccion7":{
             "texto":"Para reservar o para obtener más información, contáctanos a info@vik.cl o + 56 9 5668 4853."
         }
     },
-    "pavilion":{
+    "pavillion":{
         "seccion1":{
-            "titulo":"el pavilion",
-            "texto":"El Pavilion , un restaurant, lounge y tienda bañado por la luz del sol, con paredes vidriadas del suelo al techo, brindando vistas deslumbrantes del Viñedo VIK, la Bodega, Viña Vik y la majestuosa naturaleza que los rodea."
+            "titulo":"el pavillion",
+            "texto":"El pavillion , un restaurant, lounge y tienda bañado por la luz del sol, con paredes vidriadas del suelo al techo, brindando vistas deslumbrantes del Viñedo VIK, la Bodega, Viña Vik y la majestuosa naturaleza que los rodea."
         },
         "seccion2":{
             "titulo":"Rodrigo acuña bravo",
@@ -183,6 +192,5 @@
         "seccion3":{
             "texto":"Reserva.Escribe a info@vik.cl o llama +56 9 5668 4853"
         }
-
     }
-},
+}

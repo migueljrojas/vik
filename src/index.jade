@@ -2,3 +2,86 @@ extends _layouts/base
 
 block content
     main.home
+        section.home__hero
+            +slider('home__hero__slider')
+            a.home__hero__next(href="#nuestros-vinos")
+        section#nuestros-vinos.home__vinos
+            .container
+                .row
+                    .col-xs-24
+                        +section-title(site.data.home.nuestros-vinos.titulo, 'h2', 'dash')
+                        ul.home__vinos__list
+                            each wine in site.data.home.nuestros-vinos.vinos
+                                li.home__vinos__list__item
+                                    .home__vinos__list__item__data
+                                        .home__vinos__list__item__img
+                                            img(src=wine.imagen)
+                                        h3.home__vinos__list__item__name= wine.nombre
+                                    .home__vinos__list__item__actions
+                                        each btn in wine.botones
+                                            a._button(href=btn.url)= btn.texto
+                                            
+        section.home__historia
+            .container-fluid
+                .row
+                    .col-xs-24.col-sm-12
+                        .home__historia__img
+                            img(src=site.data.home.nuestra-historia.imagen)
+                    .col-xs-24.col-sm-12
+                        .home__historia__data
+                            +section-title(site.data.home.nuestra-historia.titulo, 'h2', 'dash')
+                            p.home__historia__data__text= site.data.home.nuestra-historia.texto
+                            a._button(href=site.data.home.nuestra-historia.boton.url)= site.data.home.nuestra-historia.boton.nombre
+                                        
+        section.home__bodega
+            .home__bodega__img
+            .home__bodega__data
+                +section-title(site.data.home.nuestra-bodega.titulo, 'h2', 'dash')
+                p.home__bodega__data__text= site.data.home.nuestra-bodega.texto
+                a._button(href=site.data.home.nuestra-bodega.boton.url)= site.data.home.nuestra-bodega.boton.nombre
+                
+        section.home__concepto    
+            .container-fluid
+                .row
+                    .col-xs-24.col-sm-12
+                        .home__concepto__data
+                            +section-title(site.data.home.nuestro-concepto.titulo, 'h2', 'dash')
+                            p.home__concepto__data__text= site.data.home.nuestro-concepto.texto
+                            a._button(href=site.data.home.nuestro-concepto.boton.url)= site.data.home.nuestro-concepto.boton.nombre
+                    .col-xs-24.col-sm-12
+                        .home__concepto__video
+                            a(href="#")
+                                img(src=site.data.home.nuestro-concepto.imagen)
+                                
+        section.home__pavillion    
+            .container-fluid
+                .row
+                    .col-xs-24.col-sm-12
+                        .home__pavillion__video
+                            a(href="#")
+                                img(src=site.data.home.pavillion.imagen)
+                    .col-xs-24.col-sm-12
+                        .home__pavillion__data
+                            +section-title(site.data.home.pavillion.titulo, 'h2', 'dash')
+                            p.home__pavillion__data__text= site.data.home.pavillion.texto
+                            a._button(href=site.data.home.pavillion.boton.url)= site.data.home.pavillion.boton.nombre
+            
+        section.home__retreat    
+            .container-fluid
+                .row
+                    .col-xs-24.col-sm-12
+                        .home__retreat__data
+                            +section-title(site.data.home.retreat.titulo, 'h2', 'dash')
+                            p.home__retreat__data__text= site.data.home.retreat.texto
+                            a._button(href=site.data.home.retreat.boton.url)= site.data.home.retreat.boton.nombre
+                    .col-xs-24.col-sm-12
+                        .home__retreat__video
+                            a(href="#")
+                                img(src=site.data.home.retreat.imagen)
+                                
+        section.home__map
+            .hpme__map__img
+                a(href="#")
+                    img(src="/images/home/mapa.jpg")
+            
+            

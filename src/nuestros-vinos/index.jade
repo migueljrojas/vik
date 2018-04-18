@@ -5,4 +5,24 @@ block config
   - var baseUrl = '../'
 
 block content
-  p nuestros-vinos page
+    main.vinos
+        section.vinos__hero
+            +section-title(site.data.vinos.principal.titulo, 'h1', 'x')
+            each p in site.data.vinos.principal.texto
+                p.vinos__hero__text=p
+            +share
+
+        section.vinos__list
+            .container
+                ul.row
+                    each wine, index in site.data.vinos.principal.vinos
+                        li.col-xs-24.vinos__list__item(class="vinos__list__item--#{index + 1}")
+                            .vinos__list__item__bottle
+                                img(src=wine.imagen)
+                            .vinos__list__item__actions
+                                each btn in wine.botones
+                                    a._button(href=btn.url)= btn.texto
+                                    
+        +top-footer('historia', 'bodega')
+                            
+                        

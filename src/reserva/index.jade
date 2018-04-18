@@ -5,4 +5,46 @@ block config
   - var baseUrl = '../'
 
 block content
-  p reserva page
+    main.reserva
+        section.reserva__hero
+            .container
+                .row
+                    .col-xs-24
+                        +section-title(site.data.reserva.principal.titulo, 'h1', 'x')
+                        p.reserva__hero__text= site.data.reserva.principal.contenido
+        
+        section.reserva__enoturismo
+            .container
+                .row
+                    .col-xs-24.col-sm-16.col-sm-offset-4
+                        +section-title(site.data.reserva.seccion1.titulo)
+                        each p in site.data.reserva.seccion1.contenido  
+                            p.reserva__enoturismo__text= p
+                        a._button(href=site.data.reserva.seccion1.boton.url)= site.data.reserva.seccion1.boton.nombre
+        
+        section.reserva__actividades
+            .container-fluid
+                .row.nopadding
+                    .col-xs-24
+                        +section-title('Actividades', 'h2', 'none')
+                    each item in site.data.reserva.actividades
+                        .col-xs-24
+                            .reserva__actividad
+                                .reserva__actividad__img
+                                    img(src="item.imagen")
+                                .reserva__actividad__info
+                                    +section-title(item.titulo, 'h3', 'x')
+                                    p.reserva__actividad__info__text=item.texto
+                                    if item.extra
+                                        .reserva__actividad__extra
+                                            each link in item.extra
+                                                a(href=link.url)= link.nombre
+            
+        section.reserva__info
+            .container
+                .row
+                    .col-xs-24.col-sm-16.col-sm-offset-4
+                        +section-title(site.data.reserva.seccion2.titulo)
+                        p.reserva__info__text!=site.data.reserva.seccion2.texto
+                        
+                        

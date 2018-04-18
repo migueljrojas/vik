@@ -5,4 +5,9 @@ block config
   - var baseUrl = '../'
 
 block content
-  p vik-chile-retreat page
+    main.retreat
+        section.retreat__hero
+            .retreat__hero__data
+                +section-title(site.data.retreat.titulo, 'h1', 'x')
+                p.retreat__hero__data__text= site.data.retreat.contenido
+                a._button(href=site.data.retreat.boton.url, target="_blank")= site.data.retreat.boton.nombre

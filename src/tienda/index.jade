@@ -5,4 +5,41 @@ block config
   - var baseUrl = '../'
 
 block content
-  p tienda page
+    main.tienda
+        section.tienda__hero
+            .container
+                .row
+                    .col-xs-24
+                        +slider('tienda__hero__slider')
+                            each slide in site.data.tienda.slider
+                                .tienda__hero__slide
+                                    .tienda__hero__slide__img
+                                        img(src=slide.img)
+                                    .tienda__hero__slide__data
+                                        h4.tienda__hero__slide__data__title= slide.title
+                                        p.tienda__hero__slide__data__text= slide.text
+                                        a._button(href=slide.boton.url)= slide.boton.texto
+        section.tienda__listado
+            .container
+                .row
+                    each prod in site.data.tienda.products
+                        .col-xs-24.col-sm-8
+                            .tienda__producto
+                                .tienda__producto__img
+                                    img(src=prod.img)
+                                .tienda__producto__data
+                                    h3.tienda__producto__data__nombre=prod.nombre
+                                    each p in prod.desc
+                                        p.tienda__producto__data__desc=p
+                                    p.tienda__producto__data__precio=prod.precio
+                                    a._button(href=prod.boton.url)= prod.boton.texto
+                            
+        section.tienda__connect
+            .container
+                .row
+                    .col-xs-24.col-sm-16.col-sm-offset-4
+                        +section-title('Connect', 'h3', 'none')
+                        p.tienda__connect__texto Lo invitamos a conectarse con VIK para información sobre exclusivos eventos y catas en su ciudad, especiales oportunidades de reserva incluyendo botellas de grandes formatos, próximas novedades y noticias de VIK
+                        a._button(href="/press/connect") Connect
+                        
+        +top-footer('historia', 'vinos')

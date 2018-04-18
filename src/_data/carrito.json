@@ -1,0 +1,17 @@
+{
+    "nombre":"",
+    "titulo":"",
+    "texto":"",
+    "productos":[
+        {
+            "nombre":"",
+            "valor":"",
+            "total":""
+        },
+        {
+            "nombre":"",
+            "valor":"",
+            "total":""
+        }
+    ]
+}

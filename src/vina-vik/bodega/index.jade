@@ -1,8 +1,64 @@
-extends ../_layouts/base
+extends ../../_layouts/base
 
 block config
   //- Correct base url pathing for this page
-  - var baseUrl = '../'
+  - var baseUrl = '../../'
 
 block content
-  p vina-vik/bodega page
+    main.bodega
+        section.bodega__hero
+            .bodega__hero__data
+                +section-title(site.data.bodega.seccion1.titulo, 'h1', 'x')
+                p.bodega__hero__data__text= site.data.bodega.seccion1.texto
+                +share
+                
+        section.bodega__break
+            .container
+                .row
+                    .col-xs-24.col-sm-16.col-sm-offset-4
+                        +section-title(site.data.vina-vik.bodega.seccion2.titulo, 'h2', 'none')
+                        p.bodega__break__subtitle=site.data.vina-vik.bodega.seccion2.texto 
+                        
+        .bodega__parallax.bodega__parallax--one
+        
+        section.bodega__break
+            .container
+                .row
+                    .col-xs-24.col-sm-16.col-sm-offset-4
+                        p.bodega__break__subtitle=site.data.vina-vik.bodega.seccion3.texto 
+                        
+        .bodega__parallax.bodega__parallax--two
+        
+        section.bodega__break
+            .container
+                .row
+                    .col-xs-24.col-sm-16.col-sm-offset-4
+                        p.bodega__break__subtitle=site.data.vina-vik.bodega.seccion4.texto 
+
+        .bodega__parallax.bodega__parallax--three
+        
+        section.bodega__break
+            .container
+                .row
+                    .col-xs-24.col-sm-16.col-sm-offset-4
+                        +section-title(site.data.vina-vik.bodega.seccion5.titulo, 'h2', 'x')                    
+                        p.bodega__break__subtitle=site.data.vina-vik.bodega.seccion5.texto 
+
+        .bodega__parallax.bodega__parallax--four
+        
+        section.bodega__break
+            .container
+                .row
+                    .col-xs-24.col-sm-16.col-sm-offset-4
+                        +section-title(site.data.vina-vik.bodega.seccion6.titulo, 'h2', 'x')                    
+                        p.bodega__break__subtitle=site.data.vina-vik.bodega.seccion6.texto 
+
+        .bodega__parallax.bodega__parallax--five
+        
+        section.bodega__break
+            .container
+                .row
+                    .col-xs-24.col-sm-16.col-sm-offset-4
+                        p.bodega__break__subtitle!=site.data.vina-vik.bodega.seccion7.texto 
+
+        +top-footer('historia', 'vinos')

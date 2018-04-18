@@ -1,8 +1,73 @@
-extends ../_layouts/base
+extends ../../_layouts/base
 
 block config
   //- Correct base url pathing for this page
-  - var baseUrl = '../'
+  - var baseUrl = '../../'
 
 block content
-  p vina-vik/historia page
+    main.historia
+        section.historia__hero
+            .container-fluid
+                .row
+                    .col-xs-24.col-sm-16.col-sm-offset-4
+                        +section-title(site.data.vina-vik.historia.principal.titulo, 'h1', 'x')
+                        p.historia__hero__subtitle=site.data.vina-vik.historia.principal.texto 
+                        +share
+                        
+            .historia__hero__parallax
+            
+        section.historia__crono
+            .container
+                .row
+                    .col-xs-24.col-sm-16.col-sm-offset-4
+                        +section-title(site.data.vina-vik.historia.seccion2.titulo, 'h2', 'none')
+                        p.historia__crono__subtitle=site.data.vina-vik.historia.seccion2.texto 
+                        
+        section.historia__oro    
+            .container-fluid
+                .row
+                    .col-xs-24.col-sm-12
+                        .historia__oro__img
+                            img(src=site.data.vina-vik.historia.secion3.imagen)
+                    .col-xs-24.col-sm-12
+                        .historia__oro__data
+                            +section-title(site.data.vina-vik.historia.secion3.titulo, 'h2', 'x')
+                            each p in site.data.vina-vik.historia.secion3.texto
+                                p.historia__oro__data__text= p
+                                
+        section.historia__crono
+            .container
+                .row
+                    .col-xs-24.col-sm-16.col-sm-offset-4
+                        p.historia__crono__subtitle=site.data.vina-vik.historia.seccion4.texto 
+                        
+        section.historia__tiles
+            .container-fluid
+                .row.nopadding
+                    each img in site.data.vina-vik.historia.seccion5.imagenes
+                        .col-xs-24.col-sm-8
+                            .historia__tiles__img
+                                img(src=img)
+                                
+        section.historia__team
+            .container-fluid
+                .row
+                    .col-xs-24.col-sm-16.col-sm-offset-4
+                        +section-title(site.data.vina-vik.historia.seccion6.titulo, 'h2', 'x')
+                        p.historia__team__subtitle=site.data.vina-vik.historia.seccion6.texto 
+                        
+            .historia__team__parallax
+            
+            .container
+                .row
+                    .col-xs-24.col-sm-16.col-sm-offset-4
+                        ul.historia__team__members
+                            each member in site.data.vina-vik.historia.seccion6.miembros
+                                li.historia__team__member
+                                    .historia__team__member__img
+                                        img(src=member.foto)
+                                    .historia__team__member__data
+                                        h3.historia__team__member__name=member.nombre
+                                        p.historia__team__member__job=member.cargo
+                                    
+        +top-footer('vinos', 'bodega')

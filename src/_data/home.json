@@ -4,15 +4,45 @@
         "vinos":[
             {
                 "nombre":"vik",
-                "imagen":""
+                "imagen":"",
+                "botones":[
+                    {
+                        "texto":"+ informacion",
+                        "url":"/nuestros-vinos/vik"
+                    },
+                    {
+                        "texto":"comprar",
+                        "url":"/tienda/producto"
+                    }
+                ]
             },
             {
                 "nombre":"milla calla",
-                "imagen":""
+                "imagen":"",
+                "botones":[
+                    {
+                        "texto":"+ informacion",
+                        "url":"/nuestros-vinos/vik"
+                    },
+                    {
+                        "texto":"comprar",
+                        "url":"/tienda/producto"
+                    }
+                ]
             },
             {
                 "nombre":"la piu belle",
-                "imagen":""
+                "imagen":"",
+                "botones":[
+                    {
+                        "texto":"+ informacion",
+                        "url":"/nuestros-vinos/vik"
+                    },
+                    {
+                        "texto":"comprar",
+                        "url":"/tienda/producto"
+                    }
+                ]
             }
         ]
     },
@@ -21,7 +51,7 @@
         "texto":"Alexander Vik emprendedor noruego se propuso crear un viñedo excepcional en el año 2004 para producir un vino único.",
         "boton":{
             "nombre":"conoce mas",
-            "url":"#"
+            "url":"/vina-vik/historia"
         },
         "imagen":""
     },
@@ -43,8 +73,8 @@
         },
         "video":""
     },
-    "el-pavillion":{
-        "titulo":"el pavilion",
+    "pavillion":{
+        "titulo":"el pavillion",
         "texto":"Un restaurante con vista a 360º entre viñedo, montaña y naturaleza. Ofrece una cocina creativa, elaborada con productos orgánicos de nuestro huerto y de la región.",
         "boton":{
             "nombre":"conoce mas",
@@ -52,7 +82,7 @@
         },
         "imagen":""
     },
-    "vik-chile-retreat":{
+    "retreat":{
         "titulo":"vik chile retreat",
         "texto":"Un hotel excepcional para sumergirse completamente en la experiencia VIK, centrada en el concepto que todos los elementos de su estadía se unen para transformar la forma en que podrá disfrutar de nuestros vinos VIK.",
         "boton":{

@@ -1,8 +1,41 @@
-extends ../_layouts/base
+extends ../../_layouts/base
 
 block config
   //- Correct base url pathing for this page
-  - var baseUrl = '../'
+  - var baseUrl = '../../'
 
 block content
-  p vina-vik/pavilion page
+    main.pavillion
+        section.pavillion__hero
+            .pavillion__hero__data
+                +section-title(site.data.vina-vik.pavillion.seccion1.titulo, 'h1', 'x')
+                p.pavillion__hero__data__text= site.data.vina-vik.pavillion.seccion1.texto
+                +share
+                
+        section.pavillion__break
+            .container
+                .row
+                    .col-xs-24.col-sm-16.col-sm-offset-4
+                        +section-title(site.data.vina-vik.pavillion.seccion2.titulo, 'h2', 'none')
+                        p.pavillion__break__subtitle=site.data.vina-vik.pavillion.seccion2.texto 
+                        
+        .pavillion__video
+            a(href="#")
+            
+        .pavillion__parallax.pavillion__parallax--one
+        
+        .pavillion__static.pavillion__static--one
+
+        .pavillion__parallax.pavillion__parallax--two
+        
+        .pavillion__static.pavillion__static--two
+        
+        section.bodega__break
+            .container
+                .row
+                    .col-xs-24.col-sm-16.col-sm-offset-4
+                        p.bodega__break__subtitle!=site.data.vina-vik.pavillion.seccion3.texto 
+
+        +top-footer('historia', 'vinos')
+        
+        

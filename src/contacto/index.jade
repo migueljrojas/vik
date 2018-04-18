@@ -5,4 +5,51 @@ block config
   - var baseUrl = '../'
 
 block content
-  p contacto page
+    main.contacto
+        section.contacto__hero
+            .container
+                .row
+                    .col-xs-24
+                        +section-title(site.data.contacto.titulo, 'h1', 'x')
+        
+        secton.contacto__body
+            .container
+                .row
+                    .col-xs-24.col-sm-16.col-sm-offset-4
+                        +section-title(site.data.contacto.subtitulo, 'h2', 'x')
+                        .row
+                            each item in site.data.contacto.adicionales
+                                .col-xs-24.col-sm-12
+                                    .contacto__feature
+                                        .contacto__feature__icon
+                                            img(src=item.icon)
+                                        h3.contacto__feature__title=item.titulo
+                                        p.contacto__feature__text=item.contenido
+                                        p.contacto__feature__data
+                                            strong Mail:
+                                            a(href="mailto:#{item.mail}")= item.mail
+                                        p.contacto__feature__data
+                                            strong Phone:
+                                            a(href="tel:#{item.phone}")= item.phone
+                                            
+        section.contacto__map
+            a(href="#")
+                img(src="/images/contacto/map.jpg")
+            
+        section.contacto__address
+            .container
+                .row
+                    .col-xs-24.col-sm-16.col-sm-offset-4
+                        .contacto__address__icon
+                            img(src="/images/contacto/map-icon.png")
+                        h3.contacto__address__title=site.data.contacto.direccion.titulo
+                        p.contacto__address__text=site.data.contacto.direccion.direccion
+                        p.contacto__address__data
+                            strong Mail:
+                            a(href="mailto:#{site.data.contacto.direccion.mail}")= site.data.contacto.direccion.mail
+                        p.contacto__address__data
+                            strong Phone:
+                            a(href="tel:#{site.data.contacto.direccion.phone}")= site.data.contacto.direccion.phone
+                            
+        +top-footer('historia', 'vinos')
+            

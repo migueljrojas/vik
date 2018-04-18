@@ -1,8 +1,60 @@
-extends ../_layouts/base
+extends ../../_layouts/base
 
 block config
   //- Correct base url pathing for this page
-  - var baseUrl = '../'
+  - var baseUrl = '../../'
 
 block content
-  p tienda/producto page
+    main.producto
+        ul.producto__index
+            li VIK
+            li Milla calla
+            li la piu belle
+            li collection box
+        
+        section.producto__main
+            .container
+                .row
+                    .col-xs-24.col-sm-12
+                        .producto__main__img
+                            img(src=site.data.producto.imagen)
+                    .col-xs-24.col-sm-12
+                        .producto__main__data
+                            h1.producto__main__data__nombre=site.data.producto.nombre
+                            p.producto__main__data__precio
+                                strong Precio Unitario:
+                                span=site.data.producto.precio
+                            form.vikform.producto__main__data__form
+                                .vikform__group
+                                    select.vikform__input.vikform__input--select.vikform__input--year
+                                        option Año
+                                        option 2017
+                                        option 2016
+                                        option 2015
+                                        option 2014
+
+                                    select.vikform__input.vikform__input--select.vikform__input--product
+                                        option La piu belle 6 botellas
+                                        option La piu belle edicion especial
+                                .vikform__group
+                                    input(type="number")
+                                    button.vikform__submit(type="submit") Agregar al carrito
+                        
+                        .producto__main__info
+                            p.producto__main__info__item
+                                strong Color:
+                                span=site.data.producto.color
+                            p.producto__main__info__item
+                                strong Aromas:
+                                span=site.data.producto.aromas
+                            p.producto__main__info__item
+                                strong Boca:
+                                span=site.data.producto.boca
+                            p.producto__main__info__item
+                                strong General:
+                                span=site.data.producto.general
+                                
+                        +share
+                        
+        +top-footer('historia', 'bodega')
+                            
