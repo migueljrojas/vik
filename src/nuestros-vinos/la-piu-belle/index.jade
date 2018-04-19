@@ -1,5 +1,10 @@
 extends ../../_layouts/base
 
+include ../../_modules/slider/slider
+include ../../_modules/share/share
+include ../../_modules/section-title/section-title
+include ../../_modules/top-footer/top-footer
+
 block config
   //- Correct base url pathing for this page
   - var baseUrl = '../../'
@@ -26,9 +31,9 @@ block content
                     .col-xs-24.col-sm-16.col-sm-offset-4
                         +section-title(site.data.vinos.piubelle.seccion2.nombre, 'h2', 'x')
                         .wine__parralax.wine__parralax--two
-                        each p in site.data.vinos.piubelle.seccion2.texto
-                            p=.wine__content__texto
-                        +slider('.wine__content__slider')
+                        each p in site.data.vinos.piubelle.seccion2.contenido
+                            p.wine__content__texto=p
+                        +slider('wine__content__slider')
                             each slide in site.data.vinos.piubelle.seccion2.slider
                                 .wine__content__slide
                                     .wine__content__slide__img
@@ -39,7 +44,7 @@ block content
             .container
                 .row
                     .col-xs-24
-                        +section-title(slide in site.data.vinos.piubelle.seccion3.texto, 'h3', 'x', 'alt')
+                        +section-title(site.data.vinos.piubelle.seccion3.texto, 'h3', 'x', 'alt')
                         ul.wine__data__composicion
                             each item in site.data.vinos.piubelle.seccion3.composicion
                                 li.wine__data__composicion__item
@@ -58,7 +63,7 @@ block content
                         +section-title(site.data.vinos.piubelle.seccion4.nombre, 'h2', 'x')
                         .wine__parralax.wine__parralax--three
                         each p in site.data.vinos.piubelle.seccion4.notas
-                            p=.wine__content__texto
+                            p.wine__content__texto=p
                         +slider('.wine__content__slider')
                             each slide in site.data.vinos.piubelle.seccion4.slider
                                 .wine__content__slide

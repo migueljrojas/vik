@@ -4,16 +4,15 @@ button._button,
     background: $link;
     color: $white;
     display: inline-block;
-    font-family: $mainFont;
-    font-size: $xs;
+    font-family: $altFont;
+    text-transform: uppercase;
+    font-size: 14px;
     font-weight: 700;
     height: $base;
     line-height: $base;
-    max-width: 300px;
-    padding: 0 40px;
+    padding: 0 20px;
     text-align: center;
     transition: all $duration $easingLight;
-    border-radius: $radius;
 
     &:hover{
         background: $linkHover;

@@ -1,5 +1,10 @@
 extends ../../_layouts/base
 
+include ../../_modules/slider/slider
+include ../../_modules/share/share
+include ../../_modules/section-title/section-title
+include ../../_modules/top-footer/top-footer
+
 block config
   //- Correct base url pathing for this page
   - var baseUrl = '../../'
@@ -10,73 +15,73 @@ block content
             .container-fluid
                 .row
                     .col-xs-24.col-sm-16.col-sm-offset-4
-                        +section-title(site.data.vina-vik.concepto.seccion1.titulo, 'h1', 'x')
-                        p.concepto__hero__subtitle=site.data.vina-vik.concepto.seccion1.texto 
+                        +section-title(site.data.vinavik.concepto.seccion1.titulo, 'h1', 'x')
+                        p.concepto__hero__subtitle=site.data.vinavik.concepto.seccion1.texto 
                         +share
                         
             .concepto__hero__video
                 a(href="#")
-                    img(src=site.data.vina-vik.concepto.seccion1.imagen)
+                    img(src=site.data.vinavik.concepto.seccion1.imagen)
                     
         section.concepto__break
             .container
                 .row
                     .col-xs-24.col-sm-16.col-sm-offset-4
-                        +section-title(site.data.vina-vik.concepto.seccion2.titulo, 'h2', 'none')
-                        p.concepto__crono__subtitle=site.data.vina-vik.concepto.seccion2.texto 
+                        +section-title(site.data.vinavik.concepto.seccion2.titulo, 'h2', 'none')
+                        p.concepto__crono__subtitle=site.data.vinavik.concepto.seccion2.texto 
                         
         section.concepto__vitivinicultura    
             .container-fluid
                 .row
                     .col-xs-24.col-sm-12
                         .concepto__vitivinicultura__img
-                            img(src=site.data.vina-vik.concepto.secion3.imagen)
+                            img(src=site.data.vinavik.concepto.seccion3.imagen)
                     .col-xs-24.col-sm-12
                         .concepto__vitivinicultura__data
-                            +section-title(site.data.vina-vik.concepto.secion3.titulo, 'h2', 'x')
-                            p.concepto__vitivinicultura__data__text= site.data.vina-vik.concepto.secion3.texto
+                            +section-title(site.data.vinavik.concepto.seccion3.titulo, 'h2', 'x')
+                            p.concepto__vitivinicultura__data__text= site.data.vinavik.concepto.seccion3.texto
                             
         section.concepto__break
             .container
                 .row
                     .col-xs-24.col-sm-16.col-sm-offset-4
-                        +section-title(site.data.vina-vik.concepto.seccion4.titulo, 'h2', 'none')
-                        p.concepto__crono__subtitle=site.data.vina-vik.concepto.seccion4.texto 
+                        +section-title(site.data.vinavik.concepto.seccion4.titulo, 'h2', 'none')
+                        p.concepto__crono__subtitle=site.data.vinavik.concepto.seccion4.texto 
                         
         section.concepto__perfeccion    
             .container-fluid
                 .row
                     .col-xs-24.col-sm-12
                         .concepto__perfeccion__data
-                            +section-title(site.data.vina-vik.concepto.secion5.titulo, 'h2', 'x')
-                            p.concepto__perfeccion__data__text= site.data.vina-vik.concepto.secion5.texto
+                            +section-title(site.data.vinavik.concepto.seccion5.titulo, 'h2', 'x')
+                            p.concepto__perfeccion__data__text= site.data.vinavik.concepto.seccion5.texto
                     .col-xs-24.col-sm-12
                         .concepto__perfeccion__img
-                            img(src=site.data.vina-vik.concepto.secion5.imagen)
+                            img(src=site.data.vinavik.concepto.seccion5.imagen)
 
         section.concepto__break.concepto__viticultura
             .container
                 .row
                     .col-xs-24.col-sm-16.col-sm-offset-4
-                        +section-title(site.data.vina-vik.concepto.seccion6.titulo, 'h2', 'none')
-                        p.concepto__crono__subtitle=site.data.vina-vik.concepto.seccion6.texto 
+                        +section-title(site.data.vinavik.concepto.seccion6.titulo, 'h2', 'none')
+                        p.concepto__crono__subtitle=site.data.vinavik.concepto.seccion6.texto 
                         
                     .col-xs-24
                         .concepto__viticultura__stats
-                            each item in site.data.vina-vik.concepto.seccion6.estadisticas
+                            each item in site.data.vinavik.concepto.seccion6.estadisticas
                                 .concepto__viticultura__stats__item
                                     span.concepto__viticultura__stats__item__value= item.numeros
                                     span.concepto__viticultura__stats__item__text= item.texto
 
                     .col-xs-24.col-sm-12
-                        p.concepto__viticultura__texto= site.data.vina-vik.concepto.seccion6.contenido[0]
+                        p.concepto__viticultura__texto= site.data.vinavik.concepto.seccion6.contenido[0]
                     .col-xs-24.col-sm-12
-                        p.concepto__viticultura__texto= site.data.vina-vik.concepto.seccion6.contenido[1]
+                        p.concepto__viticultura__texto= site.data.vinavik.concepto.seccion6.contenido[1]
                         
         section.concepto__tiles
             .container-fluid
                 .row.nopadding
-                    each img in site.data.vina-vik.concepto.seccion7.imagenes
+                    each img in site.data.vinavik.concepto.seccion7.imagenes
                         .col-xs-24.col-sm-8
                             .concepto__tiles__img
                                 img(src=img)
@@ -85,17 +90,17 @@ block content
             .container
                 .row
                     .col-xs-24.col-sm-16.col-sm-offset-4
-                        +section-title(site.data.vina-vik.concepto.seccion8.titulo, 'h2', 'none')
-                        p.concepto__crono__subtitle=site.data.vina-vik.concepto.seccion8.texto 
+                        +section-title(site.data.vinavik.concepto.seccion8.titulo, 'h2', 'none')
+                        p.concepto__crono__subtitle=site.data.vinavik.concepto.seccion8.texto 
                         
                     .col-xs-24.col-sm-12
-                        p.concepto__vinicultura__texto= site.data.vina-vik.concepto.seccion8.contenido[0]
-                        p.concepto__vinicultura__texto= site.data.vina-vik.concepto.seccion8.contenido[1]
-                        p.concepto__vinicultura__texto= site.data.vina-vik.concepto.seccion8.contenido[2]
+                        p.concepto__vinicultura__texto= site.data.vinavik.concepto.seccion8.contenido[0]
+                        p.concepto__vinicultura__texto= site.data.vinavik.concepto.seccion8.contenido[1]
+                        p.concepto__vinicultura__texto= site.data.vinavik.concepto.seccion8.contenido[2]
                     .col-xs-24.col-sm-12
-                        p.concepto__vinicultura__texto= site.data.vina-vik.concepto.seccion8.contenido[3]
-                        p.concepto__vinicultura__texto= site.data.vina-vik.concepto.seccion8.contenido[4]
-                        p.concepto__vinicultura__texto= site.data.vina-vik.concepto.seccion8.contenido[5]
+                        p.concepto__vinicultura__texto= site.data.vinavik.concepto.seccion8.contenido[3]
+                        p.concepto__vinicultura__texto= site.data.vinavik.concepto.seccion8.contenido[4]
+                        p.concepto__vinicultura__texto= site.data.vinavik.concepto.seccion8.contenido[5]
                         
         .concepto__parallax.concepto__parallax--one
         
@@ -103,15 +108,15 @@ block content
             .container
                 .row
                     .col-xs-24.col-sm-16.col-sm-offset-4
-                        +section-title(site.data.vina-vik.concepto.seccion9.titulo, 'h2', 'none')
-                        p.concepto__crono__subtitle=site.data.vina-vik.concepto.seccion9.texto 
+                        +section-title(site.data.vinavik.concepto.seccion9.titulo, 'h2', 'none')
+                        p.concepto__crono__subtitle=site.data.vinavik.concepto.seccion9.texto 
                         
                     .col-xs-24.col-sm-12
-                        p.concepto__terroir__texto= site.data.vina-vik.concepto.seccion9.contenido[0]
-                        p.concepto__terroir__texto= site.data.vina-vik.concepto.seccion9.contenido[1]
+                        p.concepto__terroir__texto= site.data.vinavik.concepto.seccion9.contenido[0]
+                        p.concepto__terroir__texto= site.data.vinavik.concepto.seccion9.contenido[1]
                     .col-xs-24.col-sm-12
-                        p.concepto__terroir__texto= site.data.vina-vik.concepto.seccion9.contenido[2]
-                        p.concepto__terroir__texto= site.data.vina-vik.concepto.seccion9.contenido[3]
+                        p.concepto__terroir__texto= site.data.vinavik.concepto.seccion9.contenido[2]
+                        p.concepto__terroir__texto= site.data.vinavik.concepto.seccion9.contenido[3]
 
         .concepto__parallax.concepto__parallax--two
         
@@ -119,10 +124,10 @@ block content
             .container
                 .row
                     .col-xs-24.col-sm-16.col-sm-offset-4
-                        +section-title(site.data.vina-vik.concepto.seccion10.titulo, 'h2', 'none')
-                        p.concepto__crono__subtitle=site.data.vina-vik.concepto.seccion10.texto 
+                        +section-title(site.data.vinavik.concepto.seccion10.titulo, 'h2', 'none')
+                        p.concepto__crono__subtitle=site.data.vinavik.concepto.seccion10.texto 
                         ul.concepto__verde__list
-                            each item in site.data.vina-vik.concepto.seccion10.contenido
+                            each item in site.data.vinavik.concepto.seccion10.contenido
                                 li= item
                                 
         .concepto__parallax.concepto__parallax--three

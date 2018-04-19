@@ -1,5 +1,10 @@
 extends ../../_layouts/base
 
+include ../../_modules/slider/slider
+include ../../_modules/share/share
+include ../../_modules/section-title/section-title
+include ../../_modules/top-footer/top-footer
+
 block config
   //- Correct base url pathing for this page
   - var baseUrl = '../../'
@@ -10,8 +15,8 @@ block content
             .container-fluid
                 .row
                     .col-xs-24.col-sm-16.col-sm-offset-4
-                        +section-title(site.data.vina-vik.historia.principal.titulo, 'h1', 'x')
-                        p.historia__hero__subtitle=site.data.vina-vik.historia.principal.texto 
+                        +section-title(site.data.vinavik.historia.seccion1.titulo, 'h1', 'x')
+                        p.historia__hero__subtitle=site.data.vinavik.historia.seccion1.texto 
                         +share
                         
             .historia__hero__parallax
@@ -20,31 +25,31 @@ block content
             .container
                 .row
                     .col-xs-24.col-sm-16.col-sm-offset-4
-                        +section-title(site.data.vina-vik.historia.seccion2.titulo, 'h2', 'none')
-                        p.historia__crono__subtitle=site.data.vina-vik.historia.seccion2.texto 
+                        +section-title(site.data.vinavik.historia.seccion2.titulo, 'h2', 'none')
+                        p.historia__crono__subtitle=site.data.vinavik.historia.seccion2.texto 
                         
         section.historia__oro    
             .container-fluid
                 .row
                     .col-xs-24.col-sm-12
                         .historia__oro__img
-                            img(src=site.data.vina-vik.historia.secion3.imagen)
+                            img(src=site.data.vinavik.historia.seccion3.imagen)
                     .col-xs-24.col-sm-12
                         .historia__oro__data
-                            +section-title(site.data.vina-vik.historia.secion3.titulo, 'h2', 'x')
-                            each p in site.data.vina-vik.historia.secion3.texto
+                            +section-title(site.data.vinavik.historia.seccion3.titulo, 'h2', 'x')
+                            each p in site.data.vinavik.historia.seccion3.texto
                                 p.historia__oro__data__text= p
                                 
         section.historia__crono
             .container
                 .row
                     .col-xs-24.col-sm-16.col-sm-offset-4
-                        p.historia__crono__subtitle=site.data.vina-vik.historia.seccion4.texto 
+                        p.historia__crono__subtitle=site.data.vinavik.historia.seccion4.texto 
                         
         section.historia__tiles
             .container-fluid
                 .row.nopadding
-                    each img in site.data.vina-vik.historia.seccion5.imagenes
+                    each img in site.data.vinavik.historia.seccion5.imagenes
                         .col-xs-24.col-sm-8
                             .historia__tiles__img
                                 img(src=img)
@@ -53,8 +58,8 @@ block content
             .container-fluid
                 .row
                     .col-xs-24.col-sm-16.col-sm-offset-4
-                        +section-title(site.data.vina-vik.historia.seccion6.titulo, 'h2', 'x')
-                        p.historia__team__subtitle=site.data.vina-vik.historia.seccion6.texto 
+                        +section-title(site.data.vinavik.historia.seccion6.titulo, 'h2', 'x')
+                        p.historia__team__subtitle=site.data.vinavik.historia.seccion6.texto 
                         
             .historia__team__parallax
             
@@ -62,7 +67,7 @@ block content
                 .row
                     .col-xs-24.col-sm-16.col-sm-offset-4
                         ul.historia__team__members
-                            each member in site.data.vina-vik.historia.seccion6.miembros
+                            each member in site.data.vinavik.historia.seccion6.miembros
                                 li.historia__team__member
                                     .historia__team__member__img
                                         img(src=member.foto)

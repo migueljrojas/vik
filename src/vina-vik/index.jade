@@ -1,5 +1,10 @@
 extends ../_layouts/base
 
+include ../_modules/slider/slider
+include ../_modules/share/share
+include ../_modules/section-title/section-title
+include ../_modules/top-footer/top-footer
+
 block config
   //- Correct base url pathing for this page
   - var baseUrl = '../'
@@ -8,17 +13,17 @@ block content
     main.vina
         section.vina__hero
             .vina__hero__data
-                +section-title(site.data.vina-vik.principal.titulo, 'h1', 'x')
-                p.vina__hero__data__text= site.data.vina-vik.principal.texto
+                +section-title(site.data.vinavik.principal.titulo, 'h1', 'x')
+                p.vina__hero__data__text= site.data.vinavik.principal.texto
                 +share
         section.vina__interstitial
             .container
                 .row
                     .col-xs-24.col-sm-18.col-sm-offset-3
-                        p.vina__interstitial__quote= site.data.vina-vik.principal.mensaje
+                        p.vina__interstitial__quote= site.data.vinavik.principal.mensaje
         section.vina__parallax
             .vina__parallax__1
-                a(href=#)
+                a(href="#")
                     img(src="/images/vina-vik/video-placeholder.jpg")
             .vina__parallax__2
             .vina__parallax__3

@@ -5,4 +5,119 @@ block config
   - var baseUrl = '../../'
 
 block content
-  p tienda/checkout page
+    main.checkout
+        .container
+            .row
+                .col-xs-24.col-sm-12
+                    h3.checkout__title Datos personales y de envío
+                    p.checkout__subtitle ingresa los datos necesarios para la compra
+                    form.vikform.checkout__form.checkout__form--login
+                        .vikform__group
+                            input.vikform__input(type="text", placeholder="Nombre")
+                            input.vikform__input(type="text", placeholder="Apellido")
+                        .vikform__group
+                            .vikform__group--sub
+                                label.vikform__label Fecha de Nacimiento
+                                .vikform__group
+                                    select.vikform__input.vikform__input--select
+                                        option DD
+                                        option 01
+                                        option 02
+                                    select.vikform__input.vikform__input--select
+                                        option MM
+                                        option 01
+                                        option 02
+                                    select.vikform__input.vikform__input--select
+                                        option AAAA
+                                        option 1998
+                                        option 1999
+                            .vikform__group--sub
+                                label.vikform__label Género
+                                .vikform__group
+                                    input.vikform__input.vikform__input--radio(type="radio")
+                                    label.vikform__label Masculino
+                                .vikform__group
+                                    input.vikform__input.vikform__input--radio(type="radio")
+                                    label.vikform__label Femenino
+                        .vikform__group
+                            label.vikform__label Dirección de envío
+                            .vikform__group--sub
+                                input.vikform__input(type="text", placeholder="Calle")
+                                input.vikform__input(type="text", placeholder="Numero")
+                                input.vikform__input(type="text", placeholder="Dpto")
+                            .vikform__group--sub
+                                select.vikform__input.vikform__input--select
+                                    option Provincia
+                                    option Provincia 1
+                                    option Provincia 2
+                                select.vikform__input.vikform__input--select
+                                    option Ciudad
+                                    option Ciudad 1
+                                    option Ciudad 2
+                            
+                .col-xs-24.col-sm-12
+                    h3.checkout__title Datos de pago
+                    p.checkout__subtitle Ingresa los datos para realizar tu pago
+                    form.vikform.checkout__form.checkout__form--login
+                        .vikform__group
+                            label.vikform__label Pagar con tarjeta de crédito
+                            .vikform__group--sub
+                                .vikform__group
+                                    input.vikform__input.vikform__input--radio(type="radio")
+                                    label.vikform__label
+                                        img(src="/images/tienda/visa.png")
+                                .vikform__group
+                                    input.vikform__input.vikform__input--radio(type="radio")
+                                    label.vikform__label
+                                        img(src="/images/tienda/mastercard.png")
+                        .vikform__group
+                            input.vikform__input(type="text", placeholder="Calle")
+                            input.vikform__input(type="text", placeholder="Numero")
+                            input.vikform__input(type="text", placeholder="Dpto")
+                            input.vikform__input(type="text", placeholder="Dpto")
+                            
+                        .vikform__group
+                            label.vikform__label Pagar con PayPal
+                            a.vikform__paypal(href="#")
+                                img(src="/images/tienda/paypal.png")
+                                
+        section.checkout__heading
+            .container
+                .row
+                    .col-xs-24.col-sm-18
+                        span.checkout__heading__name= site.data.carrito.checkout.nombre
+                        h1.checkout__heading__title= site.data.carrito.checkout.titulo
+                        p.checkout__heading__texto= site.data.carrito.checkout.texto1
+        section.checkout__items
+            .container.vikform
+                each item in site.data.carrito.productos
+                    .row.checkout__item
+                        .col-xs-24.col-md-6
+                            .checkout__item__label Producto
+                            .checkout__item__value
+                                span= item.nombre
+                        .col-xs-6
+                            .checkout__item__label Cantidad
+                            .checkout__item__value
+                                span 3
+                        .col-xs-6
+                            .checkout__item__label Valor unitario
+                            .checkout__item__value
+                                span= item.valor
+                        .col-xs-6.col-md-3
+                            .checkout__item__label Total
+                            .checkout__item__value
+                                span= item.total
+                        .col-xs-6.col-md-3
+                                
+                .row.checkout__items__total
+                    .col-xs-12.col-md-3.col-md-offset-18
+                        span.checkout__items__total__label Subtotal:
+                    .col-xs-12.col-md-3
+                        span.checkout__items__total__amount U$S 1,700.00
+                        
+                .row.checkout__items__actions
+                    .col-xs-24.col-sm-12.col-md-18
+                        p.checkout__heading__texto=site.data.carrito.checkout.texto2
+                    .col-xs-24.col-sm-12.col-md-6
+                        a._button(href="#") Finalizar compra

@@ -5,4 +5,104 @@ block config
   - var baseUrl = '../../'
 
 block content
-  p tienda/carrito page
+    main.carrito
+        section.carrito__heading
+            .container
+                .row
+                    .col-xs-24.col-sm-18
+                        span.carrito__heading__name= site.data.carrito.nombre
+                        h1.carrito__heading__title= site.data.carrito.titulo
+                        p.carrito__heading__texto= site.data.carrito.texto
+        section.carrito__items
+            form.container.vikform
+                each item in site.data.carrito.productos
+                    .row.carrito__item
+                        .col-xs-24.col-md-6
+                            .carrito__item__label Producto
+                            .carrito__item__value
+                                span= item.nombre
+                        .col-xs-6
+                            .carrito__item__label Cantidad
+                            .carrito__item__value
+                                input.vikform__input(type="number")
+                        .col-xs-6
+                            .carrito__item__label Valor unitario
+                            .carrito__item__value
+                                span= item.valor
+                        .col-xs-6.col-md-3
+                            .carrito__item__label Total
+                            .carrito__item__value
+                                span= item.total
+                        .col-xs-6.col-md-3
+                            button.carrito__item__delete
+                                span x
+                                span eliminar
+                                
+                .row.carrito__items__total
+                    .col-xs-12.col-md-3.col-md-offset-18
+                        span.carrito__items__total__label Subtotal:
+                    .col-xs-12.col-md-3
+                        span.carrito__items__total__amount U$S 1,700.00
+                        
+                .row.carrito__items__actions
+                    .col-xs-24.col-sm-12
+                        a._button(href="/tienda") Seguir Comprando
+                    .col-xs-24.col-sm-12
+                        a._button(href="#") Actualizar carrito
+                
+        section.carrito__checkout
+            .container
+                .row
+                    .col-xs-24.col-sm-12
+                        h3.carrito__checkout__title Accede a tu cuenta
+                        p.carrito__checkout__subtitle Si ya tienes tu perfil creado ingresa con tu email y contraseña
+                        form.vikform.carrito__checkout__form.carrito__checkout__form--login
+                            .vikform__group
+                                input.vikform__input(type="email", placeholder="E-mail")
+                            .vikform__group
+                                input.vikform__input(type="password", placeholder="Contraseña")
+                            .vikform__group
+                                button.vikform__submit(type="submit") Ingresar
+                                a.vikform__link(href="#") Olvidé mi contraseña
+                                
+                    .col-xs-24.col-sm-12
+                        h3.carrito__checkout__title Crear cuenta
+                        p.carrito__checkout__subtitle Si no estás registrado, solo te pedimos estos datos
+                        form.vikform.carrito__checkout__form.carrito__checkout__form--login
+                            .vikform__group
+                                input.vikform__input(type="text", placeholder="Nombre")
+                                input.vikform__input(type="text", placeholder="Apellido")
+                            .vikform__group
+                                input.vikform__input(type="email", placeholder="E-mail")
+                                select.vikform__input.vikform__input--select
+                                    option Pais
+                                    option Pais 1
+                                    option Pais 2
+                            .vikform__group
+                                .vikform__group--sub
+                                    label.vikform__label Fecha de Nacimiento
+                                    .vikform__group
+                                        select.vikform__input.vikform__input--select
+                                            option DD
+                                            option 01
+                                            option 02
+                                        select.vikform__input.vikform__input--select
+                                            option MM
+                                            option 01
+                                            option 02
+                                        select.vikform__input.vikform__input--select
+                                            option AAAA
+                                            option 1998
+                                            option 1999
+                                .vikform__group--sub
+                                    label.vikform__label Género
+                                    .vikform__group
+                                        input.vikform__input.vikform__input--radio(type="radio")
+                                        label.vikform__label Masculino
+                                    .vikform__group
+                                        input.vikform__input.vikform__input--radio(type="radio")
+                                        label.vikform__label Femenino
+                            .vikform__group
+                                input(type="password", palceholder="Contraseña")
+                                button.vikform__submit(type="submit") Ingresar
+                    

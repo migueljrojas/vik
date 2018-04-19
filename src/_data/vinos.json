@@ -7,45 +7,48 @@
         ],
         "vinos":[
             {
-                "imagen":"",
+                "imagen":"/images/home/vik-2012.png",
+                "nombre":"Vik",
                 "botones":[
                     {
                         "texto":"descubre este vino",
-                        "url":"*"
+                        "url":"/nuestros-vinos/vik"
                     },
                     {
                         "texto":"comprar",
-                        "url":"*"
+                        "url":"/tienda/producto"
                     }
                 ]
             },
             {
-                "imagen":"",
+                "imagen":"/images/home/milla-calla.png",
+                "nombre":"Milla Calla",
                 "botones":[
                     {
                         "texto":"descubre este vino",
-                        "url":"*"
+                        "url":"/nuestros-vinos/milla-calla"
                     },
                     {
                         "texto":"comprar",
-                        "url":"*"
+                        "url":"/tienda/producto"
                     }
                 ]
             },
             {
-                "imagen":"",
+                "imagen":"/images/home/la-piu-belle.png",
+                "nombre":"La piu Belle",
                 "botones":[
                     {
                         "texto":"ir almicrositio",
-                        "url":"*"
+                        "url":"#"
                     },
                     {
                         "texto":"descubre este vino",
-                        "url":"*"
+                        "url":"/nuestros-vinos/la-piu-belle"
                     },
                     {
                         "texto":"comprar",
-                        "url":"*"
+                        "url":"/tienda/producto"
                     }
                 ]
             }

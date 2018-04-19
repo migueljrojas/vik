@@ -1,6 +1,22 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,600");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,700|Vollkorn:400,700");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@font-face {
+  font-family: 'Trajan Pro';
+  src: url("../../fonts/subset-TrajanPro-Regular.eot");
+  src: url("../../fonts/subset-TrajanPro-Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/subset-TrajanPro-Regular.woff2") format("woff2"), url("../../fonts/subset-TrajanPro-Regular.woff") format("woff"), url("../../fonts/subset-TrajanPro-Regular.ttf") format("truetype"), url("../../fonts/subset-TrajanPro-Regular.svg#TrajanPro-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Trajan Pro';
+  src: url("../../fonts/subset-TrajanPro-Bold.eot");
+  src: url("../../fonts/subset-TrajanPro-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/subset-TrajanPro-Bold.woff2") format("woff2"), url("../../fonts/subset-TrajanPro-Bold.woff") format("woff"), url("../../fonts/subset-TrajanPro-Bold.ttf") format("truetype"), url("../../fonts/subset-TrajanPro-Bold.svg#TrajanPro-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
 /* Mixins */
 /* Keyframes */
 @-webkit-keyframes fadeIn {
@@ -15158,7 +15174,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .header__hamburguer span {
-  background-color: #053f7a;
+  background-color: #af1f24;
   border-radius: 2px;
   content: '';
   display: block;
@@ -15402,16 +15418,16 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .-vertical-space {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .-vertical-space-top {
-  padding-top: 40px;
+  padding-top: 50px;
 }
 
 .-vertical-space-bottom {
-  padding-bottom: 40px;
+  padding-bottom: 50px;
 }
 
 .embed-responsive.-map {
@@ -15437,26 +15453,25 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 a._button,
 button._button,
 ._button {
-  background: #053f7a;
+  background: #af1f24;
   color: #fff;
   display: inline-block;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
   font-size: 14px;
   font-weight: 700;
-  height: 40px;
-  line-height: 40px;
-  max-width: 300px;
-  padding: 0 40px;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
   text-align: center;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  border-radius: 20px;
 }
 
 a._button:hover,
 button._button:hover,
 ._button:hover {
-  background: #3872ad;
+  background: #e25257;
   text-decoration: none;
   color: #fff;
 }
@@ -15471,7 +15486,7 @@ button._button.-white,
 a._button.-white:hover,
 button._button.-white:hover,
 ._button.-white:hover {
-  color: #053f7a;
+  color: #af1f24;
   background: #fff;
   padding: 0 40px;
 }
@@ -15484,29 +15499,29 @@ button._button.-cta,
   height: 70px;
   letter-spacing: 1px;
   line-height: 70px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Volkorn", serif;
 }
 
 a._button.-cta:hover,
 button._button.-cta:hover,
 ._button.-cta:hover {
-  background: #053f7a;
+  background: #af1f24;
   padding: 0 40px;
 }
 
 a._button.-large,
 button._button.-large,
 ._button.-large {
-  height: 60px;
-  line-height: 60px;
+  height: 75px;
+  line-height: 75px;
   font-size: 24px;
 }
 
 a._button.-small,
 button._button.-small,
 ._button.-small {
-  height: 30px;
-  line-height: 30px;
+  height: 37.5px;
+  line-height: 37.5px;
 }
 
 a._button.-black,
@@ -15519,7 +15534,7 @@ button._button.-black,
 a._button.-black:hover,
 button._button.-black:hover,
 ._button.-black:hover {
-  color: #053f7a;
+  color: #af1f24;
   background: #000;
   padding: 0 60px;
 }
@@ -15536,9 +15551,9 @@ button._button {
   width: 100%;
   font-size: 14px;
   font-weight: 600;
-  padding: 10px;
+  padding: 12.5px;
   color: #787871;
-  margin-bottom: 10px;
+  margin-bottom: 12.5px;
 }
 
 ._form input:last-child,
@@ -15564,14 +15579,178 @@ button._button {
 
 ._form ._submit {
   color: #fff;
-  background: #053f7a;
+  background: #af1f24;
   width: 300px;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 
 ._form ._submit:hover {
-  background: #3872ad;
+  background: #e25257;
+}
+
+.home__hero {
+  position: relative;
+}
+
+.home__hero__next {
+  position: absolute;
+  bottom: 50px;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.home__hero__next i {
+  font-size: 36px;
+}
+
+.home__slider .slick-dots {
+  bottom: -50px;
+}
+
+.home__slider .slick-dots li button:before {
+  color: #555555;
+}
+
+.home__slider .slick-dots li.active button:before {
+  -webkit-transform: scale3d(1.1, 1.1, 1.1);
+          transform: scale3d(1.1, 1.1, 1.1);
+}
+
+.home__slide {
+  height: 80vh;
+  overflow: hidden;
+}
+
+.home__slide__video {
+  padding-bottom: 50%;
+}
+
+.home__slide__video iframe {
+  position: absolute;
+  height: 120% !important;
+  top: -15% !important;
+}
+
+.home__slide__img {
+  height: 0;
+  padding-bottom: 56.5%;
+  overflow: hidden;
+  position: relative;
+}
+
+.home__slide__img img {
+  position: absolute;
+  width: 100%;
+}
+
+.home__vinos {
+  padding: 16% 0;
+  background: url("/images/home/fondo-blanco.jpg") no-repeat center center/cover;
+}
+
+@media (min-width: 768px) {
+  .home__vinos {
+    padding: 12% 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .home__vinos {
+    padding: 8% 0;
+  }
+}
+
+.home__vinos__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.home__vinos__list__item {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+@media (min-width: 768px) {
+  .home__vinos__list__item {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
+}
+
+.home__vinos__list__item__img {
+  text-align: center;
+}
+
+.home__vinos__list__item__data {
+  -webkit-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  text-align: center;
+}
+
+.home__vinos__list__item__name {
+  font-size: 21px;
+}
+
+.home__vinos__list__item__actions {
+  -webkit-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  opacity: 0;
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  pointer-events: none;
+}
+
+.home__vinos__list__item__actions ._button {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.home__vinos__list__item__actions ._button:first-child {
+  margin-right: 10px;
+  background: #3f3f3f;
+}
+
+.home__vinos__list__item:hover .home__vinos__list__item__actions {
+  opacity: 1;
+  pointer-events: all;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.home__vinos__list__item:hover .home__vinos__list__item__data {
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
 }
 
 *,
@@ -15582,7 +15761,7 @@ button._button {
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Volkorn", serif;
   font-weight: 300;
   overflow-x: hidden;
   width: 100vw;
@@ -15590,13 +15769,13 @@ body {
 }
 
 a {
-  color: #053f7a;
+  color: #af1f24;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
 a:hover {
-  color: #3872ad;
+  color: #e25257;
   text-decoration: none;
 }
 
@@ -15604,6 +15783,10 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Trajan Pro", serif;
 }
 
 .browsehappy {

@@ -1,10 +1,20 @@
 {
-    "nuestros-vinos":{
+    "slider":[
+        {
+            "type":"video",
+            "src":"http://www.youtube.com/embed/KaxQm09HiUI?autoplay=1&mute=1&rel=0"
+        },
+        {
+            "type":"imagen",
+            "src":"https://picsum.photos/1920/1080"
+        }
+    ],
+    "vinos":{
         "titulo":"nuestros vinos",
         "vinos":[
             {
                 "nombre":"vik",
-                "imagen":"",
+                "imagen":"/images/home/vik-2012.png",
                 "botones":[
                     {
                         "texto":"+ informacion",
@@ -18,11 +28,11 @@
             },
             {
                 "nombre":"milla calla",
-                "imagen":"",
+                "imagen":"/images/home/milla-calla.png",
                 "botones":[
                     {
                         "texto":"+ informacion",
-                        "url":"/nuestros-vinos/vik"
+                        "url":"/nuestros-vinos/milla-calla"
                     },
                     {
                         "texto":"comprar",
@@ -32,11 +42,11 @@
             },
             {
                 "nombre":"la piu belle",
-                "imagen":"",
+                "imagen":"/images/home/la-piu-belle.png",
                 "botones":[
                     {
                         "texto":"+ informacion",
-                        "url":"/nuestros-vinos/vik"
+                        "url":"/nuestros-vinos/la-piu-belle"
                     },
                     {
                         "texto":"comprar",
@@ -46,7 +56,7 @@
             }
         ]
     },
-    "nuestra-historia":{
+    "historia":{
         "titulo":"nuestra historia",
         "texto":"Alexander Vik emprendedor noruego se propuso crear un viñedo excepcional en el año 2004 para producir un vino único.",
         "boton":{
@@ -55,7 +65,7 @@
         },
         "imagen":""
     },
-    "nuestra-bodega":{
+    "bodega":{
         "titulo":"nuestra bodega",
         "texto":"Un diseño único y sin precedentes, que es al mismo tiempo vanguardista, altamente sostenible, tecnológicamente creativo y con un despliegue visual impactante que promete redefinir la experiencia del vino.",
         "boton":{
@@ -64,7 +74,7 @@
         },
         "imagen":""
     },
-    "nuestro-conceptp":{
+    "concepto":{
         "titulo":"nuestro concepto",
         "texto":"En VIK los conceptos de ciencia, tecnología y conocimiento son nuestra base, la pasión es nuestro motor y el vino es la expresión de nuestro arte.",
         "boton":{

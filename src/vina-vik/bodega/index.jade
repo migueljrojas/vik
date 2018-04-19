@@ -1,5 +1,10 @@
 extends ../../_layouts/base
 
+include ../../_modules/slider/slider
+include ../../_modules/share/share
+include ../../_modules/section-title/section-title
+include ../../_modules/top-footer/top-footer
+
 block config
   //- Correct base url pathing for this page
   - var baseUrl = '../../'
@@ -8,16 +13,16 @@ block content
     main.bodega
         section.bodega__hero
             .bodega__hero__data
-                +section-title(site.data.bodega.seccion1.titulo, 'h1', 'x')
-                p.bodega__hero__data__text= site.data.bodega.seccion1.texto
+                +section-title(site.data.vinavik.bodega.seccion1.titulo, 'h1', 'x')
+                p.bodega__hero__data__text= site.data.vinavik.bodega.seccion1.texto
                 +share
                 
         section.bodega__break
             .container
                 .row
                     .col-xs-24.col-sm-16.col-sm-offset-4
-                        +section-title(site.data.vina-vik.bodega.seccion2.titulo, 'h2', 'none')
-                        p.bodega__break__subtitle=site.data.vina-vik.bodega.seccion2.texto 
+                        +section-title(site.data.vinavik.bodega.seccion2.titulo, 'h2', 'none')
+                        p.bodega__break__subtitle=site.data.vinavik.bodega.seccion2.texto 
                         
         .bodega__parallax.bodega__parallax--one
         
@@ -25,7 +30,7 @@ block content
             .container
                 .row
                     .col-xs-24.col-sm-16.col-sm-offset-4
-                        p.bodega__break__subtitle=site.data.vina-vik.bodega.seccion3.texto 
+                        p.bodega__break__subtitle=site.data.vinavik.bodega.seccion3.texto 
                         
         .bodega__parallax.bodega__parallax--two
         
@@ -33,7 +38,7 @@ block content
             .container
                 .row
                     .col-xs-24.col-sm-16.col-sm-offset-4
-                        p.bodega__break__subtitle=site.data.vina-vik.bodega.seccion4.texto 
+                        p.bodega__break__subtitle=site.data.vinavik.bodega.seccion4.texto 
 
         .bodega__parallax.bodega__parallax--three
         
@@ -41,8 +46,8 @@ block content
             .container
                 .row
                     .col-xs-24.col-sm-16.col-sm-offset-4
-                        +section-title(site.data.vina-vik.bodega.seccion5.titulo, 'h2', 'x')                    
-                        p.bodega__break__subtitle=site.data.vina-vik.bodega.seccion5.texto 
+                        +section-title(site.data.vinavik.bodega.seccion5.titulo, 'h2', 'x')                    
+                        p.bodega__break__subtitle=site.data.vinavik.bodega.seccion5.texto 
 
         .bodega__parallax.bodega__parallax--four
         
@@ -50,8 +55,8 @@ block content
             .container
                 .row
                     .col-xs-24.col-sm-16.col-sm-offset-4
-                        +section-title(site.data.vina-vik.bodega.seccion6.titulo, 'h2', 'x')                    
-                        p.bodega__break__subtitle=site.data.vina-vik.bodega.seccion6.texto 
+                        +section-title(site.data.vinavik.bodega.seccion6.titulo, 'h2', 'x')                    
+                        p.bodega__break__subtitle=site.data.vinavik.bodega.seccion6.texto 
 
         .bodega__parallax.bodega__parallax--five
         
@@ -59,6 +64,6 @@ block content
             .container
                 .row
                     .col-xs-24.col-sm-16.col-sm-offset-4
-                        p.bodega__break__subtitle!=site.data.vina-vik.bodega.seccion7.texto 
+                        p.bodega__break__subtitle!=site.data.vinavik.bodega.seccion7.texto 
 
         +top-footer('historia', 'vinos')

@@ -1,3 +1,27 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,600');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,700|Vollkorn:400,700');
 
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+@font-face {
+    font-family: 'Trajan Pro';
+    src: url('../../fonts/subset-TrajanPro-Regular.eot');
+    src: url('../../fonts/subset-TrajanPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/subset-TrajanPro-Regular.woff2') format('woff2'),
+        url('../../fonts/subset-TrajanPro-Regular.woff') format('woff'),
+        url('../../fonts/subset-TrajanPro-Regular.ttf') format('truetype'),
+        url('../../fonts/subset-TrajanPro-Regular.svg#TrajanPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Trajan Pro';
+    src: url('../../fonts/subset-TrajanPro-Bold.eot');
+    src: url('../../fonts/subset-TrajanPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/subset-TrajanPro-Bold.woff2') format('woff2'),
+        url('../../fonts/subset-TrajanPro-Bold.woff') format('woff'),
+        url('../../fonts/subset-TrajanPro-Bold.ttf') format('truetype'),
+        url('../../fonts/subset-TrajanPro-Bold.svg#TrajanPro-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
