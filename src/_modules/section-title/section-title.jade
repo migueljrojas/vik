@@ -1,3 +1,24 @@
-mixin section-title(text,h,icon,mode)
-  div(class="")
-    p This is an example paragraph for the section-title module
+mixin section-title(text,h,icon,mode, altText)
+    .section-title(class=mode == 'alt' ? 'section-title--alt' : '')
+        if mode == 'alt'
+            if icon != 'none'
+                .section-title__icon
+                    img(src="/images/#{icon}.png")
+            if altText
+                span.section-title__alt= altText
+            if h == 'h1'
+                h1.section-title__text=text
+            if h == 'h2'
+                h2.section-title__text=text
+            if h == 'h3'
+                h3.section-title__text=text
+        else 
+            if h == 'h1'
+                h1.section-title__text=text
+            if h == 'h2'
+                h2.section-title__text=text
+            if h == 'h3'
+                h3.section-title__text=text
+            if icon != 'none'
+                .section-title__icon
+                    img(src="/images/#{icon}.png")

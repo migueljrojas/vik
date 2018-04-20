@@ -29,7 +29,49 @@
           </g>
       </symbol>
   </svg>
-  <header class="header"></header>
+  <header class="header -ontop">
+    <div class="container header__container">
+      <div class="header__hamburguer"><span></span><span></span><span></span></div>
+      <div class="header__logo"><a href="/"><img src="/images/logo.png"></a></div>
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li><a href="/vina-vik">Vina Vik</a>
+            <ul class="header__submenu">
+              <li><a href="/vina-vik/historia">Historia</a></li>
+              <li><a href="/vina-vik/nuestro-concepto">Nuestro Concepto</a></li>
+              <li><a href="/vina-vik/bodega">la bodega</a></li>
+              <li><a href="/vina-vik/pavillion">el pavillion</a></li>
+            </ul>
+          </li>
+          <li><a href="/nuestros-vinos">nuestros vinos</a>
+            <ul class="header__submenu">
+              <li><a href="/nuestros-vinos/vik">vik</a></li>
+              <li><a href="/nuestros-vinos/milla-calla">milla cala</a></li>
+              <li><a href="/nuestros-vinos/la-piu-belle">la piu belle</a></li>
+              <li><a href="/nuestros-vinos/your-vik-bottle">your vik bottle</a></li>
+            </ul>
+          </li>
+          <li><a href="/vik-chile-retreat">vik chile retreat</a>
+          </li>
+          <li><a href="#">news</a>
+            <ul class="header__submenu">
+              <li><a href="/news/prensa">prensa</a></li>
+              <li><a href="/news/connect">connect</a></li>
+            </ul>
+          </li>
+          <li><a href="/videos-galeria">videos y galeria</a>
+          </li>
+          <li><a href="/contacto">contacto</a>
+          </li>
+          <li><a href="/reserva">reserva</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__tienda"><a href="/tienda">tienda</a>
+        <div class="header__tienda__cart"><span>0</span><img src="/images/shop-cart.png"></div>
+      </div>
+    </div>
+  </header>
   <main class="home">
     <section class="home__hero">
       <div class="_slider home__slider">
@@ -39,7 +81,7 @@
           </div>
         </div>
         <div class="home__slide">
-          <div class="home__slide__img"><img src="https://picsum.photos/1920/1080"></div>
+          <div class="home__slide__img"><img src="https://picsum.photos/1920/1080?random"></div>
         </div>
       </div><a href="#nuestros-vinos" class="home__hero__next"><i class="material-icons">keyboard_arrow_down</i></a>
     </section>
@@ -47,8 +89,9 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-24">
-            <div>
-              <p>This is an example paragraph for the section-title module</p>
+            <div class="section-title">
+              <h2 class="section-title__text">nuestros vinos</h2>
+              <div class="section-title__icon"><img src="/images/dash.png"/></div>
             </div>
             <ul class="home__vinos__list">
               <li class="home__vinos__list__item">
@@ -82,14 +125,15 @@
     </section>
     <section class="home__historia">
       <div class="container-fluid">
-        <div class="row">
+        <div class="row nopadding">
           <div class="col-xs-24 col-sm-12">
-            <div class="home__historia__img"><img src=""></div>
+            <div class="home__historia__img"><img src="/images/home/history.jpg"></div>
           </div>
-          <div class="col-xs-24 col-sm-12">
+          <div class="col-xs-24 col-sm-12 flexcol">
             <div class="home__historia__data">
-              <div>
-                <p>This is an example paragraph for the section-title module</p>
+              <div class="section-title">
+                <h2 class="section-title__text">nuestra historia</h2>
+                <div class="section-title__icon"><img src="/images/dash.png"/></div>
               </div>
               <p class="home__historia__data__text">Alexander Vik emprendedor noruego se propuso crear un viñedo excepcional en el año 2004 para producir un vino único.</p><a href="/vina-vik/historia" class="_button">conoce mas</a>
             </div>
@@ -97,42 +141,51 @@
         </div>
       </div>
     </section>
+    <div class="home__bodega__img"></div>
     <section class="home__bodega">
-      <div class="home__bodega__img"></div>
-      <div class="home__bodega__data">
-        <div>
-          <p>This is an example paragraph for the section-title module</p>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-24 col-sm-16 col-sm-offset-4">
+            <div class="home__bodega__data">
+              <div class="section-title">
+                <h2 class="section-title__text">nuestra bodega</h2>
+                <div class="section-title__icon"><img src="/images/dash.png"/></div>
+              </div>
+              <p class="home__bodega__data__text">Un diseño único y sin precedentes, que es al mismo tiempo vanguardista, altamente sostenible, tecnológicamente creativo y con un despliegue visual impactante que promete redefinir la experiencia del vino.</p><a href="#" class="_button">conoce mas</a>
+            </div>
+          </div>
         </div>
-        <p class="home__bodega__data__text">Un diseño único y sin precedentes, que es al mismo tiempo vanguardista, altamente sostenible, tecnológicamente creativo y con un despliegue visual impactante que promete redefinir la experiencia del vino.</p><a href="#" class="_button">conoce mas</a>
       </div>
     </section>
     <section class="home__concepto">   
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-xs-24 col-sm-12">
+        <div class="row flexrow nopadding">
+          <div class="col-xs-24 col-sm-12 flexcol">
             <div class="home__concepto__data">
-              <div>
-                <p>This is an example paragraph for the section-title module</p>
+              <div class="section-title">
+                <h2 class="section-title__text">nuestro concepto</h2>
+                <div class="section-title__icon"><img src="/images/dash.png"/></div>
               </div>
               <p class="home__concepto__data__text">En VIK los conceptos de ciencia, tecnología y conocimiento son nuestra base, la pasión es nuestro motor y el vino es la expresión de nuestro arte.</p><a href="#" class="_button">conoce mas</a>
             </div>
           </div>
           <div class="col-xs-24 col-sm-12">
-            <div class="home__concepto__video"><a href="#"><img></a></div>
+            <div class="home__concepto__video"><a href="http://www.youtube.com/embed/74vdD28l7U4?autoplay=1" id="home-concepto"><img src="/images/home/concepto.jpg"></a></div>
           </div>
         </div>
       </div>
     </section>
     <section class="home__pavillion">   
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-xs-24 col-sm-12">
-            <div class="home__pavillion__video"><a href="#"><img src=""></a></div>
+        <div class="row flexrow nopadding">
+          <div class="col-xs-24 col-sm-17">
+            <div class="home__pavillion__video"><a href="http://www.youtube.com/embed/74vdD28l7U4?autoplay=1" id="home-pavillion"><img src="/images/home/pavillion.jpg"></a></div>
           </div>
-          <div class="col-xs-24 col-sm-12">
+          <div class="col-xs-24 col-sm-7 flexcol">
             <div class="home__pavillion__data">
-              <div>
-                <p>This is an example paragraph for the section-title module</p>
+              <div class="section-title">
+                <h2 class="section-title__text">el pavillion</h2>
+                <div class="section-title__icon"><img src="/images/dash.png"/></div>
               </div>
               <p class="home__pavillion__data__text">Un restaurante con vista a 360º entre viñedo, montaña y naturaleza. Ofrece una cocina creativa, elaborada con productos orgánicos de nuestro huerto y de la región.</p><a href="#" class="_button">conoce mas</a>
             </div>
@@ -142,27 +195,57 @@
     </section>
     <section class="home__retreat">   
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-xs-24 col-sm-12">
+        <div class="row flexrow nopadding">
+          <div class="col-xs-24 col-sm-7 flexcol">
             <div class="home__retreat__data">
-              <div>
-                <p>This is an example paragraph for the section-title module</p>
+              <div class="section-title">
+                <h2 class="section-title__text">vik chile retreat</h2>
+                <div class="section-title__icon"><img src="/images/dash.png"/></div>
               </div>
               <p class="home__retreat__data__text">Un hotel excepcional para sumergirse completamente en la experiencia VIK, centrada en el concepto que todos los elementos de su estadía se unen para transformar la forma en que podrá disfrutar de nuestros vinos VIK.</p><a href="#" class="_button">conoce mas</a>
             </div>
           </div>
-          <div class="col-xs-24 col-sm-12">
-            <div class="home__retreat__video"><a href="#"><img src=""></a></div>
+          <div class="col-xs-24 col-sm-17">
+            <div class="home__retreat__image"><img src="/images/home/retreat.jpg"></div>
           </div>
         </div>
       </div>
     </section>
     <section class="home__map">
-      <div class="hpme__map__img"><a href="#"><img src="/images/home/mapa.jpg"></a></div>
+      <div class="home__map__img"><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2763.6053641324825!2d-71.22764897823893!3d-34.540914934824656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96647dcf97aeac3f%3A0x29173e2d8792a020!2sVi%C3%B1a+Vik+Hotel!5e0!3m2!1ses!2sar!4v1524116888597" id="home-map"><img src="/images/home/map.jpg"></a></div>
     </section>
   </main>
-  <footer class="footer"></footer>
+  <footer class="footer">
+    <div class="footer__section footer__section--top">
+      <p>Viña vik </p>
+      <p>Milahue, San Vicente de Tagua, Chile</p>
+    </div>
+    <div class="footer__section footer__section--middle">
+      <p>#vikvibe</p>
+      <ul class="footer__social">
+        <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a></li>
+      </ul>
+    </div>
+    <div class="footer__section footer__section--bottom">
+      <p><strong>M</strong><span>+56 9 56684852</span></p>
+      <p><strong>E</strong><span>tours@vik.cl</span></p>
+    </div>
+  </footer>
   <script src="./scripts/main.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
+  <script src="/scripts/jquery.requestAnimationFrame.js"></script>
+  <script src="/scripts/jquery.mousewheel.js"></script>
+  <script src="/scripts/ilightbox.packed.js"></script>
   <script>new WOW().init();</script>
+  <script>
+    $('#home-concepto').iLightBox();
+    $('#home-pavillion').iLightBox();
+    $('#home-map').iLightBox();
+    $('#vina-video').iLightBox();
+    $('#concepto-video').iLightBox();
+    $('#video-pavillion').iLightBox();
+  </script>
 </body></html>

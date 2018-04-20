@@ -1,2 +1,28 @@
-header.header
+header.header.-ontop
+    .container.header__container
+        .header__hamburguer
+            span
+            span
+            span
+            
+        .header__logo
+            a(href="/")
+                img(src="/images/logo.png")
+            
+        nav.header__nav
+            ul.header__menu
+                each item in site.data.header.menu
+                    li
+                        a(href=item.url)= item.nombre
+                        if item.submenu
+                            ul.header__submenu
+                                each link in item.submenu
+                                    li
+                                        a(href=link.url)= link.nombre
+        .header__tienda
+            a(href="/tienda")= site.data.header.tienda.texto
+            .header__tienda__cart
+                span= site.data.header.tienda.cantidades
+                img(src="/images/shop-cart.png")
+
     

@@ -37,44 +37,47 @@ block content
                                             
         section.home__historia
             .container-fluid
-                .row
+                .row.nopadding
                     .col-xs-24.col-sm-12
                         .home__historia__img
                             img(src=site.data.home.historia.imagen)
-                    .col-xs-24.col-sm-12
+                    .col-xs-24.col-sm-12.flexcol
                         .home__historia__data
                             +section-title(site.data.home.historia.titulo, 'h2', 'dash')
                             p.home__historia__data__text= site.data.home.historia.texto
                             a._button(href=site.data.home.historia.boton.url)= site.data.home.historia.boton.nombre
                                         
+        .home__bodega__img
         section.home__bodega
-            .home__bodega__img
-            .home__bodega__data
-                +section-title(site.data.home.bodega.titulo, 'h2', 'dash')
-                p.home__bodega__data__text= site.data.home.bodega.texto
-                a._button(href=site.data.home.bodega.boton.url)= site.data.home.bodega.boton.nombre
+            .container
+                .row
+                    .col-xs-24.col-sm-16.col-sm-offset-4
+                        .home__bodega__data
+                            +section-title(site.data.home.bodega.titulo, 'h2', 'dash')
+                            p.home__bodega__data__text= site.data.home.bodega.texto
+                            a._button(href=site.data.home.bodega.boton.url)= site.data.home.bodega.boton.nombre
                 
         section.home__concepto    
             .container-fluid
-                .row
-                    .col-xs-24.col-sm-12
+                .row.flexrow.nopadding
+                    .col-xs-24.col-sm-12.flexcol
                         .home__concepto__data
                             +section-title(site.data.home.concepto.titulo, 'h2', 'dash')
                             p.home__concepto__data__text= site.data.home.concepto.texto
                             a._button(href=site.data.home.concepto.boton.url)= site.data.home.concepto.boton.nombre
                     .col-xs-24.col-sm-12
                         .home__concepto__video
-                            a(href="#")
-                                img(src=site.data.home.concepto.imagen)
+                            a(href="http://www.youtube.com/embed/74vdD28l7U4?autoplay=1", id="home-concepto")
+                                img(src=site.data.home.concepto.video)
                                 
         section.home__pavillion    
             .container-fluid
-                .row
-                    .col-xs-24.col-sm-12
+                .row.flexrow.nopadding
+                    .col-xs-24.col-sm-17
                         .home__pavillion__video
-                            a(href="#")
+                            a(href="http://www.youtube.com/embed/74vdD28l7U4?autoplay=1", id="home-pavillion")
                                 img(src=site.data.home.pavillion.imagen)
-                    .col-xs-24.col-sm-12
+                    .col-xs-24.col-sm-7.flexcol
                         .home__pavillion__data
                             +section-title(site.data.home.pavillion.titulo, 'h2', 'dash')
                             p.home__pavillion__data__text= site.data.home.pavillion.texto
@@ -82,20 +85,19 @@ block content
             
         section.home__retreat    
             .container-fluid
-                .row
-                    .col-xs-24.col-sm-12
+                .row.flexrow.nopadding
+                    .col-xs-24.col-sm-7.flexcol
                         .home__retreat__data
                             +section-title(site.data.home.retreat.titulo, 'h2', 'dash')
                             p.home__retreat__data__text= site.data.home.retreat.texto
                             a._button(href=site.data.home.retreat.boton.url)= site.data.home.retreat.boton.nombre
-                    .col-xs-24.col-sm-12
-                        .home__retreat__video
-                            a(href="#")
-                                img(src=site.data.home.retreat.imagen)
+                    .col-xs-24.col-sm-17
+                        .home__retreat__image
+                            img(src=site.data.home.retreat.imagen)
                                 
         section.home__map
-            .hpme__map__img
-                a(href="#")
-                    img(src="/images/home/mapa.jpg")
+            .home__map__img
+                a(href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2763.6053641324825!2d-71.22764897823893!3d-34.540914934824656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96647dcf97aeac3f%3A0x29173e2d8792a020!2sVi%C3%B1a+Vik+Hotel!5e0!3m2!1ses!2sar!4v1524116888597", id="home-map")
+                    img(src="/images/home/map.jpg")
             
             

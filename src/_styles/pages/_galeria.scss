@@ -1,0 +1,39 @@
+.galeria {
+    @include padd(top);
+
+    &__hero {
+        @include padd;
+
+    }
+
+    .section-title {
+        h2 {
+            font-size: 24px;
+
+            @include mq(sm){
+                font-size: 32px;
+            }
+        }
+    }
+
+    &__videos {
+        &__slider {
+            margin-top: 40px;
+        }
+        &__slide {
+
+        }
+    }
+
+    &__images {
+        &__slider {
+            margin-top: 40px;
+            margin-bottom: -5px !important;
+        }
+        &__slide {
+            &__img {
+                @include img(60%);
+            }
+        }
+    }
+}

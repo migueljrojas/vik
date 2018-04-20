@@ -13,11 +13,14 @@ block config
 block content
     main.pavillion
         section.pavillion__hero
-            .pavillion__hero__data
-                +section-title(site.data.vinavik.pavillion.seccion1.titulo, 'h1', 'x')
-                p.pavillion__hero__data__text= site.data.vinavik.pavillion.seccion1.texto
-                +share
-                
+            .container
+                .row
+                    .col-xs-24.col-sm-16.col-sm-offset-4
+                        .pavillion__hero__data
+                            +section-title(site.data.vinavik.pavillion.seccion1.titulo, 'h1', 'x')
+                            p.pavillion__hero__data__text= site.data.vinavik.pavillion.seccion1.texto
+                            +share
+                    
         section.pavillion__break
             .container
                 .row
@@ -26,22 +29,25 @@ block content
                         p.pavillion__break__subtitle=site.data.vinavik.pavillion.seccion2.texto 
                         
         .pavillion__video
-            a(href="#")
+            a(href="http://www.youtube.com/embed/KaxQm09HiUI?autoplay=1", id="video-pavillion")
+                img(src="/images/vina-vik/pavillion1.jpg")
             
         .pavillion__parallax.pavillion__parallax--one
         
         .pavillion__static.pavillion__static--one
+            img(src="/images/vina-vik/pavillion3.jpg")
 
         .pavillion__parallax.pavillion__parallax--two
         
         .pavillion__static.pavillion__static--two
+            img(src="/images/vina-vik/pavillion5.jpg")
         
-        section.bodega__break
+        section.pavillion__break.pavillion__reserva
             .container
                 .row
                     .col-xs-24.col-sm-16.col-sm-offset-4
-                        p.bodega__break__subtitle!=site.data.vinavik.pavillion.seccion3.texto 
+                        p.pavillion__reserva__subtitle!=site.data.vinavik.pavillion.seccion3.texto 
 
-        +top-footer('historia', 'vinos')
+        +top-footer(['historia', 'vinos'])
         
         

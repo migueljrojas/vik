@@ -1,20 +1,10 @@
 {
     "videos":[
-        {
-            "video":"",
-            "img":""
-        },
-        {
-            "video":"",
-            "img":""
-        }
+        "http://www.youtube.com/embed/KaxQm09HiUI",
+        "http://www.youtube.com/embed/74vdD28l7U4"
     ],
     "images":[
-        {
-            "img":""
-        },
-        {
-            "img":""
-        }
+        "/images/vina-vik/bodega1.jpg",
+        "https://picsum.photos/1920/1080?random"
     ]
 }

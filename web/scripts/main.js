@@ -14666,17 +14666,26 @@ var Header = function() {
     var header = $('.header');
     var body = $('body');
     var menuOpen = $('.header__hamburguer');
-    var menuClose = $('.header__nav__close');
+    var url = window.location.pathname;
+    var urlRegExp = new RegExp(url == '/' ? window.location.origin + '/?$' : url.replace(/\/$/,'') + '$');
 
     menuOpen.on('click', function(){
-        header.addClass('-open');
-        body.addClass('-hideOverflow');
+        header.toggleClass('-open');
+        body.toggleClass('-hideOverflow');
     });
 
-    menuClose.on('click', function(){
-        header.removeClass('-open');
-        body.removeClass('-hideOverflow');
+    // now grab every link from the navigation
+    $('.header__menu li a').each(function(){
+        // and test its normalized href against the url pathname regexp
+
+        if(urlRegExp.test(this.href.replace(/\/$/,''))){
+            $(this).parents('.header__menu li').addClass('-active');
+        }
     });
+
+    if (url == '/' || url == '/home') {
+        $("body").addClass("-home");
+    }
 };
 
 module.exports = Header;

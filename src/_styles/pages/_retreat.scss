@@ -1,0 +1,23 @@
+.retreat {
+    &__hero {
+        @include padd;
+        background:url('/images/retreat/imagen1.jpg') no-repeat center center / cover;
+        height: 100vh;
+        position: relative;
+
+        &__data {
+            @include padd;
+            padding-top: 20%!important;
+            text-align: center;
+
+            &__text {
+
+                margin-bottom: 40px;
+
+                @include mq(md){
+                    font-size: 21px;
+                }
+            }
+        }
+    }
+}

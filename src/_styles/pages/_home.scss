@@ -25,6 +25,10 @@
 
     &__slider {
 
+        &.slick-dotted.slick-slider {
+            margin-bottom: 0;
+        }
+
         .slick-dots {
             bottom: -50px;
 
@@ -39,11 +43,11 @@
     }
 
     &__slide {
-        height: 80vh;
+        height: 90vh;
         overflow: hidden;
 
         &__video {
-            padding-bottom: 50%;
+            padding-bottom: 60%;
 
             iframe {
                 position: absolute;
@@ -74,6 +78,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
+            padding: 20px 0;
 
 
             &__item {
@@ -113,6 +118,10 @@
                         &:first-child{
                             margin-right: 10px;
                             background: $altColor;
+
+                            &:hover {
+                                background: $altColor + #333;
+                            }
                         }
                     }
                 }
@@ -132,4 +141,110 @@
         }
     }
 
+    &__historia {
+        @include padd;
+
+        .row {
+            @include flexrow;
+        }
+
+        &__img {
+            @include img;
+        }
+
+        &__data {
+            text-align: center;
+            max-width: 400px;
+            margin: auto;
+            align-self: center;
+
+            &__text {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &__bodega {
+        @include padd;
+
+        &__img {
+            @include parallax('/images/home/bodega.jpg');
+
+            height: 80vh;
+        }
+
+        &__data {
+            text-align: center;
+
+            &__text {
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    &__concepto {
+        @include padd(bottom);
+
+        &__video {
+            @include img;
+        }
+        &__data {
+            text-align: center;
+            max-width: 400px;
+            margin: auto;
+            align-self: center;
+
+            &__text {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &__pavillion {
+        &__video {
+            @include img;
+        }
+        .flexcol {
+            background: $lightestGray;
+        }
+        &__data {
+            text-align: center;
+            max-width: 400px;
+            margin: auto;
+            align-self: center;
+
+            &__text {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &__retreat {
+        &__image {
+            @include img;
+        }
+        .flexcol {
+            background: $lightestGray;
+        }
+        &__data {
+            text-align: center;
+            max-width: 400px;
+            margin: auto;
+            align-self: center;
+
+            &__text {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &__map {
+        &__img {
+            @include img();
+
+            @include mq(sm){
+                @include img(25%);
+            }
+        }
+    }
 }

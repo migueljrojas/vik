@@ -12,13 +12,16 @@ block config
 block content
     main.vinos
         section.vinos__hero
-            +section-title(site.data.vinos.principal.titulo, 'h1', 'x')
-            each p in site.data.vinos.principal.texto
-                p.vinos__hero__text=p
-            +share
+            .container
+                .row
+                    .col-xs-24.col-sm-16.col-sm-offset-4
+                        +section-title(site.data.vinos.principal.titulo, 'h1', 'x')
+                        each p in site.data.vinos.principal.texto
+                            p.vinos__hero__text=p
+                        +share
 
         section.vinos__list
-            .container
+            .container-fluid
                 ul.row
                     each wine, index in site.data.vinos.principal.vinos
                         li.col-xs-24.vinos__list__item(class="vinos__list__item--#{index + 1}")
@@ -28,6 +31,6 @@ block content
                                 each btn in wine.botones
                                     a._button(href=btn.url)= btn.texto
                                     
-        +top-footer('historia', 'bodega')
+    +top-footer(['historia', 'bodega'])
                             
                         

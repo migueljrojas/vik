@@ -15,7 +15,7 @@
         },
         "seccion3":{
             "titulo":"lugar de oro",
-            "imagen":"/images/vina-vik/historia-oro.jpg",
+            "imagen":"/images/vina-vik/historia2.jpg",
             "texto":[
                 "El lugar escogido fue el Valle de Millahue, denominado por los indígenas 'Lugar de Oro'.",
                 "Es aquí donde nace 'VIK' un viñedo que encarna la perfecta fusión entre hombre, experiencia, tierra, clima y alta tecnología."
@@ -26,9 +26,9 @@
         },
         "seccion5":{
             "imagenes":[
-                "/images/vina-vik/historia-tile-1.jpg",
-                "/images/vina-vik/historia-tile-2.jpg",
-                "/images/vina-vik/historia-tile-3.jpg"
+                "/images/vina-vik/historia3.jpg",
+                "/images/vina-vik/historia4.jpg",
+                "/images/vina-vik/historia5.jpg"
             ]
         },
         "seccion6":{
@@ -37,17 +37,17 @@
             "imagen-principal":"",
             "miembros":[
                 {
-                    "foto":"",
+                    "foto":"/images/vina-vik/persona1.jpg",
                     "nombre":"Gastón Williams",
                     "cargo":"ceo"
                 },
                 {
-                    "foto":"",
+                    "foto":"/images/vina-vik/persona2.jpg",
                     "nombre":"christián vallejo",
                     "cargo":"winemaker"
                 },
                 {
-                    "foto":"",
+                    "foto":"/images/vina-vik/persona3.jpg",
                     "nombre":"Pedro Veas",
                     "cargo":"cfo"
 
@@ -59,7 +59,7 @@
         "seccion1":{
             "titulo":"nuestro concepto",
             "texto":"El concepto vitivinícola de VIK se basa en la técnica de la optimización de cada una de las etapas de viticultura y vinificación, por medio de la gran atención en la ciencia y tecnología, todo esto adaptado a nuestros valles para lograr la mejor madurez de nuestra fruta y crear los mejores vinos.",
-            "imagen":"*"
+            "imagen":"/images/vina-vik/concepto.jpg"
         },
         "seccion2":{
             "titulo":"holismo",
@@ -67,7 +67,8 @@
         },
         "seccion3":{
             "titulo":"VITI-VINICULTURA",
-            "texto":"El concepto vitivinícola de VIK se basa en la técnica de la optimización de cada una de las etapas de viticultura y vinificación, por medio de la gran atención en la ciencia y tecnología, todo esto adaptado a nuestros valles para lograr la mejor madurez de nuestra fruta y crear los mejores vinos."
+            "texto":"El concepto vitivinícola de VIK se basa en la técnica de la optimización de cada una de las etapas de viticultura y vinificación, por medio de la gran atención en la ciencia y tecnología, todo esto adaptado a nuestros valles para lograr la mejor madurez de nuestra fruta y crear los mejores vinos.",
+            "imagen":"/images/vina-vik/concepto1.jpg"
         },
         "seccion4":{
             "titulo":"+300 personas",
@@ -76,7 +77,7 @@
         "seccion5":{
             "titulo":"la perfeccion",
             "texto":"Nuestro objetivo es adaptar las mejores técnicas para maximizar la óptima calidad de nuestras uvas con tecnología de punta, manteniendo nuestro concepto holístico de perfección cualitativa.",
-            "imagen":"*"
+            "imagen":"/images/vina-vik/concepto2.jpg"
         },
         "seccion6":{
             "titulo":"viticultura",
@@ -84,15 +85,15 @@
             "estadisticas":[
                 {
                     "numeros":"7.518",
-                    "texto":"En VIK la viticultura de precisión es fundamental, por esta razón contamos con tecnología de punta que nos ayuda a lograr nuestra premisa de mantener una plantación en alta densidad."
+                    "texto":"PLANTAS / HA<br>A los pies de los cerros"
                 },
                 {
                     "numeros":"8.333",
-                    "texto":"PLANTAS / HAEN LAS LADERAS"
+                    "texto":"PLANTAS / HA<br>EN LAS LADERAS"
                 },
                 {
                     "numeros":"10.000",
-                    "texto":"PLANTAS / HAEN ULTIMAS PLANTACIONES 2012"
+                    "texto":"PLANTAS / HA<br>EN ULTIMAS PLANTACIONES 2012"
                 }
             ],
             "contenido":[
@@ -102,9 +103,9 @@
         },
         "seccion7":{
             "imagenes":[
-                "",
-                "",
-                ""
+                "/images/vina-vik/concepto4.jpg",
+                "/images/vina-vik/concepto5.jpg",
+                "/images/vina-vik/concepto6.jpg"
             ]
         },
         "seccion8":{

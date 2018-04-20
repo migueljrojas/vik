@@ -1,0 +1,471 @@
+.vina {
+    &__hero {
+        @include padd;
+        @include parallax('/images/vina-vik/vina1.jpg');
+
+        height: 100vh;
+
+        &__data {
+            @include padd(top);
+
+            text-align: center;
+
+            &__text {
+                @include mq(md){
+                    font-size: 21px;
+                }
+            }
+        }
+    }
+
+    &__interstitial {
+        @include padd;
+        background: $white;
+
+        &__quote {
+            text-align: center;
+            font-size: 24px;
+
+            @include mq(md){
+                font-size: 32px;
+            }
+        }
+    }
+
+    &__parallax {
+        &__2 {
+            @include parallax('/images/vina-vik/vina3.jpg');
+            height: 80vh;
+        }
+        &__4 {
+            @include parallax('/images/vina-vik/vina5.jpg');
+            height: 80vh;
+        }
+    }
+
+    &__reserva {
+        @include padd;
+
+        text-align: center;
+        font-family: $titleFont;
+        font-size: 24px;
+
+        &__title {}
+    }
+}
+
+.historia {
+    @include padd(top);
+
+    &__hero {
+        @include padd;
+        text-align: center;
+
+        &__subtitle {
+            font-size: 24px;
+            color: $midGray;
+        }
+
+        &__parallax {
+            @include img(40%);
+        }
+    }
+    &__crono {
+        @include padd;
+        text-align: center;
+
+        &__subtitle {
+            color: $midGray;
+        }
+    }
+
+    &__oro {
+        .flexcol {
+            background: $lightestGray;
+        }
+
+        &__img {
+            @include img(70%);
+        }
+
+        &__data {
+            text-align: center;
+            max-width: 400px;
+            margin: auto;
+            align-self: center;
+
+            &__text {
+                margin-bottom: 20px;
+                font-size: 18px;
+                color: $midGray;
+
+                @include mq(sm){
+                    font-size: 21px;
+
+                }
+            }
+
+            .section-title {
+                h2 {
+                    font-size: 26px;
+
+                    @include mq(sm){
+                        font-size: 36px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__tiles {
+        &__img {
+            @include img(75%);
+        }
+    }
+
+    &__team {
+        @include padd;
+        text-align: center;
+
+        .container-fluid {
+            padding-bottom: 5%;
+        }
+
+        &__parallax {
+            @include img(60%);
+        }
+
+        .section-title {
+            h2 {
+                font-size: 26px;
+
+                @include mq(sm){
+                    font-size: 36px;
+                }
+            }
+        }
+
+        &__members {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &__member {
+            flex-basis: 100%;
+            color: $midGray;
+            padding: 0 10px;
+
+            @include mq(sm) {
+                flex-basis: 50%;
+            }
+
+            &__img {
+                @include img(90%);
+            }
+
+            &__job {
+                font-family: $altFont;
+                font-weight: 700;
+                text-transform: uppercase;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.concepto {
+    @include padd(top);
+
+    &__hero {
+        @include padd(top);
+        text-align: center;
+
+        &__subtitle {
+            font-size: 24px;
+            color: $midGray;
+        }
+
+        &__video {
+            @include img(40%);
+            margin-top: 40px;
+        }
+    }
+
+    &__break {
+        @include padd;
+        text-align: center;
+
+        &__subtitle {
+            color: $midGray;
+            line-height: 1.8;
+        }
+    }
+
+    &__vitivinicultura,
+    &__perfeccion {
+        .flexcol {
+            background: $lightestGray;
+        }
+
+        &__img {
+            @include img(70%);
+        }
+
+        &__data {
+            text-align: center;
+            max-width: 400px;
+            margin: auto;
+            align-self: center;
+
+            &__text {
+                margin-bottom: 20px;
+                font-size: 18px;
+                color: $midGray;
+
+                @include mq(sm){
+                    font-size: 21px;
+
+                }
+            }
+
+            .section-title {
+                h2 {
+                    font-size: 26px;
+
+                    @include mq(sm){
+                        font-size: 36px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__viticultura,
+    &__vinicultura,
+    &__terroir,
+    &__verde {
+        .section-title {
+            h2 {
+                font-size: 26px;
+
+                @include mq(sm){
+                    font-size: 36px;
+                }
+            }
+        }
+        .concepto__break__subtitle {
+            margin-bottom: 80px;
+            font-size: 18px;
+        }
+        &__stats {
+            @include padd(bottom);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            &__item {
+                flex-basis:100%;
+
+                @include mq(sm){
+                    flex-basis:30%;
+                }
+
+                &__value {
+                    font-family: $titleFont;
+                    display: block;
+                    font-size: 64px;
+                    font-weight: bold;
+                    color: $midGray;
+
+                    @include mq(md) {
+                        font-size: 90px;
+                    }
+                }
+
+                &__text {
+                    font-family: $altFont;
+                    display: block;
+                    font-size: 12px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        &__texto {
+            text-align: left;
+            color: $midGray;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        &__list {
+            list-style:circle;
+            text-align: left;
+            font-size: 14px;
+
+            @include mq(md){
+                width: 80%;
+                margin: auto;
+            }
+
+            li {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &__tiles {
+        &__img {
+            @include img(75%);
+        }
+    }
+
+    &__parallax {
+        height: 80vh;
+        &--one {
+            @include parallax('/images/vina-vik/concepto7.jpg');
+        }
+        &--two {
+            @include parallax('/images/vina-vik/concepto8.jpg');
+        }
+        &--three {
+            @include parallax('/images/vina-vik/concepto9.jpg');
+        }
+    }
+}
+
+.bodega {
+    &__hero {
+        @include padd;
+        @include parallax('/images/vina-vik/bodega1.jpg');
+
+        height: 100vh;
+
+        &__data {
+            @include padd(top);
+
+            text-align: center;
+
+            &__text {
+                @include mq(md){
+                    font-size: 21px;
+                }
+            }
+        }
+    }
+
+    .section-title {
+        h2 {
+            font-size: 26px;
+
+            @include mq(sm){
+                font-size: 36px;
+            }
+        }
+    }
+
+    &__break {
+        @include padd;
+        text-align: center;
+
+        &__subtitle {
+            color: $midGray;
+            line-height: 1.8;
+        }
+    }
+
+    &__parallax {
+        height: 80vh;
+        &--one {
+            @include parallax('/images/vina-vik/bodega2.jpg');
+        }
+        &--two {
+            @include parallax('/images/vina-vik/bodega3.jpg');
+        }
+        &--three {
+            @include parallax('/images/vina-vik/bodega4.jpg');
+        }
+        &--four {
+            @include parallax('/images/vina-vik/bodega5.jpg');
+        }
+        &--five {
+            @include parallax('/images/vina-vik/bodega6.jpg');
+        }
+    }
+
+    &__reserva {
+        &__subtitle {
+            text-align: center;
+            font-family: $titleFont;
+            font-size: 24px;
+        }
+    }
+}
+
+.pavillion {
+    &__hero {
+        @include padd;
+        @include parallax('/images/vina-vik/bodega1.jpg');
+
+        height: 100vh;
+
+        &__data {
+            @include padd(top);
+
+            text-align: center;
+
+            &__text {
+                @include mq(md){
+                    font-size: 21px;
+                }
+            }
+        }
+    }
+
+    .section-title {
+        h2 {
+            font-size: 26px;
+
+            @include mq(sm){
+                font-size: 36px;
+            }
+        }
+    }
+
+    &__break {
+        @include padd;
+        text-align: center;
+
+        &__subtitle {
+            color: $midGray;
+            line-height: 1.8;
+        }
+    }
+
+    &__video {
+        @include img(40%);
+    }
+
+    &__parallax {
+        height: 80vh;
+        &--one {
+            @include parallax('/images/vina-vik/pavillion2.jpg');
+        }
+        &--two {
+            @include parallax('/images/vina-vik/pavillion4.jpg');
+        }
+    }
+
+    &__static {
+        @include img(70%);
+    }
+
+    &__reserva {
+        &__subtitle {
+            text-align: center;
+            font-family: $titleFont;
+            font-size: 24px;
+        }
+    }
+}

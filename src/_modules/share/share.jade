@@ -1,6 +1,7 @@
-mixin share(spec)
-  - spec = spec || {}
-  - spec.__class = spec.__class || ''
-
-  div(class="")
-    p This is an example paragraph for the share module
+mixin share()
+    ul.share
+        each red in site.data.share
+           li
+               a(href=red.url, target="_blank")
+                   i(class="fa fa-#{red.name}")
+        

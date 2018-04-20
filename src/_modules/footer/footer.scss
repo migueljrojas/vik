@@ -1,3 +1,69 @@
 .footer {
-    
+    background: $darkestGray;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: $altFont;
+
+    &__social {
+        display: flex;
+        justify-content: center;
+
+        li {
+            margin: 0 10px;
+        }
+
+        i {
+            font-size: 21px;
+            color: $lightGray;
+        }
+    }
+
+    &__section {
+        padding: 40px 0;
+        text-align: center;
+        flex-basis: 100%;
+        color:  $lightGray;;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        @include mq(sm){
+            flex-basis: 32%;
+        }
+
+        &--top {
+            border-bottom:1px solid $darkestGray + #111;
+            order: 1;
+
+            @include mq(sm){
+                flex-basis: 36%;
+                border-left:1px solid $darkestGray + #111;
+                border-right:1px solid $darkestGray + #111;
+                border-bottom:none;
+                order:2;
+            }
+
+            P:first-child {
+                font-family: $titleFont;
+                font-size: 1.2em;
+            }
+        }
+
+        &--middle {
+            order: 2;
+
+            @include mq(sm){
+                order:1;
+            }
+        }
+
+        &--bottom {
+            order:3;
+
+            strong {
+                margin-right: 20px;
+                font-family: $titleFont;
+            }
+        }
+    }
 }

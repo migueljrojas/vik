@@ -12,13 +12,15 @@ block config
 block content
     main.yourbottle
         section.yourbottle__hero
-            .container-fluid
-                .col-xs-24
-                    +section-title(site.data.vinos.yourvikbottle.titulo, 'h1', 'x')
+            .container
+                .row
+                    .col-xs-24.col-sm-16.col-sm-offset-4
+                        .yourbottle__hero__data
+                            +section-title(site.data.vinos.yourvikbottle.titulo, 'h1', 'x')
         section.yourbottle__content
             .container
                 .row
-                    .col-xs-24
+                    .col-xs-24.col-sm-16.col-sm-offset-4.col-md-12.col-md-offset-6
                         p.yourbottle__content__text=site.data.vinos.yourvikbottle.texto
                         form.yourbottle__content__form.vikform
                             input.vikform__input(type="text", placeholder="Nº")
@@ -29,4 +31,4 @@ block content
                                 option 2015
                             button.vikform__submit(type="submit") Buscar
         
-        +top-footer('historia', 'bodega')
+        +top-footer(['historia', 'bodega'])

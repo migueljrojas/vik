@@ -36,6 +36,18 @@ body
         script(src= baseUrl + 'scripts/main.js')
         
         script(src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js")
+        script(src="/scripts/jquery.requestAnimationFrame.js")
+        script(src="/scripts/jquery.mousewheel.js")
+        script(src="/scripts/ilightbox.packed.js")
+        
         script new WOW().init();
+        script
+            $('#home-concepto').iLightBox();
+            $('#home-pavillion').iLightBox();
+            $('#home-map').iLightBox();
+            $('#vina-video').iLightBox();
+            $('#concepto-video').iLightBox();
+            $('#video-pavillion').iLightBox();
+            
 
 </html>

@@ -18,27 +18,27 @@
         {
             "titulo":"catas de vinos",
             "texto":"Disfrute de una cata de vinos en nuestra excepcional sala de cata, donde uno de nuestros expertos VIK lo guiará para poder descubrir el alma de nuestros vinos.",
-            "imagen":"*"
+            "imagen":"/images/reserva/reserva2.jpg"
         },
         {
             "titulo":"visitas guiadas",
             "texto":"Por nuestro viñedo y nuestras instalaciones: Descubra el misterio que encierra cada una de nuestras botellas desde la perspectiva de un vinicultor y conozca el arte de elaborar un gran vino.",
-            "imagen":"*"
+            "imagen":"/images/reserva/reserva3.jpg"
         },
         {
             "titulo":"cabalgatas",
             "texto":"Cabalgue por nuestro viñedo VIK en compañía de un guía experto para descubrir los 11000 acres (4400 hectáreas) de hermosa naturaleza y vides.",
-            "imagen":"*"
+            "imagen":"/images/reserva/reserva4.jpg"
         },
         {
             "titulo":"trekking",
             "texto":"Viña VIK posee numerosos senderos de trekking para disfrutar un lugar único, con una fascinante diversidad geográfica y de flora y fauna.",
-            "imagen":"*"
+            "imagen":"/images/reserva/reserva5.jpg"
         },
         {
             "titulo":"mountain bike",
             "texto":"Otra forma distinta de conocer la hacienda desde diferentes ángulos en nuestras mountain bikes. Usted podrá realizar un recorrido por todo el viñedo desde las cimas de los cerros por un camino especialmente diseñado o a través de los diferentes caminos del viñedo.",
-            "imagen":"*"
+            "imagen":"/images/reserva/reserva6.jpg"
         },
         {
             "titulo":"gastronomía",
@@ -53,17 +53,17 @@
                     "url":"#"
                 }
             ],
-            "imagen":"*"
+            "imagen":"/images/reserva/reserva7.jpg"
         },
         {
             "titulo":"vinotherapia spa",
             "texto":"Nuestro spa de vino holístico le invita a disfrutar de una experiencia única, de bienestar diseñada para renovar su energía física y mental con terapias especiales que son una perfecta combinación de aromas, textura y somidos, y ofrecen una variedad excepcional de sensaciones. ",
-            "imagen":"*"
+            "imagen":"/images/reserva/reserva8.jpg"
         },
         {
             "titulo":"piscina",
             "texto":"Nada unas brazadas en la piscina infinita de mármol con vista al viñedo VIK.",
-            "imagen":""
+            "imagen":"/images/reserva/reserva9.jpg"
         },
         {
             "titulo":"alojamiento",
@@ -74,12 +74,12 @@
                     "url":"#"
                 }
             ],
-            "imagen":"*"
+            "imagen":"/images/reserva/reserva10.jpg"
         },
         {
             "titulo":"visite viñedoscercanos",
             "texto":"Visite los viñedos cercanos en Apalta, Cachapoal y Valle de Colchagua; tales como Neyen, Montes, Lapostolle y Clos de Apalta. Además en el Valle de Colchagua encontrará variados viñedos que podrá visitar como también la ciudad de Santa Cruz.",
-            "imagen":"*"
+            "imagen":"/images/reserva/reserva11.jpg"
         }
     ],
     "seccion2":{

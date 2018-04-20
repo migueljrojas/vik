@@ -98,6 +98,34 @@
   animation-fill-mode: forwards;
 }
 
+@media (min-width: 768px) {
+  .flexrow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+}
+
+@media (min-width: 768px) {
+  .flexcol {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -15163,14 +15191,35 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   display: block;
 }
 
+.header {
+  -webkit-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  z-index: 1000;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+@media (min-width: 992px) {
+  .header {
+    background: transparent;
+    height: 120px;
+    border-bottom: 1px solid rgba(150, 150, 150, 0.3);
+  }
+}
+
 .header__hamburguer {
   cursor: pointer;
   width: 25px;
   height: 25px;
   margin: auto;
   position: absolute;
-  right: 32px;
-  top: 30px;
+  right: 20px;
+  top: 20px;
 }
 
 .header__hamburguer span {
@@ -15204,6 +15253,203 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
           animation-direction: reverse;
 }
 
+@media (min-width: 992px) {
+  .header__hamburguer {
+    display: none;
+  }
+}
+
+.header__container {
+  position: relative;
+}
+
+.header__logo {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+@media (min-width: 992px) {
+  .header__logo {
+    top: 20px;
+    left: 0;
+  }
+}
+
+.header__logo img {
+  width: 40px;
+}
+
+@media (min-width: 992px) {
+  .header__logo img {
+    width: 70px;
+  }
+}
+
+.header__nav {
+  -webkit-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 60px;
+  left: 0;
+  -webkit-transform: translateX(-110%);
+          transform: translateX(-110%);
+  background: rgba(107, 0, 0, 0.7);
+  position: fixed;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .header__nav {
+    position: relative;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    background: transparent;
+    top: 40px;
+  }
+}
+
+.header__menu {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .header__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.header__menu li {
+  position: relative;
+  border-bottom: 1px solid #fff;
+}
+
+@media (min-width: 992px) {
+  .header__menu li {
+    border-bottom: none;
+  }
+}
+
+.header__menu li:hover > a + .header__submenu {
+  max-height: 50vh;
+}
+
+@media (min-width: 992px) {
+  .header__menu li:hover > a + .header__submenu {
+    opacity: 1;
+    -webkit-transform: translateY(20px) translateX(-50%);
+            transform: translateY(20px) translateX(-50%);
+    pointer-events: all;
+  }
+}
+
+.header__menu li.-active > a {
+  color: #af1f24;
+}
+
+.header__menu a {
+  color: #262626;
+  display: block;
+  padding: 0 10px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+}
+
+@media (min-width: 992px) {
+  .header__menu a {
+    font-size: 14px;
+    height: auto;
+    line-height: 1;
+  }
+}
+
+.header__menu a:hover {
+  color: #af1f24;
+}
+
+.header__submenu {
+  -webkit-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  border-top: 1px solid #fff;
+  max-height: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+@media (min-width: 992px) {
+  .header__submenu {
+    border-top: none;
+    position: absolute;
+    top: 0;
+    width: 250px;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transform: translateY(20px) translateX(-50%);
+            transform: translateY(20px) translateX(-50%);
+    left: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .header__submenu a {
+    margin-bottom: 10px;
+  }
+}
+
+.header__tienda {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 45px;
+  right: 0;
+  font-size: 14px;
+}
+
+@media (min-width: 992px) {
+  .header__tienda {
+    top: 36px;
+  }
+}
+
+.header__tienda a {
+  color: #262626;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.header__tienda__cart {
+  padding-left: 15px;
+}
+
+.header__tienda__cart span {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.header__tienda__cart img {
+  margin-left: 10px;
+}
+
 .header.-open .header__hamburguer span:nth-child(1) {
   -webkit-animation: inT 0.6s cubic-bezier(0.785, 0.135, 0.15, 0.86) forwards;
           animation: inT 0.6s cubic-bezier(0.785, 0.135, 0.15, 0.86) forwards;
@@ -15217,6 +15463,21 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .header.-open .header__hamburguer span:nth-child(3) {
   -webkit-animation: inBtm 0.6s cubic-bezier(0.785, 0.135, 0.15, 0.86) forwards;
           animation: inBtm 0.6s cubic-bezier(0.785, 0.135, 0.15, 0.86) forwards;
+}
+
+.header.-open .header__nav {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.-home .header a {
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+  .-home .header {
+    border-bottom: none;
+  }
 }
 
 @-webkit-keyframes inM {
@@ -15381,6 +15642,389 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     -webkit-transform: translateY(-9px) rotate(135deg);
             transform: translateY(-9px) rotate(135deg);
   }
+}
+
+.footer {
+  background: #262626;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__social li {
+  margin: 0 10px;
+}
+
+.footer__social i {
+  font-size: 21px;
+  color: #ebebeb;
+}
+
+.footer__section {
+  padding: 40px 0;
+  text-align: center;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  color: #ebebeb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .footer__section {
+    -ms-flex-preferred-size: 32%;
+        flex-basis: 32%;
+  }
+}
+
+.footer__section--top {
+  border-bottom: 1px solid #373737;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+@media (min-width: 768px) {
+  .footer__section--top {
+    -ms-flex-preferred-size: 36%;
+        flex-basis: 36%;
+    border-left: 1px solid #373737;
+    border-right: 1px solid #373737;
+    border-bottom: none;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+.footer__section--top P:first-child {
+  font-family: "Trajan Pro", serif;
+  font-size: 1.2em;
+}
+
+.footer__section--middle {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+@media (min-width: 768px) {
+  .footer__section--middle {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+.footer__section--bottom {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+.footer__section--bottom strong {
+  margin-right: 20px;
+  font-family: "Trajan Pro", serif;
+}
+
+.press-article {
+  -ms-flex-preferred-size: 90%;
+      flex-basis: 90%;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .press-article {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+  }
+}
+
+@media (min-width: 992px) {
+  .press-article {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .press-article {
+    -ms-flex-preferred-size: 22%;
+        flex-basis: 22%;
+  }
+}
+
+@media (min-width: 768px) {
+  .press-article--connect {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+  }
+}
+
+@media (min-width: 992px) {
+  .press-article--connect {
+    -ms-flex-preferred-size: 33%;
+        flex-basis: 33%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .press-article--connect {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
+}
+
+.press-article--connect .press-article__data__title {
+  font-size: 18px;
+}
+
+.press-article--connect .press-article__data__text {
+  font-size: 18px;
+}
+
+.press-article--connect .press-article__img {
+  width: 100%;
+  height: 0;
+  padding-bottom: 60%;
+  overflow: hidden;
+  position: relative;
+}
+
+.press-article--connect .press-article__img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: none;
+  height: auto;
+}
+
+.press-article__data__title {
+  font-size: 16px;
+  padding: 15px 0;
+}
+
+.press-article__foot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 0;
+  border-top: 1px solid #ebebeb;
+}
+
+.press-article__foot__share {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.press-article__foot__share li {
+  margin-right: 5px;
+}
+
+.press-article__foot__share li a {
+  color: #999;
+}
+
+.press-article__img img {
+  max-width: 200px;
+  height: 240px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section-title__text {
+  margin: 0;
+  padding: 0 0 10px;
+  font-family: "Trajan Pro", serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.section-title__alt {
+  color: #af1f24;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  display: block;
+  padding-top: 20px;
+}
+
+.section-title h1 {
+  font-size: 36px;
+}
+
+@media (min-width: 768px) {
+  .section-title h1 {
+    font-size: 48px;
+  }
+}
+
+.section-title h2 {
+  font-size: 32px;
+}
+
+@media (min-width: 768px) {
+  .section-title h2 {
+    font-size: 44px;
+  }
+}
+
+.section-title h3 {
+  font-size: 28px;
+}
+
+@media (min-width: 768px) {
+  .section-title h3 {
+    font-size: 40px;
+  }
+}
+
+.section-title--alt .section-title__text {
+  padding-top: 10px;
+}
+
+.share {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 40px auto;
+}
+
+.share li {
+  position: relative;
+  margin: 0 7px;
+}
+
+.share li:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border: 1px solid #ebebeb;
+}
+
+.share a {
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #999;
+}
+
+.top-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.top-footer__block {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  height: 0;
+  padding-bottom: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .top-footer__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .top-footer__block {
+    padding-bottom: 25%;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+
+.top-footer__block__text {
+  font-size: 32px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-family: "Trajan Pro", serif;
+}
+
+@media (min-width: 768px) {
+  .top-footer__block__text {
+    font-size: 48px;
+  }
+}
+
+.top-footer__block--historia {
+  background: url("/images/footer/footer-historia.jpg") no-repeat center center/cover;
+}
+
+.top-footer__block--bodega {
+  background: url("/images/footer/footer-bodega.jpg") no-repeat center center/cover;
+}
+
+.top-footer__block--vinos {
+  background: url("/images/footer/footer-nuestrosvinos.jpg") no-repeat center center/cover;
 }
 
 .-hide {
@@ -15619,6 +16263,10 @@ button._button {
   font-size: 36px;
 }
 
+.home__slider.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
 .home__slider .slick-dots {
   bottom: -50px;
 }
@@ -15633,12 +16281,12 @@ button._button {
 }
 
 .home__slide {
-  height: 80vh;
+  height: 90vh;
   overflow: hidden;
 }
 
 .home__slide__video {
-  padding-bottom: 50%;
+  padding-bottom: 60%;
 }
 
 .home__slide__video iframe {
@@ -15685,6 +16333,7 @@ button._button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 20px 0;
 }
 
 .home__vinos__list__item {
@@ -15741,6 +16390,10 @@ button._button {
   background: #3f3f3f;
 }
 
+.home__vinos__list__item__actions ._button:first-child:hover {
+  background: #727272;
+}
+
 .home__vinos__list__item:hover .home__vinos__list__item__actions {
   opacity: 1;
   pointer-events: all;
@@ -15751,6 +16404,2567 @@ button._button {
 .home__vinos__list__item:hover .home__vinos__list__item__data {
   -webkit-transform: translateY(-30px);
           transform: translateY(-30px);
+}
+
+.home__historia {
+  padding: 16% 0;
+}
+
+@media (min-width: 768px) {
+  .home__historia {
+    padding: 12% 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .home__historia {
+    padding: 8% 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .home__historia .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+}
+
+.home__historia__img {
+  position: relative;
+  padding-bottom: 56.5%;
+  overflow: hidden;
+  height: 0;
+  width: 100%;
+}
+
+.home__historia__img img {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.home__historia__data {
+  text-align: center;
+  max-width: 400px;
+  margin: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.home__historia__data__text {
+  margin-bottom: 20px;
+}
+
+.home__bodega {
+  padding: 16% 0;
+}
+
+@media (min-width: 768px) {
+  .home__bodega {
+    padding: 12% 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .home__bodega {
+    padding: 8% 0;
+  }
+}
+
+.home__bodega__img {
+  background: url("/images/home/bodega.jpg") no-repeat center center/cover;
+  height: 80vh;
+}
+
+@media (min-width: 768px) {
+  .home__bodega__img {
+    background: url("/images/home/bodega.jpg") no-repeat center center fixed/100%;
+  }
+}
+
+.home__bodega__data {
+  text-align: center;
+}
+
+.home__bodega__data__text {
+  margin-bottom: 40px;
+}
+
+.home__concepto {
+  padding: 0 0 16%;
+}
+
+@media (min-width: 768px) {
+  .home__concepto {
+    padding: 0 0 12%;
+  }
+}
+
+@media (min-width: 992px) {
+  .home__concepto {
+    padding: 0 0 8%;
+  }
+}
+
+.home__concepto__video {
+  position: relative;
+  padding-bottom: 56.5%;
+  overflow: hidden;
+  height: 0;
+  width: 100%;
+}
+
+.home__concepto__video img {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.home__concepto__data {
+  text-align: center;
+  max-width: 400px;
+  margin: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.home__concepto__data__text {
+  margin-bottom: 20px;
+}
+
+.home__pavillion__video {
+  position: relative;
+  padding-bottom: 56.5%;
+  overflow: hidden;
+  height: 0;
+  width: 100%;
+}
+
+.home__pavillion__video img {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.home__pavillion .flexcol {
+  background: #f4f7f8;
+}
+
+.home__pavillion__data {
+  text-align: center;
+  max-width: 400px;
+  margin: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.home__pavillion__data__text {
+  margin-bottom: 20px;
+}
+
+.home__retreat__image {
+  position: relative;
+  padding-bottom: 56.5%;
+  overflow: hidden;
+  height: 0;
+  width: 100%;
+}
+
+.home__retreat__image img {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.home__retreat .flexcol {
+  background: #f4f7f8;
+}
+
+.home__retreat__data {
+  text-align: center;
+  max-width: 400px;
+  margin: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.home__retreat__data__text {
+  margin-bottom: 20px;
+}
+
+.home__map__img {
+  position: relative;
+  padding-bottom: 56.5%;
+  overflow: hidden;
+  height: 0;
+  width: 100%;
+}
+
+.home__map__img img {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+}
+
+@media (min-width: 768px) {
+  .home__map__img {
+    position: relative;
+    padding-bottom: 25%;
+    overflow: hidden;
+    height: 0;
+    width: 100%;
+  }
+  .home__map__img img {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+
+.contacto__hero {
+  padding: 16% 0;
+  background: url("/images/contacto/contacto1.jpg") no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .contacto__hero {
+    padding: 12% 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .contacto__hero {
+    padding: 8% 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .contacto__hero {
+    background: url("/images/contacto/contacto1.jpg") no-repeat center center fixed/100%;
+  }
+}
+
+.contacto__hero__data {
+  padding: 16% 0;
+  padding-top: 15% !important;
+}
+
+@media (min-width: 768px) {
+  .contacto__hero__data {
+    padding: 12% 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .contacto__hero__data {
+    padding: 8% 0;
+  }
+}
+
+.contacto__body {
+  padding: 16% 0;
+}
+
+@media (min-width: 768px) {
+  .contacto__body {
+    padding: 12% 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .contacto__body {
+    padding: 8% 0;
+  }
+}
+
+.contacto__body .section-title h2 {
+  font-size: 26px;
+}
+
+@media (min-width: 768px) {
+  .contacto__body .section-title h2 {
+    font-size: 36px;
+  }
+}
+
+.contacto__feature {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.contacto__feature__icon {
+  padding-bottom: 20px;
+}
+
+.contacto__feature__title {
+  font-size: 21px;
+  margin: 0;
+}
+
+.contacto__feature__text {
+  margin: 0;
+  padding: 20px 0;
+  color: #999;
+}
+
+.contacto__map__img {
+  position: relative;
+  padding-bottom: 56.5%;
+  overflow: hidden;
+  height: 0;
+  width: 100%;
+}
+
+.contacto__map__img img {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+}
+
+@media (min-width: 768px) {
+  .contacto__map__img {
+    position: relative;
+    padding-bottom: 25%;
+    overflow: hidden;
+    height: 0;
+    width: 100%;
+  }
+  .contacto__map__img img {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+
+.contacto__address {
+  padding: 16% 0;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .contacto__address {
+    padding: 12% 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .contacto__address {
+    padding: 8% 0;
+  }
+}
+
+.contacto__address__title {
+  margin-bottom: 20px;
+}
+
+.contacto__address__text {
+  color: #999;
+}
+
+.galeria {
+  padding: 16% 0 0;
+}
+
+@media (min-width: 768px) {
+  .galeria {
+    padding: 12% 0 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .galeria {
+    padding: 8% 0 0;
+  }
+}
+
+.galeria__hero {
+  padding: 16% 0;
+}
+
+@media (min-width: 768px) {
+  .galeria__hero {
+    padding: 12% 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .galeria__hero {
+    padding: 8% 0;
+  }
+}
+
+.galeria .section-title h2 {
+  font-size: 24px;
+}
+
+@media (min-width: 768px) {
+  .galeria .section-title h2 {
+    font-size: 32px;
+  }
+}
+
+.galeria__videos__slider {
+  margin-top: 40px;
+}
+
+.galeria__images__slider {
+  margin-top: 40px;
+  margin-bottom: -5px !important;
+}
+
+.galeria__images__slide__img {
+  position: relative;
+  padding-bottom: 60%;
+  overflow: hidden;
+  height: 0;
+  width: 100%;
+}
+
+.galeria__images__slide__img img {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.news {
+  padding: 16% 0 0;
+}
+
+@media (min-width: 768px) {
+  .news {
+    padding: 12% 0 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .news {
+    padding: 8% 0 0;
+  }
+}
+
+.news__hero {
+  padding: 16% 0 0;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .news__hero {
+    padding: 12% 0 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .news__hero {
+    padding: 8% 0 0;
+  }
+}
+
+.news__hero__tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #999;
+}
+
+.news__hero__tabs li {
+  margin: 0 7px;
+}
+
+.news__page {
+  padding: 0 0 16%;
+}
+
+@media (min-width: 768px) {
+  .news__page {
+    padding: 0 0 12%;
+  }
+}
+
+@media (min-width: 992px) {
+  .news__page {
+    padding: 0 0 8%;
+  }
+}
+
+.news__page:not(:first-of-type) {
+  display: none;
+}
+
+.news__page__nav {
+  background: none;
+  border: none;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.news__page__year {
+  padding: 0 15px;
+  font-size: 36px;
+  margin-top: -10px;
+}
+
+.news__page__heading {
+  padding-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.news__page__articles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.news__contact {
+  padding: 16% 0;
+  background: #f4f7f8;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .news__contact {
+    padding: 12% 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .news__contact {
+    padding: 8% 0;
+  }
+}
+
+.news__contact__item {
+  margin-bottom: 15px;
+}
+
+.news__contact__item strong,
+.news__contact__item span {
+  display: block;
+}
+
+.news__contact__item--inline strong {
+  display: block;
+}
+
+.news__contact ._button {
+  width: 200px;
+}
+
+@media (min-width: 992px) {
+  .news--connect .news__hero ._button {
+    float: right;
+    margin-top: -80px;
+  }
+}
+
+.news--connect .news__hero ._button.-ghost {
+  background: none;
+  border: 1px solid #787871;
+  color: #787871;
+}
+
+.news--connect .news__pages {
+  padding: 0 0 16%;
+}
+
+@media (min-width: 768px) {
+  .news--connect .news__pages {
+    padding: 0 0 12%;
+  }
+}
+
+@media (min-width: 992px) {
+  .news--connect .news__pages {
+    padding: 0 0 8%;
+  }
+}
+
+.news--connect .news__contact {
+  background: none;
+}
+
+.news--connect .news__contact .section-title h2 {
+  font-size: 24px;
+}
+
+.reserva__hero {
+  padding: 16% 0;
+  background: url("/images/reserva/reserva1.jpg") no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .reserva__hero {
+    padding: 12% 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .reserva__hero {
+    padding: 8% 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .reserva__hero {
+    background: url("/images/reserva/reserva1.jpg") no-repeat center center fixed/100%;
+  }
+}
+
+.reserva__hero__data {
+  padding: 16% 0;
+  padding-top: 15% !important;
+}
+
+@media (min-width: 768px) {
+  .reserva__hero__data {
+    padding: 12% 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .reserva__hero__data {
+    padding: 8% 0;
+  }
+}
+
+.reserva__enoturismo {
+  padding: 16% 0;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .reserva__enoturismo {
+    padding: 12% 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .reserva__enoturismo {
+    padding: 8% 0;
+  }
+}
+
+.reserva__enoturismo__text {
+  margin-bottom: 30px;
+  color: #999;
+}
+
+.reserva .section-title {
+  margin-bottom: 40px;
+}
+
+.reserva .section-title h2 {
+  font-size: 24px;
+}
+
+@media (min-width: 768px) {
+  .reserva .section-title h2 {
+    font-size: 32px;
+  }
+}
+
+.reserva__actividades {
+  padding: 16% 0 0;
+  background: url("/images/home/fondo-blanco.jpg") no-repeat top center/100%;
+}
+
+@media (min-width: 768px) {
+  .reserva__actividades {
+    padding: 12% 0 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .reserva__actividades {
+    padding: 8% 0 0;
+  }
+}
+
+.reserva__actividad .flexcol {
+  background: #fff;
+}
+
+.reserva__actividad__img {
+  position: relative;
+  padding-bottom: 70%;
+  overflow: hidden;
+  height: 0;
+  width: 100%;
+}
+
+.reserva__actividad__img img {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.reserva__actividad__data {
+  text-align: center;
+  max-width: 400px;
+  margin: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.reserva__actividad__data__text {
+  margin-bottom: 20px;
+}
+
+.reserva__actividad .section-title h3 {
+  font-size: 21px;
+}
+
+@media (min-width: 768px) {
+  .reserva__actividad .section-title h3 {
+    font-size: 24px;
+  }
+}
+
+.reserva__info {
+  padding: 16% 0;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .reserva__info {
+    padding: 12% 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .reserva__info {
+    padding: 8% 0;
+  }
+}
+
+.retreat__hero {
+  padding: 16% 0;
+  background: url("/images/retreat/imagen1.jpg") no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .retreat__hero {
+    padding: 12% 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .retreat__hero {
+    padding: 8% 0;
+  }
+}
+
+.retreat__hero__data {
+  padding: 16% 0;
+  padding-top: 20% !important;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .retreat__hero__data {
+    padding: 12% 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .retreat__hero__data {
+    padding: 8% 0;
+  }
+}
+
+.retreat__hero__data__text {
+  margin-bottom: 40px;
+}
+
+@media (min-width: 992px) {
+  .retreat__hero__data__text {
+    font-size: 21px;
+  }
+}
+
+.tienda {
+  padding: 16% 0 0;
+}
+
+@media (min-width: 768px) {
+  .tienda {
+    padding: 12% 0 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .tienda {
+    padding: 8% 0 0;
+  }
+}
+
+.tienda__hero {
+  padding: 16% 0;
+}
+
+@media (min-width: 768px) {
+  .tienda__hero {
+    padding: 12% 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .tienda__hero {
+    padding: 8% 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .tienda__hero__heading ._button {
+    float: right;
+    margin-top: -80px;
+  }
+}
+
+.tienda__hero__heading ._button.-ghost {
+  background: none;
+  border: 1px solid #787871;
+  color: #787871;
+}
+
+.tienda__hero__slider .slick-dots {
+  bottom: -20px;
+}
+
+.tienda__hero__slider .slick-dots li button:before {
+  color: #555555;
+}
+
+.tienda__hero__slider .slick-dots li.active button:before {
+  -webkit-transform: scale3d(1.1, 1.1, 1.1);
+          transform: scale3d(1.1, 1.1, 1.1);
+}
+
+.tienda__hero__slide {
+  position: relative;
+}
+
+.tienda__hero__slide__img {
+  position: relative;
+  padding-bottom: 24%;
+  overflow: hidden;
+  height: 0;
+  width: 100%;
+}
+
+.tienda__hero__slide__img img {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.tienda__hero__slide__data {
+  text-align: center;
+  width: 300px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+@media (min-width: 768px) {
+  .tienda__hero__slide__data {
+    position: absolute;
+    right: 10%;
+    z-index: 2;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
+
+.tienda__hero__slide__data ._button {
+  width: 220px;
+}
+
+.tienda__producto {
+  width: 300px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.tienda__producto__img {
+  position: relative;
+  padding-bottom: 120%;
+  overflow: hidden;
+  height: 0;
+  width: 100%;
+}
+
+.tienda__producto__img img {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.tienda__producto__img img {
+  height: 100%;
+  width: auto;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.tienda__producto__data {
+  height: 260px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tienda__producto ._button {
+  height: 30px;
+  line-height: 30px;
+}
+
+.tienda__connect {
+  padding: 16% 0;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .tienda__connect {
+    padding: 12% 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .tienda__connect {
+    padding: 8% 0;
+  }
+}
+
+.tienda__connect .section-title h3 {
+  font-size: 21px;
+}
+
+@media (min-width: 768px) {
+  .tienda__connect .section-title h3 {
+    font-size: 28px;
+  }
+}
+
+.tienda__connect__texto {
+  margin-bottom: 40px;
+}
+
+.tienda__connect ._button {
+  width: 220px;
+}
+
+.vina__hero {
+  padding: 16% 0;
+  background: url("/images/vina-vik/vina1.jpg") no-repeat center center/cover;
+  height: 100vh;
+}
+
+@media (min-width: 768px) {
+  .vina__hero {
+    padding: 12% 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .vina__hero {
+    padding: 8% 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .vina__hero {
+    background: url("/images/vina-vik/vina1.jpg") no-repeat center center fixed/100%;
+  }
+}
+
+.vina__hero__data {
+  padding: 16% 0 0;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .vina__hero__data {
+    padding: 12% 0 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .vina__hero__data {
+    padding: 8% 0 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .vina__hero__data__text {
+    font-size: 21px;
+  }
+}
+
+.vina__interstitial {
+  padding: 16% 0;
+  background: #fff;
+}
+
+@media (min-width: 768px) {
+  .vina__interstitial {
+    padding: 12% 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .vina__interstitial {
+    padding: 8% 0;
+  }
+}
+
+.vina__interstitial__quote {
+  text-align: center;
+  font-size: 24px;
+}
+
+@media (min-width: 992px) {
+  .vina__interstitial__quote {
+    font-size: 32px;
+  }
+}
+
+.vina__parallax__2 {
+  background: url("/images/vina-vik/vina3.jpg") no-repeat center center/cover;
+  height: 80vh;
+}
+
+@media (min-width: 768px) {
+  .vina__parallax__2 {
+    background: url("/images/vina-vik/vina3.jpg") no-repeat center center fixed/100%;
+  }
+}
+
+.vina__parallax__4 {
+  background: url("/images/vina-vik/vina5.jpg") no-repeat center center/cover;
+  height: 80vh;
+}
+
+@media (min-width: 768px) {
+  .vina__parallax__4 {
+    background: url("/images/vina-vik/vina5.jpg") no-repeat center center fixed/100%;
+  }
+}
+
+.vina__reserva {
+  padding: 16% 0;
+  text-align: center;
+  font-family: "Trajan Pro", serif;
+  font-size: 24px;
+}
+
+@media (min-width: 768px) {
+  .vina__reserva {
+    padding: 12% 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .vina__reserva {
+    padding: 8% 0;
+  }
+}
+
+.historia {
+  padding: 16% 0 0;
+}
+
+@media (min-width: 768px) {
+  .historia {
+    padding: 12% 0 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .historia {
+    padding: 8% 0 0;
+  }
+}
+
+.historia__hero {
+  padding: 16% 0;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .historia__hero {
+    padding: 12% 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .historia__hero {
+    padding: 8% 0;
+  }
+}
+
+.historia__hero__subtitle {
+  font-size: 24px;
+  color: #999;
+}
+
+.historia__hero__parallax {
+  position: relative;
+  padding-bottom: 40%;
+  overflow: hidden;
+  height: 0;
+  width: 100%;
+}
+
+.historia__hero__parallax img {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.historia__crono {
+  padding: 16% 0;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .historia__crono {
+    padding: 12% 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .historia__crono {
+    padding: 8% 0;
+  }
+}
+
+.historia__crono__subtitle {
+  color: #999;
+}
+
+.historia__oro .flexcol {
+  background: #f4f7f8;
+}
+
+.historia__oro__img {
+  position: relative;
+  padding-bottom: 70%;
+  overflow: hidden;
+  height: 0;
+  width: 100%;
+}
+
+.historia__oro__img img {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.historia__oro__data {
+  text-align: center;
+  max-width: 400px;
+  margin: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.historia__oro__data__text {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #999;
+}
+
+@media (min-width: 768px) {
+  .historia__oro__data__text {
+    font-size: 21px;
+  }
+}
+
+.historia__oro__data .section-title h2 {
+  font-size: 26px;
+}
+
+@media (min-width: 768px) {
+  .historia__oro__data .section-title h2 {
+    font-size: 36px;
+  }
+}
+
+.historia__tiles__img {
+  position: relative;
+  padding-bottom: 75%;
+  overflow: hidden;
+  height: 0;
+  width: 100%;
+}
+
+.historia__tiles__img img {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.historia__team {
+  padding: 16% 0;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .historia__team {
+    padding: 12% 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .historia__team {
+    padding: 8% 0;
+  }
+}
+
+.historia__team .container-fluid {
+  padding-bottom: 5%;
+}
+
+.historia__team__parallax {
+  position: relative;
+  padding-bottom: 60%;
+  overflow: hidden;
+  height: 0;
+  width: 100%;
+}
+
+.historia__team__parallax img {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.historia__team .section-title h2 {
+  font-size: 26px;
+}
+
+@media (min-width: 768px) {
+  .historia__team .section-title h2 {
+    font-size: 36px;
+  }
+}
+
+.historia__team__members {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.historia__team__member {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  color: #999;
+  padding: 0 10px;
+}
+
+@media (min-width: 768px) {
+  .historia__team__member {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+
+.historia__team__member__img {
+  position: relative;
+  padding-bottom: 90%;
+  overflow: hidden;
+  height: 0;
+  width: 100%;
+}
+
+.historia__team__member__img img {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.historia__team__member__job {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.concepto {
+  padding: 16% 0 0;
+}
+
+@media (min-width: 768px) {
+  .concepto {
+    padding: 12% 0 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .concepto {
+    padding: 8% 0 0;
+  }
+}
+
+.concepto__hero {
+  padding: 16% 0 0;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .concepto__hero {
+    padding: 12% 0 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .concepto__hero {
+    padding: 8% 0 0;
+  }
+}
+
+.concepto__hero__subtitle {
+  font-size: 24px;
+  color: #999;
+}
+
+.concepto__hero__video {
+  position: relative;
+  padding-bottom: 40%;
+  overflow: hidden;
+  height: 0;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.concepto__hero__video img {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.concepto__break {
+  padding: 16% 0;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .concepto__break {
+    padding: 12% 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .concepto__break {
+    padding: 8% 0;
+  }
+}
+
+.concepto__break__subtitle {
+  color: #999;
+  line-height: 1.8;
+}
+
+.concepto__vitivinicultura .flexcol, .concepto__perfeccion .flexcol {
+  background: #f4f7f8;
+}
+
+.concepto__vitivinicultura__img, .concepto__perfeccion__img {
+  position: relative;
+  padding-bottom: 70%;
+  overflow: hidden;
+  height: 0;
+  width: 100%;
+}
+
+.concepto__vitivinicultura__img img, .concepto__perfeccion__img img {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.concepto__vitivinicultura__data, .concepto__perfeccion__data {
+  text-align: center;
+  max-width: 400px;
+  margin: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.concepto__vitivinicultura__data__text, .concepto__perfeccion__data__text {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #999;
+}
+
+@media (min-width: 768px) {
+  .concepto__vitivinicultura__data__text, .concepto__perfeccion__data__text {
+    font-size: 21px;
+  }
+}
+
+.concepto__vitivinicultura__data .section-title h2, .concepto__perfeccion__data .section-title h2 {
+  font-size: 26px;
+}
+
+@media (min-width: 768px) {
+  .concepto__vitivinicultura__data .section-title h2, .concepto__perfeccion__data .section-title h2 {
+    font-size: 36px;
+  }
+}
+
+.concepto__viticultura .section-title h2, .concepto__vinicultura .section-title h2, .concepto__terroir .section-title h2, .concepto__verde .section-title h2 {
+  font-size: 26px;
+}
+
+@media (min-width: 768px) {
+  .concepto__viticultura .section-title h2, .concepto__vinicultura .section-title h2, .concepto__terroir .section-title h2, .concepto__verde .section-title h2 {
+    font-size: 36px;
+  }
+}
+
+.concepto__viticultura .concepto__break__subtitle, .concepto__vinicultura .concepto__break__subtitle, .concepto__terroir .concepto__break__subtitle, .concepto__verde .concepto__break__subtitle {
+  margin-bottom: 80px;
+  font-size: 18px;
+}
+
+.concepto__viticultura__stats, .concepto__vinicultura__stats, .concepto__terroir__stats, .concepto__verde__stats {
+  padding: 0 0 16%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .concepto__viticultura__stats, .concepto__vinicultura__stats, .concepto__terroir__stats, .concepto__verde__stats {
+    padding: 0 0 12%;
+  }
+}
+
+@media (min-width: 992px) {
+  .concepto__viticultura__stats, .concepto__vinicultura__stats, .concepto__terroir__stats, .concepto__verde__stats {
+    padding: 0 0 8%;
+  }
+}
+
+.concepto__viticultura__stats__item, .concepto__vinicultura__stats__item, .concepto__terroir__stats__item, .concepto__verde__stats__item {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+@media (min-width: 768px) {
+  .concepto__viticultura__stats__item, .concepto__vinicultura__stats__item, .concepto__terroir__stats__item, .concepto__verde__stats__item {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
+}
+
+.concepto__viticultura__stats__item__value, .concepto__vinicultura__stats__item__value, .concepto__terroir__stats__item__value, .concepto__verde__stats__item__value {
+  font-family: "Trajan Pro", serif;
+  display: block;
+  font-size: 64px;
+  font-weight: bold;
+  color: #999;
+}
+
+@media (min-width: 992px) {
+  .concepto__viticultura__stats__item__value, .concepto__vinicultura__stats__item__value, .concepto__terroir__stats__item__value, .concepto__verde__stats__item__value {
+    font-size: 90px;
+  }
+}
+
+.concepto__viticultura__stats__item__text, .concepto__vinicultura__stats__item__text, .concepto__terroir__stats__item__text, .concepto__verde__stats__item__text {
+  font-family: "Montserrat", sans-serif;
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.concepto__viticultura__texto, .concepto__vinicultura__texto, .concepto__terroir__texto, .concepto__verde__texto {
+  text-align: left;
+  color: #999;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.concepto__viticultura__list, .concepto__vinicultura__list, .concepto__terroir__list, .concepto__verde__list {
+  list-style: circle;
+  text-align: left;
+  font-size: 14px;
+}
+
+@media (min-width: 992px) {
+  .concepto__viticultura__list, .concepto__vinicultura__list, .concepto__terroir__list, .concepto__verde__list {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+.concepto__viticultura__list li, .concepto__vinicultura__list li, .concepto__terroir__list li, .concepto__verde__list li {
+  margin-bottom: 20px;
+}
+
+.concepto__tiles__img {
+  position: relative;
+  padding-bottom: 75%;
+  overflow: hidden;
+  height: 0;
+  width: 100%;
+}
+
+.concepto__tiles__img img {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.concepto__parallax {
+  height: 80vh;
+}
+
+.concepto__parallax--one {
+  background: url("/images/vina-vik/concepto7.jpg") no-repeat center center/cover;
+}
+
+@media (min-width: 768px) {
+  .concepto__parallax--one {
+    background: url("/images/vina-vik/concepto7.jpg") no-repeat center center fixed/100%;
+  }
+}
+
+.concepto__parallax--two {
+  background: url("/images/vina-vik/concepto8.jpg") no-repeat center center/cover;
+}
+
+@media (min-width: 768px) {
+  .concepto__parallax--two {
+    background: url("/images/vina-vik/concepto8.jpg") no-repeat center center fixed/100%;
+  }
+}
+
+.concepto__parallax--three {
+  background: url("/images/vina-vik/concepto9.jpg") no-repeat center center/cover;
+}
+
+@media (min-width: 768px) {
+  .concepto__parallax--three {
+    background: url("/images/vina-vik/concepto9.jpg") no-repeat center center fixed/100%;
+  }
+}
+
+.bodega__hero {
+  padding: 16% 0;
+  background: url("/images/vina-vik/bodega1.jpg") no-repeat center center/cover;
+  height: 100vh;
+}
+
+@media (min-width: 768px) {
+  .bodega__hero {
+    padding: 12% 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .bodega__hero {
+    padding: 8% 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .bodega__hero {
+    background: url("/images/vina-vik/bodega1.jpg") no-repeat center center fixed/100%;
+  }
+}
+
+.bodega__hero__data {
+  padding: 16% 0 0;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .bodega__hero__data {
+    padding: 12% 0 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .bodega__hero__data {
+    padding: 8% 0 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .bodega__hero__data__text {
+    font-size: 21px;
+  }
+}
+
+.bodega .section-title h2 {
+  font-size: 26px;
+}
+
+@media (min-width: 768px) {
+  .bodega .section-title h2 {
+    font-size: 36px;
+  }
+}
+
+.bodega__break {
+  padding: 16% 0;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .bodega__break {
+    padding: 12% 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .bodega__break {
+    padding: 8% 0;
+  }
+}
+
+.bodega__break__subtitle {
+  color: #999;
+  line-height: 1.8;
+}
+
+.bodega__parallax {
+  height: 80vh;
+}
+
+.bodega__parallax--one {
+  background: url("/images/vina-vik/bodega2.jpg") no-repeat center center/cover;
+}
+
+@media (min-width: 768px) {
+  .bodega__parallax--one {
+    background: url("/images/vina-vik/bodega2.jpg") no-repeat center center fixed/100%;
+  }
+}
+
+.bodega__parallax--two {
+  background: url("/images/vina-vik/bodega3.jpg") no-repeat center center/cover;
+}
+
+@media (min-width: 768px) {
+  .bodega__parallax--two {
+    background: url("/images/vina-vik/bodega3.jpg") no-repeat center center fixed/100%;
+  }
+}
+
+.bodega__parallax--three {
+  background: url("/images/vina-vik/bodega4.jpg") no-repeat center center/cover;
+}
+
+@media (min-width: 768px) {
+  .bodega__parallax--three {
+    background: url("/images/vina-vik/bodega4.jpg") no-repeat center center fixed/100%;
+  }
+}
+
+.bodega__parallax--four {
+  background: url("/images/vina-vik/bodega5.jpg") no-repeat center center/cover;
+}
+
+@media (min-width: 768px) {
+  .bodega__parallax--four {
+    background: url("/images/vina-vik/bodega5.jpg") no-repeat center center fixed/100%;
+  }
+}
+
+.bodega__parallax--five {
+  background: url("/images/vina-vik/bodega6.jpg") no-repeat center center/cover;
+}
+
+@media (min-width: 768px) {
+  .bodega__parallax--five {
+    background: url("/images/vina-vik/bodega6.jpg") no-repeat center center fixed/100%;
+  }
+}
+
+.bodega__reserva__subtitle {
+  text-align: center;
+  font-family: "Trajan Pro", serif;
+  font-size: 24px;
+}
+
+.pavillion__hero {
+  padding: 16% 0;
+  background: url("/images/vina-vik/bodega1.jpg") no-repeat center center/cover;
+  height: 100vh;
+}
+
+@media (min-width: 768px) {
+  .pavillion__hero {
+    padding: 12% 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .pavillion__hero {
+    padding: 8% 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .pavillion__hero {
+    background: url("/images/vina-vik/bodega1.jpg") no-repeat center center fixed/100%;
+  }
+}
+
+.pavillion__hero__data {
+  padding: 16% 0 0;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .pavillion__hero__data {
+    padding: 12% 0 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .pavillion__hero__data {
+    padding: 8% 0 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .pavillion__hero__data__text {
+    font-size: 21px;
+  }
+}
+
+.pavillion .section-title h2 {
+  font-size: 26px;
+}
+
+@media (min-width: 768px) {
+  .pavillion .section-title h2 {
+    font-size: 36px;
+  }
+}
+
+.pavillion__break {
+  padding: 16% 0;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .pavillion__break {
+    padding: 12% 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .pavillion__break {
+    padding: 8% 0;
+  }
+}
+
+.pavillion__break__subtitle {
+  color: #999;
+  line-height: 1.8;
+}
+
+.pavillion__video {
+  position: relative;
+  padding-bottom: 40%;
+  overflow: hidden;
+  height: 0;
+  width: 100%;
+}
+
+.pavillion__video img {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.pavillion__parallax {
+  height: 80vh;
+}
+
+.pavillion__parallax--one {
+  background: url("/images/vina-vik/pavillion2.jpg") no-repeat center center/cover;
+}
+
+@media (min-width: 768px) {
+  .pavillion__parallax--one {
+    background: url("/images/vina-vik/pavillion2.jpg") no-repeat center center fixed/100%;
+  }
+}
+
+.pavillion__parallax--two {
+  background: url("/images/vina-vik/pavillion4.jpg") no-repeat center center/cover;
+}
+
+@media (min-width: 768px) {
+  .pavillion__parallax--two {
+    background: url("/images/vina-vik/pavillion4.jpg") no-repeat center center fixed/100%;
+  }
+}
+
+.pavillion__static {
+  position: relative;
+  padding-bottom: 70%;
+  overflow: hidden;
+  height: 0;
+  width: 100%;
+}
+
+.pavillion__static img {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.pavillion__reserva__subtitle {
+  text-align: center;
+  font-family: "Trajan Pro", serif;
+  font-size: 24px;
+}
+
+.vinos {
+  padding: 16% 0;
+}
+
+@media (min-width: 768px) {
+  .vinos {
+    padding: 12% 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .vinos {
+    padding: 8% 0;
+  }
+}
+
+.vinos__hero {
+  padding: 16% 0 0;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .vinos__hero {
+    padding: 12% 0 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .vinos__hero {
+    padding: 8% 0 0;
+  }
+}
+
+.vinos__hero__text {
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: #bbbbbb;
+}
+
+.vinos__list__item {
+  padding: 16% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 768px) {
+  .vinos__list__item {
+    padding: 12% 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .vinos__list__item {
+    padding: 8% 0;
+  }
+}
+
+.vinos__list__item--1 {
+  background: url("/images/vinos/vinos1.jpg") no-repeat center center/cover;
+}
+
+@media (min-width: 768px) {
+  .vinos__list__item--1 {
+    background: url("/images/vinos/vinos1.jpg") no-repeat center center fixed/100%;
+  }
+}
+
+.vinos__list__item--2 {
+  background: url("/images/vinos/vinos3.jpg") no-repeat center center/cover;
+}
+
+@media (min-width: 768px) {
+  .vinos__list__item--2 {
+    background: url("/images/vinos/vinos3.jpg") no-repeat center center fixed/100%;
+  }
+}
+
+.vinos__list__item--3 {
+  background: url("/images/vinos/vinos5.jpg") no-repeat center center/cover;
+}
+
+@media (min-width: 768px) {
+  .vinos__list__item--3 {
+    background: url("/images/vinos/vinos5.jpg") no-repeat center center fixed/100%;
+  }
+}
+
+.vinos__list__item__actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  pointer-events: none;
+}
+
+.vinos__list__item__actions ._button {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.vinos__list__item__actions ._button:first-child {
+  margin-right: 10px;
+  background: #3f3f3f;
+}
+
+.vinos__list__item__actions ._button:first-child:hover {
+  background: #727272;
+}
+
+.vinos__list__item__bottle {
+  padding-bottom: 40px;
+}
+
+@media (min-width: 992px) {
+  .vinos__list__item__bottle {
+    padding-bottom: 80px;
+  }
+}
+
+.vinos__list__item__bottle img {
+  height: 300px;
+}
+
+@media (min-width: 768px) {
+  .vinos__list__item__bottle img {
+    height: 400px;
+  }
+}
+
+@media (min-width: 992px) {
+  .vinos__list__item__bottle img {
+    height: 500px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .vinos__list__item__bottle img {
+    height: 650px;
+  }
+}
+
+.wine {
+  padding: 16% 0;
+}
+
+@media (min-width: 768px) {
+  .wine {
+    padding: 12% 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .wine {
+    padding: 8% 0;
+  }
+}
+
+.wine__hero {
+  padding: 16% 0 0;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .wine__hero {
+    padding: 12% 0 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .wine__hero {
+    padding: 8% 0 0;
+  }
+}
+
+.wine__hero__name {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.wine__hero__text {
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: #bbbbbb;
+}
+
+@media (min-width: 992px) {
+  .wine__hero__text {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.wine__hero .section-title h1 {
+  font-size: 32px;
+}
+
+@media (min-width: 768px) {
+  .wine__hero .section-title h1 {
+    font-size: 40px;
+  }
+}
+
+.wine__hero ._button {
+  width: 250px;
+}
+
+.wine__parallax--vik1 {
+  background: url("/images/vinos/vinos1.jpg") no-repeat center center/cover;
+  padding: 16% 0;
+}
+
+@media (min-width: 768px) {
+  .wine__parallax--vik1 {
+    padding: 12% 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .wine__parallax--vik1 {
+    padding: 8% 0;
+  }
+}
+
+.wine__parallax--milla {
+  background: url("/images/vinos/vinos3.jpg") no-repeat center center/cover;
+  padding: 16% 0;
+}
+
+@media (min-width: 768px) {
+  .wine__parallax--milla {
+    padding: 12% 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .wine__parallax--milla {
+    padding: 8% 0;
+  }
+}
+
+.wine__parallax--piu {
+  background: url("/images/vinos/vinos5.jpg") no-repeat center center/cover;
+  padding: 16% 0;
+}
+
+@media (min-width: 768px) {
+  .wine__parallax--piu {
+    padding: 12% 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .wine__parallax--piu {
+    padding: 8% 0;
+  }
+}
+
+.wine__parallax--two {
+  background: url("/images/vinos/notas-vinedo.jpg") no-repeat center center/cover;
+  height: 50vh;
+}
+
+@media (min-width: 768px) {
+  .wine__parallax--two {
+    background: url("/images/vinos/notas-vinedo.jpg") no-repeat center center fixed/100%;
+  }
+}
+
+.wine__parallax--three {
+  background: url("/images/vinos/notas-cata.jpg") no-repeat center center/cover;
+  height: 50vh;
+}
+
+@media (min-width: 768px) {
+  .wine__parallax--three {
+    background: url("/images/vinos/notas-cata.jpg") no-repeat center center fixed/100%;
+  }
+}
+
+.wine__parallax__element img {
+  height: 300px;
+}
+
+@media (min-width: 768px) {
+  .wine__parallax__element img {
+    height: 500px;
+  }
+}
+
+@media (min-width: 992px) {
+  .wine__parallax__element img {
+    height: 600px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wine__parallax__element img {
+    height: 750px;
+  }
+}
+
+.wine__content {
+  padding: 16% 0;
+}
+
+@media (min-width: 768px) {
+  .wine__content {
+    padding: 12% 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .wine__content {
+    padding: 8% 0;
+  }
+}
+
+.wine__content .section-title h2 {
+  font-size: 26px;
+}
+
+@media (min-width: 768px) {
+  .wine__content .section-title h2 {
+    font-size: 36px;
+  }
+}
+
+.wine__content__textcol {
+  padding: 16% 0;
+}
+
+@media (min-width: 768px) {
+  .wine__content__textcol {
+    padding: 12% 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .wine__content__textcol {
+    padding: 8% 0;
+  }
+}
+
+.wine__content__texto {
+  color: #999;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.wine__data .section-title h3 {
+  font-size: 21px;
+}
+
+@media (min-width: 768px) {
+  .wine__data .section-title h3 {
+    font-size: 28px;
+  }
+}
+
+.wine__data__composicion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.wine__data__composicion__item {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 768px) {
+  .wine__data__composicion__item {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
+}
+
+@media (min-width: 992px) {
+  .wine__data__composicion__item {
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+  }
+}
+
+.wine__data__composicion__item__number {
+  position: relative;
+  font-size: 48px;
+  font-weight: bold;
+  color: #999;
+  display: block;
+  font-family: "Trajan Pro", serif;
+}
+
+.wine__data__composicion__item__number:after {
+  content: '%';
+  color: #af1f24;
+  font-size: 0.3em;
+}
+
+@media (min-width: 768px) {
+  .wine__data__composicion__item__number {
+    font-size: 64px;
+  }
+}
+
+@media (min-width: 992px) {
+  .wine__data__composicion__item__number {
+    font-size: 72px;
+  }
+}
+
+.wine__data__composicion__item__text {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: "Trajan Pro", serif;
+  width: 100px;
+  text-align: center;
+}
+
+.wine__data__features {
+  padding: 20px;
+  border: 1px solid #ebebeb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (min-width: 992px) {
+  .wine__data__features {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+.wine__data__features__item {
+  text-align: center;
+}
+
+.wine__data__features__item__text {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.wine__data__features__item__number {
+  font-size: 12px;
+}
+
+.wine__reviews__slide {
+  background: url("/images/vinos/fondo-negro.jpg") no-repeat center center/cover;
+  color: #fff;
+  padding: 16% 0;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .wine__reviews__slide {
+    padding: 12% 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .wine__reviews__slide {
+    padding: 8% 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .wine__reviews__slide__data {
+    width: 70%;
+    margin: 50px auto;
+  }
+}
+
+.wine__reviews__slide__data__pts {
+  font-size: 4em;
+  font-family: "Trajan Pro", serif;
+  margin-bottom: 20px;
+}
+
+.wine__reviews__slide__data__name {
+  font-family: "Trajan Pro", serif;
+  margin-bottom: 10px;
+}
+
+.wine__reviews__slide__data__desc {
+  margin-bottom: 20px;
+}
+
+.wine__reviews__slide img {
+  display: inline-block;
+}
+
+.wine__cta {
+  padding: 16% 0;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .wine__cta {
+    padding: 12% 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .wine__cta {
+    padding: 8% 0;
+  }
+}
+
+.wine__cta ._button {
+  width: 250px;
+}
+
+.wine__cta .section-title h3 {
+  font-size: 21px;
+}
+
+@media (min-width: 768px) {
+  .wine__cta .section-title h3 {
+    font-size: 28px;
+  }
+}
+
+.yourbottle__hero {
+  padding: 16% 0;
+  background: url("/images/vinos/vik-bottle.png") no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .yourbottle__hero {
+    padding: 12% 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .yourbottle__hero {
+    padding: 8% 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .yourbottle__hero {
+    background: url("/images/vinos/vik-bottle.png") no-repeat center center fixed/100%;
+  }
+}
+
+.yourbottle__hero .section-title {
+  color: #fff;
+}
+
+.yourbottle__hero__data {
+  padding: 16% 0;
+  padding-top: 20% !important;
+}
+
+@media (min-width: 768px) {
+  .yourbottle__hero__data {
+    padding: 12% 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .yourbottle__hero__data {
+    padding: 8% 0;
+  }
+}
+
+.yourbottle__content {
+  padding: 16% 0;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .yourbottle__content {
+    padding: 12% 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .yourbottle__content {
+    padding: 8% 0;
+  }
+}
+
+.yourbottle__content__text {
+  font-size: 21px;
+  color: #999;
+}
+
+.yourbottle__content__form {
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 *,

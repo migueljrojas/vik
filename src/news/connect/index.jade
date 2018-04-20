@@ -13,18 +13,22 @@ block config
 block content
     main.news.news--connect
         section.news__hero
-            +section-title('Connect', 'h1', 'none')
-            a._button.-ghost(href="#") Registrarme
+            .container
+                .row
+                    .col-xs-24
+                        +section-title('Connect', 'h1', 'none')
+                        a._button.-ghost(href="#") Registrarme
             
         section.news__pages
-                .news__page
-                    .news__page__articles
-                        - for (var i = 0; i < 3; ++i) {
-                            each article in site.data.prensa.connect
-                                .news__page__articles__item
+            .container
+                .row
+                    .col-xs-24
+                        .news__page__articles
+                            - for (var i = 0; i < 3; ++i) {
+                                each article in site.data.prensa.connect
                                     +press-article('connect', article)
-                        - }
-            
+                            - }
+                
         section.news__contact
             .container
                 .row
@@ -32,4 +36,4 @@ block content
                         +section-title('Connect para recibir información de VIK invitaciones a eventos y otros especiales', 'h2', 'none')
                         a._button(href="#") Connect
                                     
-        +top-footer('Historia', 'Vinos')
+        +top-footer(['Historia', 'Vinos'])

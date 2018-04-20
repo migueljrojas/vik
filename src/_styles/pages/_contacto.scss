@@ -1,0 +1,70 @@
+.contacto {
+    &__hero {
+        @include padd;
+        @include parallax('/images/contacto/contacto1.jpg');
+        height: 100vh;
+        position: relative;
+
+        &__data {
+            @include padd;
+            padding-top: 15%!important;
+        }
+    }
+
+    &__body {
+        @include padd;
+
+        .section-title {
+            h2 {
+                font-size: 26px;
+
+                @include mq(sm){
+                    font-size: 36px;
+                }
+            }
+        }
+    }
+
+    &__feature {
+        text-align: center;
+        padding-top: 40px;
+
+        &__icon {
+            padding-bottom: 20px;
+        }
+
+        &__title {
+            font-size: 21px;
+            margin: 0;
+        }
+
+        &__text {
+            margin: 0;
+            padding: 20px 0;
+            color: $midGray;
+        }
+    }
+
+    &__map {
+        &__img {
+            @include img();
+
+            @include mq(sm){
+                @include img(25%);
+            }
+        }
+    }
+    &__address {
+        @include padd;
+        text-align: center;
+
+        &__title {
+            margin-bottom: 20px;
+        }
+
+        &__text {
+            color: $midGray;
+            
+        }
+    }
+}

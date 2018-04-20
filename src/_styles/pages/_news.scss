@@ -1,0 +1,114 @@
+.news {
+    $n:&;
+
+    @include padd(top);
+
+    &__hero {
+        @include padd(top);
+        margin-bottom:40px;
+
+        &__tabs {
+            display: flex;
+            justify-content: center;
+            font-family: $altFont;
+            font-size:14px;
+            font-weight:bold;
+            color: $midGray;
+
+            li {
+                margin: 0 7px;
+            }
+        }
+    }
+
+    &__page {
+        @include padd(bottom);
+
+        &:not(:first-of-type) {
+            display: none;
+        }
+
+        &__nav {
+            background: none;
+            border: none;
+            height:40px;
+            width: 40px;
+            text-align: center;
+            line-height: 40px;
+        }
+
+        &__year {
+            padding: 0 15px;
+            font-size: 36px;
+            margin-top: -10px;
+        }
+
+        &__heading {
+            padding-bottom: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &__articles {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__contact {
+        @include padd;
+        background: $lightestGray;
+        text-align: center;
+
+        &__item {
+            strong,
+            span {
+                display: block;
+            }
+
+            &--inline {
+                strong {
+                    display: block;
+                }
+            }
+
+            margin-bottom: 15px;
+        }
+
+        ._button {
+            width: 200px;
+        }
+    }
+
+    &--connect {
+        #{$n}__hero {
+
+            ._button {
+                @include mq(md){
+                    float: right;
+                    margin-top: -80px;
+                }
+
+                &.-ghost{
+                    background: none;
+                    border: 1px solid $darkGray;
+                    color: $darkGray;
+                }
+            }
+        }
+
+        #{$n}__pages {
+            @include padd(bottom);
+        }
+
+        #{$n}__contact {
+            background: none;
+            .section-title {
+                h2 {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}

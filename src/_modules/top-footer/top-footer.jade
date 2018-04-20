@@ -1,3 +1,17 @@
-mixin top-footer(itemLeft, itemRight)
-  div(class="")
-    p This is an example paragraph for the top-footer module
+mixin top-footer(blocks)
+    section.top-footer
+        each item in blocks
+            if item == 'historia'
+                .top-footer__block.top-footer__block--historia
+                    a(href="/vina-vik/historia")
+                        span.top-footer__block__text Historia
+                    
+            if item == 'vinos'
+                .top-footer__block.top-footer__block--vinos
+                    a(href="/nuestros-vinos")
+                        span.top-footer__block__text Nuestros vinos
+                    
+            if item == 'bodega'
+                .top-footer__block.top-footer__block--bodega
+                    a(href="/vina-vik/bodega")
+                        span.top-footer__block__text Bodega

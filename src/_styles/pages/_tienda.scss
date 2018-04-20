@@ -1,0 +1,121 @@
+.tienda {
+    @include padd(top);
+
+    &__hero {
+        @include padd;
+
+        &__heading {
+            ._button {
+                @include mq(md){
+                    float: right;
+                    margin-top: -80px;
+                }
+
+                &.-ghost{
+                    background: none;
+                    border: 1px solid $darkGray;
+                    color: $darkGray;
+                }
+            }
+        }
+
+        &__slider {
+            .slick-dots {
+                bottom: -20px;
+
+                li button:before {
+                    color: $gray;
+                }
+
+                li.active button:before {
+                    transform: scale3d(1.1,1.1,1.1);
+                }
+            }
+        }
+
+        &__slide {
+            position: relative;
+
+            &__img {
+                @include img(24%);
+            }
+
+            &__data {
+                text-align: center;
+                width: 300px;
+                margin: auto;
+                padding: 20px 0;
+
+                @include mq(sm) {
+                    position: absolute;
+                    right: 10%;
+                    z-index: 2;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+
+                ._button {
+                    width: 220px;
+                }
+            }
+        }
+    }
+
+    &__listado {
+
+    }
+
+    &__producto {
+        width: 300px;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 40px;
+
+        &__img {
+            @include img(120%);
+
+            img {
+                height: 100%;
+                width: auto;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        &__data {
+            height: 260px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        ._button {
+            height: 30px;
+            line-height: 30px;
+        }
+    }
+
+    &__connect {
+        @include padd;
+        text-align: center;
+
+        .section-title {
+            h3 {
+                font-size: 21px;
+
+                @include mq(sm){
+                    font-size: 28px;
+                }
+            }
+        }
+
+        &__texto {
+            margin-bottom: 40px;
+        }
+
+        ._button {
+            width:220px;
+        }
+    }
+}

@@ -18,24 +18,27 @@ block content
                     +section-title('Videos y galería', 'h1', 'none')
         
         section.galeria__videos
-            .container
-                .col-xs-24.col-sm-16.col-sm-offset-4
-                    +section-title('Nuestros videos', 'h2', 'x')
-                    +slider('galeria__videos__slider')
-                        each item in site.data.galeria.videos
-                            .galeria__videos__slide
-                                a(href=item.video)
-                                    img(src=item.img)
+            .container-fluid
+                .row.nopadding
+                    .col-xs-24
+                        +section-title('Nuestros videos', 'h2', 'x')
+                        +slider('galeria__videos__slider')
+                            each item in site.data.galeria.videos
+                                .galeria__videos__slide
+                                    .embed-responsive.embed-responsive-16by9.home__slide__video
+                                        iframe.embed-responsive-item(src=item)
                                     
         section.galeria__images
-            .container
-                .col-xs-24.col-sm-16.col-sm-offset-4
-                    +section-title('Nuestras fotos', 'h2', 'x')
-                    +slider('galeria__images__slider')
-                        each item in site.data.galeria.images
-                            .galeria__images__slide
-                                img(src=item.img)
+            .container-fluid
+                .row.nopadding
+                    .col-xs-24
+                        +section-title('Nuestras fotos', 'h2', 'x')
+                        +slider('galeria__images__slider')
+                            each item in site.data.galeria.images
+                                .galeria__images__slide
+                                    .galeria__images__slide__img
+                                        img(src=item)
                                 
-        +top-footer('historia', 'vinos')
+        +top-footer(['historia', 'vinos'])
                     
         

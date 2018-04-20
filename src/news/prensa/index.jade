@@ -15,26 +15,30 @@ block content
         section.news__hero
             +section-title('Prensa', 'h1', 'none')
             ul.news__hero__tabs
-                - for (var i = 0; i < 9; ++i) {
-                    - var year = 2018
+                - for (var year = 2017; year > 2008; --year) {
                     li.news__hero__tab
-                        span=(year - 1)
+                        span=(year)
                 - }
         section.news__pages
-            //- - for (var i = 0; i < 9; ++i) {
-            //-     - var year = 2018
-            //-     .news__page
-            //-         .news__page__heading
-            //-             button.news__page__nav.news__page__nav--left
-            //-             span.news__page__year=(year - 1)
-            //-             button.news__page__nav.news__page__nav--right
-            //-         .news__page__articles
-            //-             - for (var i = 0; i < 3; ++i) {
-            //-                 each article in site.data.prensa.news
-            //-                     .news__page__articles__item
-            //-                         +press-article('press', article)
-            //-             - }
-            //- - }
+            .container
+                .row
+                    .col-xs-24
+                        - for (var year = 2017; year > 2008; --year) {
+                            .news__page
+                                .news__page__heading
+                                    button.news__page__nav.news__page__nav--left
+                                        i.material-icons keyboard_arrow_left
+                                    span.news__page__year=(year)
+                                    button.news__page__nav.news__page__nav--right
+                                        i.material-icons keyboard_arrow_right
+                                .news__page__articles
+                                    each article in site.data.prensa.news
+                                        +press-article('press', article)
+                                    each article in site.data.prensa.news
+                                        +press-article('press', article)
+                                    each article in site.data.prensa.news
+                                        +press-article('press', article)
+                        - }
             
         section.news__contact
             .container
@@ -69,4 +73,4 @@ block content
                                     span +55 11 4561 2613
                                     span 11 99936 1196
                                     
-        +top-footer('Historia', 'Vinos')
+        +top-footer(['historia', 'vinos'])

@@ -14,31 +14,39 @@ block content
         section.wine__hero
             .container
                 .row
-                    .col-xs-24
+                    .col-xs-24.col-sm-16.col-sm-offset-4
                         span.wine__hero__name= site.data.vinos.millacala.seccion1.nombre
                         +section-title(site.data.vinos.millacala.seccion1.texto, 'h1', 'x')
                         p.wine__hero__text=site.data.vinos.millacala.seccion1.contenido
                         +share
-                        a._button(href="/tienda/producto")
+                        a._button(href="/tienda/producto") comprar
             
-                        .wine__parralax.wine__parralax--one
+                    .col-xs-24
+                        .wine__parallax.wine__parallax--milla
                             .wine__parallax__element
-                                img(src="/images/vinos/vik.png")
+                                img(src="/images/vinos/vinos4.png")
                 
         section.wine__content
             .container
                 .row
                     .col-xs-24.col-sm-16.col-sm-offset-4
                         +section-title(site.data.vinos.millacala.seccion2.nombre, 'h2', 'x')
-                        .wine__parralax.wine__parralax--two
-                        each p in site.data.vinos.millacala.seccion2.contenido
-                            p.wine__content__texto=p
+                    .col-xs-24
+                        .wine__parallax.wine__parallax--two
+                    .col-xs-24.col-sm-16.col-sm-offset-4
+                        .wine__content__textcol
+                            each p in site.data.vinos.millacala.seccion2.contenido
+                                p.wine__content__texto=p
+                    .col-xs-24
                         +slider('.wine__content__slider')
                             each slide in site.data.vinos.millacala.seccion2.slider
                                 .wine__content__slide
-                                    .wine__content__slide__img
-                                        a(href=slide.url)
-                                            img(src=slide.img)
+                                    if slide.type == 'video'
+                                        .embed-responsive.embed-responsive-16by9.home__slide__video
+                                            iframe.embed-responsive-item(src=slide.src)
+                                    if slide.type == 'imagen'
+                                        .home__slide__img
+                                            img(src=slide.src)
         
         section.wine__data
             .container
@@ -50,28 +58,32 @@ block content
                                 li.wine__data__composicion__item
                                     span.wine__data__composicion__item__number= item.numero
                                     span.wine__data__composicion__item__text= item.texto
-                        ul.wime__data__features
+                        ul.wine__data__features
                             each item in site.data.vinos.millacala.seccion3.composicion2
                                 li.wine__data__features__item
-                                    span.wine__data__features__item__text= item.texto
-                                    span.wine__data__features__item__number= item.numero
+                                    span.wine__data__features__item__text= item.titulo
+                                    span.wine__data__features__item__number= item.valor
                         
         section.wine__content
             .container
                 .row
                     .col-xs-24.col-sm-16.col-sm-offset-4
                         +section-title(site.data.vinos.millacala.seccion4.nombre, 'h2', 'x')
-                        .wine__parralax.wine__parralax--three
-                        each p in site.data.vinos.millacala.seccion4.notas
-                            p.wine__content__texto=p
-                        +slider('.wine__content__slider')
+                    .col-xs-24
+                        .wine__parallax.wine__parallax--three
+                    .col-xs-24.col-sm-16.col-sm-offset-4
+                        .wine__content__textcol
+                            each p in site.data.vinos.millacala.seccion4.notas
+                                p.wine__content__texto=p
+                    .col-xs-24
+                        +slider('.wine__reviews__slider')
                             each slide in site.data.vinos.millacala.seccion4.slider
-                                .wine__content__slide
-                                    .wine__content__slide__data
-                                        .wine__content__slide__data__pts=slide.pts
-                                        .wine__content__slide__data__name=slide.name
-                                        .wine__content__slide__data__desc=slide.desc
-                                        img.wine__content__slide__data__logo(src=slide.logo)
+                                .wine__reviews__slide
+                                    .wine__reviews__slide__data
+                                        .wine__reviews__slide__data__pts=slide.pts
+                                        .wine__reviews__slide__data__name=slide.name
+                                        .wine__reviews__slide__data__desc=slide.desc
+                                        img.wine__reviews__slide__data__logo(src=slide.logo)
         
         section.wine__cta
             .container
@@ -80,4 +92,4 @@ block content
                         +section-title(site.data.vinos.millacala.seccion5.texto, 'h3', 'none')
                         a._button(href=site.data.vinos.millacala.seccion5.boton.url)= site.data.vinos.millacala.seccion5.boton.texto
         
-        +top-footer('historia', 'bodega')
+        +top-footer(['historia', 'bodega'])

@@ -1,0 +1,371 @@
+.vinos {
+    @include padd();
+
+    &__hero {
+        @include padd(top);
+        text-align: center;
+
+        &__text {
+            font-size: 18px;
+            margin-bottom: 40px;
+            color: $midGray + #222;
+        }
+    }
+
+    &__list {
+        &__item {
+            @include padd;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &--1 {
+                @include parallax('/images/vinos/vinos1.jpg');
+            }
+
+            &--2 {
+                @include parallax('/images/vinos/vinos3.jpg');
+            }
+
+            &--3 {
+                @include parallax('/images/vinos/vinos5.jpg');
+            }
+
+            &__actions {
+                display: flex;
+                justify-content: space-between;
+                pointer-events: none;
+
+                ._button {
+                    flex-grow: 1;
+
+                    &:first-child{
+                        margin-right: 10px;
+                        background: $altColor;
+
+                        &:hover {
+                            background: $altColor + #333;
+                        }
+                    }
+                }
+            }
+
+            &__bottle {
+                padding-bottom: 40px;
+
+                @include mq(md){
+                    padding-bottom: 80px;
+                }
+
+                img {
+                    height: 300px;
+
+                    @include mq(sm){
+                        height: 400px;
+                    }
+
+                    @include mq(md){
+                        height: 500px;
+                    }
+
+                    @include mq(lg){
+                        height: 650px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.wine {
+    @include padd();
+
+    &__hero {
+        @include padd(top);
+        text-align: center;
+
+        &__name {
+            font-family: $altFont;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            display:block;
+
+        }
+
+        &__text {
+            font-size: 18px;
+            margin-bottom: 40px;
+            color: $midGray + #222;
+
+            @include mq(md){
+                width: 80%;
+                margin-left:auto;
+                margin-right:auto;
+            }
+        }
+
+        .section-title {
+            h1 {
+                font-size: 32px;
+
+                @include mq(sm){
+                    font-size: 40px;
+                }
+            }
+        }
+
+        ._button {
+            width:250px;
+        }
+    }
+
+    &__parallax {
+        &--vik1 {
+            background: url('/images/vinos/vinos1.jpg') no-repeat center center / cover;
+            @include padd;
+        }
+
+        &--milla {
+            background: url('/images/vinos/vinos3.jpg') no-repeat center center / cover;
+            @include padd;
+        }
+
+        &--piu {
+            background: url('/images/vinos/vinos5.jpg') no-repeat center center / cover;
+            @include padd;
+        }
+
+        &--two {
+            @include parallax('/images/vinos/notas-vinedo.jpg');
+            height: 50vh;
+        }
+
+        &--three {
+            @include parallax('/images/vinos/notas-cata.jpg');
+            height: 50vh;
+        }
+
+        &__element {
+            img {
+                height: 300px;
+
+                @include mq(sm){
+                    height: 500px;
+                }
+
+                @include mq(md){
+                    height: 600px;
+                }
+
+                @include mq(lg){
+                    height: 750px;
+                }
+            }
+        }
+    }
+
+    &__content {
+        @include padd;
+
+        .section-title {
+            h2 {
+                font-size: 26px;
+
+                @include mq(sm){
+                    font-size: 36px;
+                }
+            }
+        }
+
+        &__textcol {
+            @include padd;
+        }
+
+        &__texto {
+            color: $midGray;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__data {
+        .section-title {
+            h3 {
+                font-size: 21px;
+
+                @include mq(sm){
+                    font-size: 28px;
+                }
+            }
+        }
+
+        &__composicion {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+
+            &__item {
+                flex-basis: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                @include mq(sm) {
+                    flex-basis: 30%;
+                }
+
+                @include mq(md) {
+                    flex-basis: 20%;
+                }
+
+                &__number{
+                    position: relative;
+                    font-size: 48px;
+                    font-weight: bold;
+                    color: $midGray;
+                    display: block;
+                    font-family: $titleFont;
+
+                    &:after {
+                        content: '%';
+                        color: $mainColor;
+                        font-size: 0.3em;
+                    }
+
+                    @include mq(sm) {
+                        font-size: 64px;
+                    }
+
+                    @include mq(md) {
+                        font-size: 72px;
+                    }
+                }
+
+                &__text {
+                    font-size: 12px;
+                    text-transform: uppercase;
+                    font-family: $titleFont;
+                    width:100px;
+                    text-align: center;
+                }
+            }
+        }
+
+        &__features {
+            padding: 20px;
+            border: 1px solid $lightGray;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            @include mq(md){
+                flex-wrap:nowrap;
+            }
+
+            &__item {
+                text-align: center;
+                &__text {
+                    display: block;
+                    font-weight: bold;
+                    font-size: 14px;
+                }
+                &__number {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    &__reviews {
+        &__slider {
+
+        }
+
+        &__slide {
+            background: url('/images/vinos/fondo-negro.jpg') no-repeat center center / cover;
+            color: $white;
+            @include padd
+            text-align: center;
+
+            &__data {
+                @include mq(md){
+                    width: 70%;
+                    margin: 50px auto;
+                }
+
+                &__pts {
+                    font-size: 4em;
+                    font-family:$titleFont;
+                    margin-bottom: 20px;
+                }
+
+                &__name {
+                    font-family:$titleFont;
+                    margin-bottom: 10px;
+                }
+                &__desc {
+                    margin-bottom: 20px;
+                }
+            }
+            img {
+                display: inline-block;
+            }
+        }
+    }
+
+    &__cta {
+        @include padd;
+        text-align: center;
+
+        ._button {
+            width: 250px;
+        }
+
+        .section-title {
+            h3 {
+                font-size: 21px;
+
+                @include mq(sm){
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+}
+
+.yourbottle {
+
+    &__hero {
+        @include padd;
+        @include parallax('/images/vinos/vik-bottle.png');
+        height: 100vh;
+        position: relative;
+
+        .section-title {
+            color: $white;
+        }
+
+        &__data {
+            @include padd;
+            padding-top: 20%!important;
+        }
+    }
+
+    &__content {
+        @include padd;
+        text-align: center;
+
+        &__text {
+            font-size: 21px;
+            color: $midGray;
+        }
+
+        &__form {
+            padding-top: 40px;
+            display: flex;
+        }
+    }
+}

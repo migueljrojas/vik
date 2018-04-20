@@ -12,7 +12,7 @@ block config
 block content
     main.concepto
         section.concepto__hero
-            .container-fluid
+            .container
                 .row
                     .col-xs-24.col-sm-16.col-sm-offset-4
                         +section-title(site.data.vinavik.concepto.seccion1.titulo, 'h1', 'x')
@@ -20,7 +20,7 @@ block content
                         +share
                         
             .concepto__hero__video
-                a(href="#")
+                a(href="http://www.youtube.com/embed/KaxQm09HiUI?autoplay=1", id="concepto-video")
                     img(src=site.data.vinavik.concepto.seccion1.imagen)
                     
         section.concepto__break
@@ -28,15 +28,15 @@ block content
                 .row
                     .col-xs-24.col-sm-16.col-sm-offset-4
                         +section-title(site.data.vinavik.concepto.seccion2.titulo, 'h2', 'none')
-                        p.concepto__crono__subtitle=site.data.vinavik.concepto.seccion2.texto 
+                        p.concepto__break__subtitle=site.data.vinavik.concepto.seccion2.texto 
                         
         section.concepto__vitivinicultura    
             .container-fluid
-                .row
+                .row.nopadding.flexrow
                     .col-xs-24.col-sm-12
                         .concepto__vitivinicultura__img
                             img(src=site.data.vinavik.concepto.seccion3.imagen)
-                    .col-xs-24.col-sm-12
+                    .col-xs-24.col-sm-12.flexcol
                         .concepto__vitivinicultura__data
                             +section-title(site.data.vinavik.concepto.seccion3.titulo, 'h2', 'x')
                             p.concepto__vitivinicultura__data__text= site.data.vinavik.concepto.seccion3.texto
@@ -46,12 +46,12 @@ block content
                 .row
                     .col-xs-24.col-sm-16.col-sm-offset-4
                         +section-title(site.data.vinavik.concepto.seccion4.titulo, 'h2', 'none')
-                        p.concepto__crono__subtitle=site.data.vinavik.concepto.seccion4.texto 
+                        p.concepto__break__subtitle=site.data.vinavik.concepto.seccion4.texto 
                         
         section.concepto__perfeccion    
             .container-fluid
-                .row
-                    .col-xs-24.col-sm-12
+                .row.nopadding.flexrow
+                    .col-xs-24.col-sm-12.flexcol
                         .concepto__perfeccion__data
                             +section-title(site.data.vinavik.concepto.seccion5.titulo, 'h2', 'x')
                             p.concepto__perfeccion__data__text= site.data.vinavik.concepto.seccion5.texto
@@ -63,15 +63,15 @@ block content
             .container
                 .row
                     .col-xs-24.col-sm-16.col-sm-offset-4
-                        +section-title(site.data.vinavik.concepto.seccion6.titulo, 'h2', 'none')
-                        p.concepto__crono__subtitle=site.data.vinavik.concepto.seccion6.texto 
+                        +section-title(site.data.vinavik.concepto.seccion6.titulo, 'h2', 'x')
+                        p.concepto__break__subtitle=site.data.vinavik.concepto.seccion6.texto 
                         
                     .col-xs-24
                         .concepto__viticultura__stats
                             each item in site.data.vinavik.concepto.seccion6.estadisticas
                                 .concepto__viticultura__stats__item
                                     span.concepto__viticultura__stats__item__value= item.numeros
-                                    span.concepto__viticultura__stats__item__text= item.texto
+                                    span.concepto__viticultura__stats__item__text!= item.texto
 
                     .col-xs-24.col-sm-12
                         p.concepto__viticultura__texto= site.data.vinavik.concepto.seccion6.contenido[0]
@@ -90,8 +90,8 @@ block content
             .container
                 .row
                     .col-xs-24.col-sm-16.col-sm-offset-4
-                        +section-title(site.data.vinavik.concepto.seccion8.titulo, 'h2', 'none')
-                        p.concepto__crono__subtitle=site.data.vinavik.concepto.seccion8.texto 
+                        +section-title(site.data.vinavik.concepto.seccion8.titulo, 'h2', 'x')
+                        p.concepto__break__subtitle=site.data.vinavik.concepto.seccion8.texto 
                         
                     .col-xs-24.col-sm-12
                         p.concepto__vinicultura__texto= site.data.vinavik.concepto.seccion8.contenido[0]
@@ -108,8 +108,8 @@ block content
             .container
                 .row
                     .col-xs-24.col-sm-16.col-sm-offset-4
-                        +section-title(site.data.vinavik.concepto.seccion9.titulo, 'h2', 'none')
-                        p.concepto__crono__subtitle=site.data.vinavik.concepto.seccion9.texto 
+                        +section-title(site.data.vinavik.concepto.seccion9.titulo, 'h2', 'x')
+                        p.concepto__break__subtitle=site.data.vinavik.concepto.seccion9.texto 
                         
                     .col-xs-24.col-sm-12
                         p.concepto__terroir__texto= site.data.vinavik.concepto.seccion9.contenido[0]
@@ -125,12 +125,12 @@ block content
                 .row
                     .col-xs-24.col-sm-16.col-sm-offset-4
                         +section-title(site.data.vinavik.concepto.seccion10.titulo, 'h2', 'none')
-                        p.concepto__crono__subtitle=site.data.vinavik.concepto.seccion10.texto 
+                        p.concepto__break__subtitle=site.data.vinavik.concepto.seccion10.texto 
                         ul.concepto__verde__list
                             each item in site.data.vinavik.concepto.seccion10.contenido
                                 li= item
                                 
         .concepto__parallax.concepto__parallax--three
         
-        +top-footer('vinos', 'bodega')
+        +top-footer(['vinos', 'bodega'])
                     

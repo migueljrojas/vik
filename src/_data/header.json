@@ -2,77 +2,77 @@
     "menu":[
         {
             "nombre":"Vina Vik",
-            "url":"/",
+            "url":"/vina-vik",
             "submenu":[
                 {
                     "nombre":"Historia",
-                    "url":"/"
+                    "url":"/vina-vik/historia"
                 },
                 {
                     "nombre":"Nuestro Concepto",
-                    "url":"/"
+                    "url":"/vina-vik/nuestro-concepto"
                 },
                 {
                     "nombre":"la bodega",
-                    "url":"/"
+                    "url":"/vina-vik/bodega"
                 },
                 {
                     "nombre":"el pavillion",
-                    "url":"/"
+                    "url":"/vina-vik/pavillion"
                 }
             ]
         },
         {
             "nombre":"nuestros vinos",
-            "url":"/",
+            "url":"/nuestros-vinos",
             "submenu":[
                 {
                     "nombre":"vik",
-                    "url":"/"
+                    "url":"/nuestros-vinos/vik"
                 },
                 {
                     "nombre":"milla cala",
-                    "url":"/"
+                    "url":"/nuestros-vinos/milla-calla"
                 },
                 {
                     "nombre":"la piu belle",
-                    "url":"/"
+                    "url":"/nuestros-vinos/la-piu-belle"
                 },
                 {
                     "nombre":"your vik bottle",
-                    "url":"/"
+                    "url":"/nuestros-vinos/your-vik-bottle"
                 }
             ]
         },
         {
             "nombre":"vik chile retreat",
-            "url":"/"
+            "url":"/vik-chile-retreat"
         },
         {
             "nombre":"news",
-            "url":"/",
+            "url":"#",
             "submenu":[
                 {
                     "nombre":"prensa",
-                    "url":"/"
+                    "url":"/news/prensa"
                 },
                 {
                     "nombre":"connect",
-                    "url":"/"
+                    "url":"/news/connect"
                 }
             ]
         },
         {
             "nombre":"videos y galeria",
-            "url":"/"
+            "url":"/videos-galeria"
         },
         {
             "nombre":"contacto",
-            "url":"/"
+            "url":"/contacto"
         },
         {
             "nombre":"reserva",
-            "url":"/"
+            "url":"/reserva"
         }
     ],
     "tienda":{

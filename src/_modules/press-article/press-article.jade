@@ -1,3 +1,16 @@
 mixin press-article(mode, data)
-  div(class="")
-    p This is an example paragraph for the press-article module
+    
+    .press-article(class="#{mode == 'press' ? 'press-article--press' : 'press-article--connect'}")
+        .press-article__img
+            img(src=data.img)
+        .press-article__data
+            h3.press-article__data__title=data.title
+            if mode == 'connect' 
+                p.press-article__data__text=data.text
+        .press-article__foot
+            ul.press-article__foot__share
+                each red in site.data.share
+                   li
+                       a(href=red.url, target="_blank")
+                           i(class="fa fa-#{red.name}")
+            span.press-article__foot__date=data.date

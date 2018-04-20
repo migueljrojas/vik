@@ -1,0 +1,79 @@
+.reserva {
+    &__hero {
+        @include padd;
+        @include parallax('/images/reserva/reserva1.jpg');
+        height: 100vh;
+        position: relative;
+
+        color: $white;
+        text-align: center;
+
+        &__data {
+            @include padd;
+            padding-top: 15%!important;
+        }
+    }
+
+    &__enoturismo {
+        @include padd;
+        text-align: center;
+
+        &__text {
+            margin-bottom: 30px;
+            color: $midGray;
+        }
+    }
+    
+    .section-title {
+        margin-bottom: 40px;
+
+        h2 {
+            font-size: 24px;
+
+            @include mq(sm){
+                font-size: 32px;
+            }
+        }
+    }
+
+    &__actividades {
+        @include padd(top);
+        background: url('/images/home/fondo-blanco.jpg') no-repeat top center / 100%;
+
+    }
+
+    &__actividad {
+        .flexcol {
+            background: $white;
+        }
+
+        &__img {
+            @include img(70%);
+        }
+        &__data {
+            text-align: center;
+            max-width: 400px;
+            margin: auto;
+            align-self: center;
+
+            &__text {
+                margin-bottom: 20px;
+            }
+        }
+
+        .section-title {
+            h3 {
+                font-size: 21px;
+
+                @include mq(sm){
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+
+    &__info {
+        @include padd;
+        text-align: center;
+    }
+}

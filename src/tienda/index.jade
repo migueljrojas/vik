@@ -16,6 +16,11 @@ block content
             .container
                 .row
                     .col-xs-24
+                        .tienda__hero__heading
+                            +section-title('Tienda', 'h1', 'none')
+                            a._button.-ghost(href="#") Registrarme
+                        
+                    .col-xs-24
                         +slider('tienda__hero__slider')
                             each slide in site.data.tienda.slider
                                 .tienda__hero__slide
@@ -48,4 +53,4 @@ block content
                         p.tienda__connect__texto Lo invitamos a conectarse con VIK para información sobre exclusivos eventos y catas en su ciudad, especiales oportunidades de reserva incluyendo botellas de grandes formatos, próximas novedades y noticias de VIK
                         a._button(href="/press/connect") Connect
                         
-        +top-footer('historia', 'vinos')
+        +top-footer(['historia', 'vinos'])

@@ -7,7 +7,7 @@
         ],
         "vinos":[
             {
-                "imagen":"/images/home/vik-2012.png",
+                "imagen":"/images/vinos/vinos2.png",
                 "nombre":"Vik",
                 "botones":[
                     {
@@ -21,7 +21,7 @@
                 ]
             },
             {
-                "imagen":"/images/home/milla-calla.png",
+                "imagen":"/images/vinos/vinos4.png",
                 "nombre":"Milla Calla",
                 "botones":[
                     {
@@ -35,7 +35,7 @@
                 ]
             },
             {
-                "imagen":"/images/home/la-piu-belle.png",
+                "imagen":"/images/vinos/vinos6.png",
                 "nombre":"La piu Belle",
                 "botones":[
                     {
@@ -72,10 +72,12 @@
             ],
             "slider":[
                 {
-
+                    "type":"video",
+                    "src":"http://www.youtube.com/embed/KaxQm09HiUI?autoplay=1&mute=1&rel=0"
                 },
                 {
-
+                    "type":"imagen",
+                    "src":"https://picsum.photos/1920/1080"
                 }
             ]
         },
@@ -148,13 +150,13 @@
                     "pts":"92",
                     "name":"VIK 2012",
                     "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequ.",
-                    "logo":"/images/vinos/reviewer-logo.png"
+                    "logo":"/images/vinos/logo-fondo-negro.png"
                 },
                 {
                     "pts":"95",
                     "name":"VIK 2013",
                     "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequ.",
-                    "logo":"/images/vinos/reviewer-logo.png"
+                    "logo":"/images/vinos/logo-fondo-negro.png"
                 }
             ]
         },
@@ -186,10 +188,12 @@
             ],
             "slider":[
                 {
-
+                    "type":"video",
+                    "src":"http://www.youtube.com/embed/KaxQm09HiUI?autoplay=1&mute=1&rel=0"
                 },
                 {
-
+                    "type":"imagen",
+                    "src":"https://picsum.photos/1920/1080"
                 }
             ]
         },
@@ -299,8 +303,12 @@
             ],
             "slider":[
                 {
+                    "type":"video",
+                    "src":"http://www.youtube.com/embed/KaxQm09HiUI?autoplay=1&mute=1&rel=0"
                 },
                 {
+                    "type":"imagen",
+                    "src":"https://picsum.photos/1920/1080"
                 }
             ]
         },

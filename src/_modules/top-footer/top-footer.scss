@@ -1,1 +1,48 @@
-// top-footer styles
+.top-footer {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__block {
+        @include flexcol;
+
+        flex-basis: 100%;
+        height: 0;
+        padding-bottom: 50%;
+        display: flex;
+        position: relative;
+
+        @include mq(sm){
+            padding-bottom: 25%;
+            flex-basis: 50%;
+        }
+
+        &__text {
+            font-size: 32px;
+            color: $white;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left:0;
+            right:0;
+            text-align: center;
+            font-family: $titleFont;
+
+
+            @include mq(sm) {
+                font-size: 48px;
+            }
+        }
+
+        &--historia {
+            background: url('/images/footer/footer-historia.jpg') no-repeat center center / cover;
+        }
+
+        &--bodega {
+            background: url('/images/footer/footer-bodega.jpg') no-repeat center center / cover;
+        }
+
+        &--vinos {
+            background: url('/images/footer/footer-nuestrosvinos.jpg') no-repeat center center / cover;
+        }
+    }
+}

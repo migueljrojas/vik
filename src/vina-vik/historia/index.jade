@@ -12,14 +12,15 @@ block config
 block content
     main.historia
         section.historia__hero
-            .container-fluid
+            .container
                 .row
                     .col-xs-24.col-sm-16.col-sm-offset-4
                         +section-title(site.data.vinavik.historia.seccion1.titulo, 'h1', 'x')
                         p.historia__hero__subtitle=site.data.vinavik.historia.seccion1.texto 
                         +share
                         
-            .historia__hero__parallax
+        .historia__hero__parallax
+            img(src="/images/vina-vik/historia1.jpg")
             
         section.historia__crono
             .container
@@ -30,11 +31,11 @@ block content
                         
         section.historia__oro    
             .container-fluid
-                .row
+                .row.nopadding.flexrow
                     .col-xs-24.col-sm-12
                         .historia__oro__img
                             img(src=site.data.vinavik.historia.seccion3.imagen)
-                    .col-xs-24.col-sm-12
+                    .col-xs-24.col-sm-12.flexcol
                         .historia__oro__data
                             +section-title(site.data.vinavik.historia.seccion3.titulo, 'h2', 'x')
                             each p in site.data.vinavik.historia.seccion3.texto
@@ -62,6 +63,7 @@ block content
                         p.historia__team__subtitle=site.data.vinavik.historia.seccion6.texto 
                         
             .historia__team__parallax
+                img(src="/images/vina-vik/historia6.jpg")
             
             .container
                 .row
@@ -75,4 +77,4 @@ block content
                                         h3.historia__team__member__name=member.nombre
                                         p.historia__team__member__job=member.cargo
                                     
-        +top-footer('vinos', 'bodega')
+        +top-footer(['vinos', 'bodega'])

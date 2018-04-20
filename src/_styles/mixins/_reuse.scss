@@ -2,6 +2,53 @@
     transition: $prop $d $e;
 }
 
+@mixin img($pad: 56.5%) {
+    position: relative;
+    padding-bottom: $pad;
+    overflow: hidden;
+    height: 0;
+    width:100%;
+
+    img {
+        position: absolute;
+        width: 100%;
+        min-height: 100%;
+        top:0;
+        left:0;
+    }
+}
+
+@mixin parallax($img) {
+    background: url($img) no-repeat center center / cover;
+
+    @include mq(sm){
+        background: url($img) no-repeat center center fixed / 100%;
+    }
+}
+
+@mixin flexcol() {
+    @include mq(sm){
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@mixin flexrow() {
+    @include mq(sm){
+        display:flex;
+        justify-content: center;
+        align-items: stretch;
+    }
+}
+
+.flexrow {
+    @include flexrow;
+}
+
+.flexcol {
+    @include flexcol;
+}
 @mixin title($size: $lg, $color: $white, $align: 'left') {
     text-transform: uppercase;
     font-size: $size;

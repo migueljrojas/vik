@@ -12,10 +12,13 @@ block config
 block content
     main.bodega
         section.bodega__hero
-            .bodega__hero__data
-                +section-title(site.data.vinavik.bodega.seccion1.titulo, 'h1', 'x')
-                p.bodega__hero__data__text= site.data.vinavik.bodega.seccion1.texto
-                +share
+            .container
+                .row
+                    .col-xs-24.col-sm-16.col-sm-offset-4
+                        .bodega__hero__data
+                            +section-title(site.data.vinavik.bodega.seccion1.titulo, 'h1', 'x')
+                            p.bodega__hero__data__text= site.data.vinavik.bodega.seccion1.texto
+                            +share
                 
         section.bodega__break
             .container
@@ -60,10 +63,10 @@ block content
 
         .bodega__parallax.bodega__parallax--five
         
-        section.bodega__break
+        section.bodega__break.bodega__reserva
             .container
                 .row
                     .col-xs-24.col-sm-16.col-sm-offset-4
-                        p.bodega__break__subtitle!=site.data.vinavik.bodega.seccion7.texto 
+                        p.bodega__reserva__subtitle!=site.data.vinavik.bodega.seccion7.texto 
 
-        +top-footer('historia', 'vinos')
+        +top-footer(['historia', 'vinos'])

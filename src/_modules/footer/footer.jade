@@ -1,1 +1,19 @@
 footer.footer
+    .footer__section.footer__section--top
+        p Viña vik 
+        p Milahue, San Vicente de Tagua, Chile
+    .footer__section.footer__section--middle
+        p #vikvibe
+        ul.footer__social
+            each red in site.data.social
+               li
+                   a(href=red.url, target="_blank")
+                       i(class="fa fa-#{red.name}")
+            
+    .footer__section.footer__section--bottom
+        p
+            strong M
+            span +56 9 56684852
+        p
+            strong E
+            span tours@vik.cl

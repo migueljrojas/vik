@@ -6,7 +6,7 @@
         },
         {
             "type":"imagen",
-            "src":"https://picsum.photos/1920/1080"
+            "src":"https://picsum.photos/1920/1080?random"
         }
     ],
     "vinos":{
@@ -63,7 +63,7 @@
             "nombre":"conoce mas",
             "url":"/vina-vik/historia"
         },
-        "imagen":""
+        "imagen":"/images/home/history.jpg"
     },
     "bodega":{
         "titulo":"nuestra bodega",
@@ -81,7 +81,7 @@
             "nombre":"conoce mas",
             "url":"#"
         },
-        "video":""
+        "video":"/images/home/concepto.jpg"
     },
     "pavillion":{
         "titulo":"el pavillion",
@@ -90,7 +90,7 @@
             "nombre":"conoce mas",
             "url":"#"
         },
-        "imagen":""
+        "imagen":"/images/home/pavillion.jpg"
     },
     "retreat":{
         "titulo":"vik chile retreat",
@@ -99,6 +99,6 @@
             "nombre":"conoce mas",
             "url":"#"
         },
-        "imagen":""
+        "imagen":"/images/home/retreat.jpg"
     }
 }
